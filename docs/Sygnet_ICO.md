@@ -38,7 +38,7 @@ Wzorujemy się na mechanice rate-limiting EOSa. Jeśli suma puli na dany dzień 
 
 # Wartość tokenu
 
-Inwestor kupując nasz token spekuluje nie tyle w zakresie dwóch obaszarów:
+Inwestor kupując nasz token spekuluje w zakresie dwóch obaszarów:
 
 1. Przyszłej popularności naszego serwisu i jego rzeczywistej użyteczności dla KYC
 2. Naszego potencjału dogadania się z wieloma bankami.
