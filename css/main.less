@@ -138,6 +138,8 @@ a {
 }
 
 .free-float-block {
+  clear: both;
+
 
 
   strong {
@@ -148,6 +150,8 @@ a {
 a.floating-link {
   color: @tokenika_light;
   font-weight: 300;
+  text-transform: uppercase;
+
 }
 
 main {
@@ -158,6 +162,8 @@ main {
   // transform: translate(-50%, -50%);
   // padding-bottom: 140px;
   // display: none;
+  margin-top: 50px;
+
 }
 
 
@@ -233,6 +239,9 @@ FOOTER
 
 footer {
 
+  margin-top: 80px;
+
+
   .inner-footer {
       border-top: 1px solid @tokenika_light;
       padding-top: 35px;
@@ -254,7 +263,8 @@ footer {
 RWD
 ******************************************************************************/
 
-@media screen and (min-width: 992px) {
+
+@media screen and (min-width: 1440px) {
   main {
     position: absolute;
     top: 50%;
@@ -262,12 +272,15 @@ RWD
     margin-right: -50%;
     transform: translate(-50%, -50%);
     padding-bottom: 140px;
+    margin-top: 0;
   }
 
   footer {
     position: absolute;
     width: 100%;
     bottom: 0;
+    left: 0;
+    margin-top: 0;
   }
 
   .free-float-block {
@@ -295,12 +308,17 @@ RWD
       padding-bottom: 35px;
       margin: 0 20px;
       overflow-x: hidden;
+
     }
   }
 
-  footer p {
+  footer  {
+  margin-top: 10px;
+  p {
     text-align: center !important;
   }
+
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -324,11 +342,11 @@ PRELOADER
   z-index: 100;
 
   .inner-preloader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // margin-right: -50%;
+    // transform: translate(-50%, -50%);
 
     span {
       color: @tokenika_light;
