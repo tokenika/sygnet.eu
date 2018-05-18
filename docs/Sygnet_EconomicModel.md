@@ -2,7 +2,9 @@
 
 ## Cel
 
-Naszym celem jest dostarczenie modelu ekonomicznego, który będzie generował motywację do harmonijnej współpracy między następującymi trzema typami podmiotów:
+Celem niniejszego dokumentu jest zaproponowanie modelu ekonomicznego dla systemu Sygnet.
+
+Model ten powinien generować motywację do harmonijnej współpracy między następującymi trzema typami podmiotów w systemie Sygnet:
 
 - Dawca informacji (służącej do weryfikacji tożsamości osoby K)
 - Biorca informacji (który potrzebuje zweryfikować osobę K)
@@ -133,9 +135,9 @@ Ponadto, jeśli pierwszym partnerem będzie nie-bank, stawia to nas w dużo leps
 
 > Widzę tylko trudność w wytłumaczeniu tego innym podmiotom.
 
-To jest podobna trudność jaką miał i ma Steem. Bardzo niewiele osób rzeczywiście rozumie mechanizm ekonomiczny Steema, chociaż mnóstwo osób go używa i tym samym przyjmuje, że ma on sens. Okazuje się, że użytkownicy nie muszą dokładnie rozumieć mechanizmów ekonomicznych żeby móc z nich uczestniczyć.
+To jest podobna trudność jaką miał i ma Steem. Bardzo niewiele osób rzeczywiście rozumie mechanizm ekonomiczny Steema, chociaż mnóstwo osób go używa i tym samym przyjmuje, że ma on sens. Okazuje się, że użytkownicy nie muszą dokładnie rozumieć mechanizmów ekonomicznych żeby móc w nich uczestniczyć.
 
-To co jest ważne to to żeby system był łatwo wytłumaczalny w zakresie sposobu korzystania z niego (w przeciwieństwie do sposobu w jaki jest on skonstruowany).
+To co jest ważne, to to żeby system był łatwo wytłumaczalny w zakresie sposobu korzystania z niego (w przeciwieństwie do sposobu w jaki jest on skonstruowany).
 
 A instrukcja użycia w zakresie finansowym jest bardzo prosta:
 
