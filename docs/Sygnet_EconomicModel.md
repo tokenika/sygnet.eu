@@ -119,6 +119,12 @@ I wtedy Sygnetowa inflacja zmierzałaby asymptotycznie do zera w wybranej przez 
 
 Cap inflacyjny niewątpliwie daje uspokojenie posiadaczom tokenów: inflacji postrzeganej jako czynnik psujący wycenę jest z upływem czasu coraz mniej. Doświadczenie z ICO EOSa dowodzi, że inwestor jest w stanie znieść dość dużą inflację (nawet 100% rocznie), o ile ma ona wyraźny cel i limit czasowy.
 
+#### Nasza oferta dla dawcy informacji
+
+Bank (albo inna firma dysponująca wiarygodną informacją o tożsamości, np. Allegro) ma majątek w postaci informacji o tożsamości, który trudno jest zmonetyzować, bo potrzebna jest do tego duża skala działania. Takim firmom nie opłaca się wchodzić w układy, które mają małą szansę na uzyskanie dużej skali. My dajemy im propozycję, która ma potencjał na masowość z prostego powodu: jest ona za darmo (z punktu widzenia użytkownika), podobnie jak np. płatność kartą.
+
+Ponadto mając zapas kapitału w postaci fiat uzyskanego z ICO jesteśmy w dobrej pozycji żeby przez dłuższy czas nakręcać ekspansję systemu, co dodatkowo zwiększa szansę powodzenia.
+
 #### Nie tylko banki
 
 Bank, jako dawca informacji, jest dla nas cennym partnerem, bo tożsamość potwierdzona przez bank jest bardziej wiarygodna niż tożsamość potwierdzona przez inne podmioty.
@@ -148,9 +154,7 @@ A instrukcja użycia w zakresie finansowym jest bardzo prosta:
 
 > Musimy założyć, że za rok, dwa banki otworzą się na krypto. Bo na razie to mają chyba taką nieformalną zmowę, żeby nie używać tokenów oficjalnie.
 
-Bank (albo inna firma dysponująca wiarygodną informacją o tożsamości, np. Allegro) ma majątek w postaci informacji o tożsamości, który trudno jest zmonetyzować, bo potrzebna jest do tego duża skala działania. Takim firmom nie opłaca się wchodzić w układy, które mają małą szansę na uzyskanie dużej skali. My dajemy im propozycję, która ma potencjał na masowość z prostego powodu: jest ona za darmo (z punktu widzenia użytkownika), podobnie jak np. płatność kartą.
-
-Ponadto mając zapas kapitału w postaci fiat uzyskanego z ICO jesteśmy w dobrej pozycji żeby przez dłuższy czas nakręcać ekspansję systemu, co dodatkowo zwiększa szansę powodzenia.
+W naszym przypadku używanie krypto przez banki sprowadza się do przyjęcia płatności w Sygnetowym tokenie. Jeśli dany podmiot nie będzie chciał mieć do czynienia z tym tokenem, to może nam przekazać dostęp do swojego konta w Sygnecie i my możemy uzyskane przez niego tokeny sprzedawać na rynku i przekazywać mu fiat.
 
 
 
@@ -168,8 +172,8 @@ Jednak brak dokładnej wyceny wpływów dla dawców informacji, nie stawia nas n
 
 Istotnie, inflacja jest ukrytym podatkiem, ale ma ona potencjał napędzania inwestycji, oczywiście gdy jest stosowana z umiarem.
 
-Do tej pory monopol na posługiwanie się inflacją miał emitent waluty narodowej, czyli aparat państwowy. Teraz, dzięki istnieniu wynalazku blockchaina, ten mechanizm jest do dyspozycji podmiotów biznesowych. Dostęp do mechanizmu inflacyjnego jest być może największym atutem jaki daje blockchain.
+Do tej pory monopol na posługiwanie się inflacją miał emitent waluty narodowej, czyli aparat państwowy. Teraz, dzięki istnieniu wynalazku blockchaina, ten mechanizm jest do dyspozycji podmiotów biznesowych. Dostęp do mechanizmu inflacyjnego jest być może największym atutem jaki daje biznesowi blockchain.
 
-Biznes blockchainowy może mieć własną walutę i ten pozornie drobny fakt zmienia wszystko: biznes blockchainowy żyje z inflacji, a jedyną sensowną miarą jego kondycji finansowej jest to: w jakim stopniu inflacja jest zrównoważona potencjałem ekspansji danego biznesu na nowych użytkowników (bo ci nowi użytkownicy generują popyt na walutę tego biznesu i ten popyt równoważy inflację).
+Blockchain powoduje, że biznes może mieć własną walutę i ten pozornie drobny fakt zmienia wszystko: biznes blockchainowy może żyć z inflacji. Wówczas jedyną sensowną miarą jego kondycji finansowej jest to: w jakim stopniu inflacja jest zrównoważona potencjałem ekspansji danego biznesu na nowych użytkowników (bo ci nowi użytkownicy generują popyt na walutę tego biznesu i ten popyt równoważy inflację).
 
 Można też spojrzeć na to w ten sposób: owszem można stosować tradycyjny model biznesowy na blockchainie, ale tego rodzaju podejście nie ma szans w konfrontacji z podejściem inflacyjnym. Biznes który może żyć z inflacji a tego nie robi, przegra z biznesem, który bierze inflację i obraca ją na swoją korzyść.
