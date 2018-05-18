@@ -1,14 +1,20 @@
-## Problem
+# Sygnet - Propozycja Modelu Ekonomicznego
 
-Naszym celem jest dostarczenie modelu ekonomicznego, który będzie generował motywację do działania dla następujących trzech podmiotów:
+## Cel
+
+Naszym celem jest dostarczenie modelu ekonomicznego, który będzie generował motywację do harmonijnej współpracy między następującymi trzema typami podmiotów:
 
 - Dawca informacji (służącej do weryfikacji tożsamości osoby K)
-- Biorca informacji (który potrzebuje zweryfikowac osobę K)
+- Biorca informacji (który potrzebuje zweryfikować osobę K)
 - Osoba K, której dotyczy informacja i która jest przedmiotem weryfikacji
 
-Oczywiście dodatkowym warunkiem jest sprawienie żeby token był postrzegany jako warty posiadania, tj. żeby jego posiadanie rodziło wymierne korzyści i żeby tych korzyści było tym więcej, im więcej mamy tego tokenu.
+Z punktu widzenia biznesowego musimy dodatkowo spełnić następujące kryteria:
 
-## Geneza
+- Token musi być postrzegany jako warty posiadania, tj. jego posiadanie powinno rodzić wymierne korzyści i tych korzyści powinno być tym więcej, im więcej mamy tego tokenu.
+- Sposób działania tokenu powinien wspierać masową adopcję systemu. Idealnie by było żeby użytkownik mógł zacząć używać systemu bez konieczności wcześniejszego zakupu tokenu.
+- Używanie tokenu powinno być uwolnione od ryzyka cenowego. Większość użytkowników chce używać tokenu w celu uzyskania usługi, a nie spekulować na jego wartości.
+
+## Inspiracja
 
 Pomysł na model ekonomiczny tokenu w systemie Sygnet inspirowany jest mechanizmem ekonomicznym systemu [Steem](https://steem.io/).
 
@@ -125,7 +131,7 @@ Ponadto, jeśli pierwszym partnerem będzie nie-bank, stawia to nas w dużo leps
 
 ## Q&A
 
-> Pomysł super. Widzę tylko trudność w wytłumaczeniu tego innym podmiotom.
+> Widzę tylko trudność w wytłumaczeniu tego innym podmiotom.
 
 To jest podobna trudność jaką miał i ma Steem. Bardzo niewiele osób rzeczywiście rozumie mechanizm ekonomiczny Steema, chociaż mnóstwo osób go używa i tym samym przyjmuje, że ma on sens. Okazuje się, że użytkownicy nie muszą dokładnie rozumieć mechanizmów ekonomicznych żeby móc z nich uczestniczyć.
 
@@ -136,11 +142,15 @@ A instrukcja użycia w zakresie finansowym jest bardzo prosta:
 - Dla biorcy informacji: *Usługa jest za darmo, nic nie musisz płacić. Gdybyś chciał jednak korzystać z systemu z większą częstotliwością to musisz wejść w posiadanie tokenów (odpowiednik nabycia licencji na wersję pro), ale te tokeny się nie zużywają, więc wysiłek (czasowy i finansowy) popełniasz tylko raz.*
 - Dla dawców informacji: *Za oferowanie informacji dostajesz tokeny, które mają wartość finansową wyznaczaną przez rynek. Możesz te tokeny trzymać licząc na aprecjację albo sprzedać i uzyskać fiat.*
 
+
+
 > Musimy założyć, że za rok, dwa banki otworzą się na krypto. Bo na razie to mają chyba taką nieformalną zmowę, żeby nie używać tokenów oficjalnie.
 
 Bank (albo inna firma dysponująca wiarygodną informacją o tożsamości, np. Allegro) ma majątek w postaci informacji o tożsamości, który trudno jest zmonetyzować, bo potrzebna jest do tego duża skala działania. Takim firmom nie opłaca się wchodzić w układy, które mają małą szansę na uzyskanie dużej skali. My dajemy im propozycję, która ma potencjał na masowość z prostego powodu: jest ona za darmo (z punktu widzenia użytkownika), podobnie jak np. płatność kartą.
 
 Ponadto mając zapas kapitału w postaci fiat uzyskanego z ICO jesteśmy w dobrej pozycji żeby przez dłuższy czas nakręcać ekspansję systemu, co dodatkowo zwiększa szansę powodzenia.
+
+
 
 > Dla tradycyjnych biznesów może być problem z oszacowaniem przychodów. Bo czy nie jest tak ze wypłata dla nich będzie zależała od ilości zapytań? Tak jak upvote na Steemie?
 
@@ -150,10 +160,14 @@ Ale nawet gdybyśmy zastosowali tradycyjny model ekonomiczny (tj. taki jak np. [
 
 Jednak brak dokładnej wyceny wpływów dla dawców informacji, nie stawia nas na straconej pozycji. W tej chwili podmioty dysponujące informacją o tożsamości nie mają żadnych wpływów z tego tytułu, więc jeśli dostarczymy cokolwiek istotnie większego niż zero i co dodatkowo ma potencjał dużej skali, to to się broni.
 
+
+
 > Inflacja jest prastarym, ukrytym podatkiem którego się używa żeby wywołać ruch w interesie i zapobiec przetrzymywania tokenów bez obrotu nimi.
 
-Istotnie, inflacja jest ukrytym podatkiem, który ma potencjał napędzania inwestycji (oczywiście gdy jest on rozsądnie stosowany) i na który do tej pory monopol miał aparat państwowy. Teraz ten mechanizm jest do dyspozycji podmiotów biznesowych. Posiadanie przez biznes tego mechanizmu inflacyjnego jest być może największym atutem jaki daje blockchain.
+Istotnie, inflacja jest ukrytym podatkiem, ale ma ona potencjał napędzania inwestycji, oczywiście gdy jest stosowana z umiarem.
 
-Tak więc biznes blockchainowy może mieć własną walutę i ten pozornie drobny fakt zmienia wszystko: biznes blockchainowy żyje z inflacji, a jedyną sensowną miarą jego kondycji finansowej jest to: w jakim stopniu inflacja jest zrównoważona potencjałem ekspansji danego biznesu na nowych użytkowników (bo ci nowi użytkownicy generują popyt na walutę tego biznesu i ten popyt równoważy inflację).
+Do tej pory monopol na posługiwanie się inflacją miał emitent waluty narodowej, czyli aparat państwowy. Teraz, dzięki istnieniu wynalazku blockchaina, ten mechanizm jest do dyspozycji podmiotów biznesowych. Dostęp do mechanizmu inflacyjnego jest być może największym atutem jaki daje blockchain.
+
+Biznes blockchainowy może mieć własną walutę i ten pozornie drobny fakt zmienia wszystko: biznes blockchainowy żyje z inflacji, a jedyną sensowną miarą jego kondycji finansowej jest to: w jakim stopniu inflacja jest zrównoważona potencjałem ekspansji danego biznesu na nowych użytkowników (bo ci nowi użytkownicy generują popyt na walutę tego biznesu i ten popyt równoważy inflację).
 
 Można też spojrzeć na to w ten sposób: owszem można stosować tradycyjny model biznesowy na blockchainie, ale tego rodzaju podejście nie ma szans w konfrontacji z podejściem inflacyjnym. Biznes który może żyć z inflacji a tego nie robi, przegra z biznesem, który bierze inflację i obraca ją na swoją korzyść.
