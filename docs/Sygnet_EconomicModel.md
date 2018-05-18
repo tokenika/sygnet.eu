@@ -2,11 +2,11 @@
 
 Zauważmy że naszym zadaniem jest dostarczenie modelu ekonimicznego który będzie generował motywację do działania dla następujących trzech podmitów:
 
-* Generator informacji (służącej do weryfikacji tożsamości osoby K)
-* Biorca informacji 
-* Osoba K, której dotyczy informacja
+* Dawca Informacji (służącej do weryfikacji tożsamości osoby K)
+* Biorca informacji (który potrzebuje zweryfikowac osobę K)
+* Osoba K, której dotyczy informacja i która jest przedmiotem weryfikacji
 
-Oczywisćie dodatkowym warunkiem jest sprwawienie żeby token był postrzegany jako warty posiadnia, tj. żeby jego posiadanie rodziło wymierne korzyści i żeby tych korzyści było tym więcej im więcej mamy tego tokenu.
+Oczywisćie dodatkowym warunkiem jest sprawienie żeby token był postrzegany jako warty posiadnia, tj. żeby jego posiadanie rodziło wymierne korzyści i żeby tych korzyści było tym więcej im więcej mamy tego tokenu.
 
 ## Geneza
 
@@ -24,9 +24,11 @@ Zauważymy też, że  systemie Steema liczba tokenów do rozdanie każdego dnia 
 
 Najczęszczym zarzutem jest porównanie Steema do piramidy finansowej. Krytycy zakładają że nagrody pochodzące z inflacji w ich rozumieniu biorą się "z powietrza" i tym samym jest tylko kwestią czasu kiedy cały ten system się zawali.
 
-#### Obrona modelu Steema
+#### Sens modelu Steema
 
-Działający od prawie 10 lat system Bitcoin (a także wszytkie inne krypotowaluty, w tym Etehreum) udowodnił, że społecznościowo wspierany system ekonomiczny może finansować się z inflacji. Muszą jednak być spełnione następujące trzy warunki:
+Działający od prawie 10 lat system Bitcoin (a także wszytkie inne krypotowaluty, w tym Etehreum) udowodnił, że społecznościowo wspierany system ekonomiczny może finansować się z inflacji.
+
+Muszą jednak być spełnione następujące trzy warunki:
 
 1. Poziom inflacji jest na rozsądnym poziomie, co zwykle oznacza przedział 5-10%.
 2. Rynek postrzega potencjał ekspansji systemu (w sensie liczby użytkowników) na poziomie istotnie wyższym niż poziom inflacji.
@@ -36,39 +38,63 @@ Dyskusyjne jest czy warunek (3) jest konieczny - być może nie jest.
 
 ## Istota propozycji dla Sygnetu
 
-Dla systemu Sygnet proponujemy rozwiązanie analogiczne do modelu Steema. Załóżmy, że Sygnet ma kapitalizację 10 mln USD, a jego token ma inflację 4% rocznie, co oznacza że codziennie jest około 1k USD do rozdania z puli inflacyjnej.
+Dla systemu Sygnet proponujemy rozwiązanie analogiczne do modelu Steema.
 
 Zauważmy że:
 
-* Odpowiednikiem generatora postów w Steemie jest generator informacji (służącej do weryfikacji tożsamości osoby K) w Sygnecie.
-* Odpowiednikiem kuratora postów w Steemie jest bioraca informacji w Sygnecie
+* Odpowiednikiem twórcy postów w Steemie jest w Sygnecie dawca informacji (służącej do weryfikacji tożsamości osoby K).
+* Odpowiednikiem kuratora postów w Steemie jest w Sygnecie bioraca informacji. Konsumuje on informację za pośrednictwem osoby K, bo to de facto ona dokonuje interakcji z dawcą informacji (i także ona decyduje z usług którego konkretnie dawcy informacji skorzystać).
 
-Podobnie jak w Steemie tę pulę dystrybujemy wśród dawców informacji (służącej do weryfikacji tożsamości).
+Wtedy:
 
-Każda weryfikacja tożsamości to oddanie głosu na danego dawcę informacji. A siła glosu jest proporcjonalna do stake'u danego użytkownika.
+* Podobnie jak w Steemie dzienną pulę inflacyjną dystrybujemy wśród dawców informacji (służącej do weryfikacji tożsamości). Każda konsumpcja tej informacji to oddanie głosu na danego dawcę informacji.
+* Podobnie jak w Steemie siła glosu jest proporcjonalna do liczby Sygnetowych tokenów będących w posiadaniu biorcy informacji (a dokładniej - do udziału tokenów biorcy informacji w całkowitej populacji Sygnetowych tokenów).
+* Podobnie jak w Steemie trzeba mieć jakąś minimalną lliczbę Sygnetowych tokenów żeby móc skorzystać z systemu Sygnet. Posiadanie tej minimalnej liczby tokenów powoduje, że z syetmu możesz korzystać rzadko (np. raz na minutę), a to ogrniaczenie maleje wraz ze wzrostem liczby posiadanych tokenów.
+* Podobnie jak w Steemie rozliczenie działa w cyklu dobowym, czy dystrybucja nagród z puli inflacyjnej następuje regularnie raz na dobę.
 
-Przykład:
+#### Przykład
 
-* Pula dzienna: 1000 USD
-* Mój stake: 1%
-* Więc dysponuję pulą 10 USD
+Załóżmy, że Sygnet ma kapitalizację 10 mln USD, wyemitowano do tej pory 100 mln tokenów, a inflacja jest na poziomie 4% rocznie, co oznacza że codziennie jest około do rozdania około 10k tokenów z puli inflacyjnej (przy tej kapitalizacji jest to równowartość około 1k USD).
 
-W danym dniu skorzystałem z usługi 4 dawców informacji.
+Załózmy że stan posiadania biorcy informacji to 1% więc dysponuje on pulą 100 tokenów (1% z 10k tokenów). Załóżmy dalej, że danym dniu skorzystał on z usługi dwóch dawców informacji, z takim rozkładem:
 
-Wtedy ci czterej dawcy otrzymują w moim imieniu z puli inflacyjnej po 2.5 USD każdy.
+* 80% zapytań było skierownaych do dawcy A,
+* 20% do dawcy B,
 
-Czyli im większy mam stake tym cenniejszym jestem biorcą informacji. Dokładnie tak samo jak w Steemie: im większy stake tym cenniejszy jest upvote. Tyle że w Sygnecie zamiast upvote'u jest pobranie informacji (służącej do weryfikacji tożsamości).
+Wówczas w rozliczeniu puli inflacyjnej dawca A dostaje z tytuły powyższej sytuacji 80 tokenów, a dawca B dostaje 20 tokenów. Oczywiście to rozliczenie to jest tylko fragment większej całości, bo z tytułu obsługi klientów innych biorców inforacji dawcy A i B dostaną kolejne tokeny w tym cyklu rozliczeniowym.
 
-Oczywiście jedna osoba może udawać że jest jednocześnie dawcą i biorcą, ale to jest analogiczne do upvote'u własnego postu na Steemie. Z doświadczenia Steema wynika że tego rodzaju nadużycia nie są powszechne i tym samym groźne dla poprawengo funkcjonaowania systemu
+#### Możliwość nadużycia
 
-I wtedy mamy system który jest postrzegany jako darmowy, bo żywi się własną inflacją. I ma tę genialną zaletę Steema: nie trzeba kupować tokenów żeby móc zacząć go używać, bo minimalną wymaganą dawkę tokenów dostajesz gratis przy założeniu Sygnetowego konta i te tokeny się nie zużywają. Ale im więcej masz tokenów tym cenniejszy jest twój głos w dystrybucji puli inflacyjnej i z tym większą częstotliwością możesz korzystać z systemu jako biorca informacji.
+Oczywiście jedna osoba może udawać że jest jednocześnie dawcą i biorcą informacji, co jest analogiczne do upvote'u własnego postu na Steemie. Z doświadczenia Steema wynika, że tego rodzaju nadużycia nie są powszechne (bo są łatwo wykrywalne) i tym samym nie są groźne dla poprawengo funkcjonaowania systemu.
 
-I to jest materiał na blockchain - bez blockchaina tego się nie da zrobić.
+#### Co uzyskujemy?
 
-* Bitcoin: mining poprzez spalanie prądu
-* Steem: mining poprzez dostarczanie contentu internetowego
+Korzyści są na wielu frontach jednoczesńie:
+
+* Uzyskujemy system który jest **postrzegany** jako darmowy (chociaż w istocie nie jest, bo żywi się własną inflacją). Posiadane przez biorców informacji tokeny nie zużywają się.
+* Nie trzeba kupować tokenów żeby móc zacząć go używać, bo minimalną wymaganą dawkę tokenów dostajesz gratis przy założeniu Sygnetowego konta i te tokeny się nie zużywają.
+* Im więcej masz tokenów tym cenniejszy jest twój głos w dystrybucji puli inflacyjnej i z tym większą częstotliwością możesz korzystać z systemu jako biorca informacji.
+
+#### Innowacyjność
+
+W zakresie tokenów emitowanych poprzez ICO powszechnie obowiązujące podejście jest następujące: stwarzamy jakąś, wyrażoną za pomocą smart-kontraktu, usługę, a związany z ta usługą token jest po to żeby biorca tej usługi mógł nim zapłacić dawcy.
+
+Podejście to ma jedną istotną wadę: potrzebujemy skłonić potencjalnego biorcę usługi do nabycia tokenu **zanim** ma on szansę z niej skorzystać. Jest to istotna przeszkoda w adopcji.
+
+Natomiast powyższy model ekonomiczny sprawia że usługa w swojej podstawowej wersji jest oferowana **za darmo**, co w oczywisty sposób niweluje barierę wejscia dla nowych użytkowników. Żeby to osiągnąc wykorzystjemy atuty technologii blockchain, ktorych nie można zrealizować w żaden inny sposób: proponowany przez nas model inflacyjny jest realiowalny tylko za pomocą smart-kontraktu - nikt by temu mechanizmowi nie ufał gdyby było inaczej.
+
+Według naszej wiedzy Sygnet ma szansę być pierwszym tokenem emitowanym na blockchainie (tj. nie posiadającym własnego natywnego blockchaina), który stosuje model ekonomiczny typowy dla blockchiana, tj. ekspansja poprzez inflację.
+
+Poniżej porównanie wychwytujące analogie pomiędzy różnymi podjeściami:
+
+* Bitcoin/Ethereum: mining poprzez spalanie prądu
+* Maidsafe/Sia: mining poprzez dostarczanie przestrzeni dyskowej
+* Golem: minng poprzez dostarczanie mocy obliczeniowej do machine learing / rendering
+* Steem: mining poprzez dostarczanie wartości intelektualnej/artystycznej (t.j. contentu internetowego)
 * EOS: mining poprzez dostarczanie mocy obliczeniowej do procesowania transakcji
-* Sygnet: mining poprzez dostarczanie wiarygodnej informacji o tożsamości (a w przyszłości być może także o reputacji)
+* Sygnet: mining poprzez dostarczanie informacji służącej do weryfikacji tożsamości
+
+
 
 
 

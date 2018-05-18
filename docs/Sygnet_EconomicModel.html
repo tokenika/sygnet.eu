@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>Sygnet_EconomicModel</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}#write, body { height: auto; }
+#write, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write ol, #write p, #write ul { position: relative; }
+#write, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+h1, h2, h3, h4, h5, h6, tr { break-inside: avoid; }
+#write, pre { white-space: pre-wrap; }
+.CodeMirror, .md-fences, table { text-align: left; }
+.md-reset, a:active, a:hover { outline: 0px; }
+.md-reset, .md-toc-item a { text-decoration: none; }
+.MathJax_SVG, .md-reset { float: none; direction: ltr; }
+:root { --bg-color:#ffffff; --text-color:#333333; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+a.url { word-break: break-all; }
+.in-text-selection, ::selection { background: rgb(181, 214, 252); text-shadow: none; }
+#write { margin: 0px auto; word-break: normal; word-wrap: break-word; padding-bottom: 70px; overflow-x: visible; }
+.first-line-indent #write p .md-line { text-indent: 0px; }
+.first-line-indent #write li, .first-line-indent #write p, .first-line-indent #write p .md-line:first-child { text-indent: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write > blockquote:first-child, #write > div:first-child, #write > ol:first-child, #write > p:first-child, #write > pre:first-child, #write > table:first-child, #write > ul:first-child { margin-top: 30px; }
+#write li > table:first-child { margin-top: -20px; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; orphans: 2; }
+p { orphans: 4; -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0px; -webkit-margin-after: 0px; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+#write > figure:first-child { margin-top: 2em; }
+figure { overflow-x: auto; margin: 1.2em 0px 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; }
+.CodeMirror-line, .md-fences { break-inside: avoid; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; margin-right: 4px; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+.md-fences { font-size: 0.9rem; display: block; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
+.md-fences.mock-cm { white-space: pre-wrap; }
+.show-fences-line-number .md-fences { padding-left: 0px; }
+.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; vertical-align: top; background: 0px 0px; text-shadow: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; }
+.md-toc-inner, a img, img a { cursor: pointer; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { white-space: pre-wrap; margin-top: 0.714em; font-size: 0.7em; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > img:only-child { display: block; margin: auto; }
+.md-line > .md-image:only-child, p > .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+.mathjax-block:not(:empty)::after, .md-toc-content::after, .md-toc::after { display: none; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
+p + .mathjax-block { margin-top: -1.143rem; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.MathJax_SVG, .mathjax-block .MathJax_SVG_Display { text-indent: 0px; max-width: none; max-height: none; min-height: 0px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-inner:hover { }
+.md-toc-inner { display: inline-block; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, tt { font-family: var(--monospace); }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0px; position: relative; min-width: 100%; width: auto; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; min-width: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg, [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+
+
+:root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: normal; src: local("Open Sans Regular"), url("./github/400.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: normal; src: local("Open Sans Italic"), url("./github/400i.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: bold; src: local("Open Sans Bold"), url("./github/700.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: bold; src: local("Open Sans Bold Italic"), url("./github/700i.woff") format("woff"); }
+html { font-size: 16px; }
+body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
+#write { max-width: 860px; margin: 0px auto; padding: 20px 30px 100px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+body > :first-child { margin-top: 0px !important; }
+body > :last-child { margin-bottom: 0px !important; }
+a { color: rgb(65, 131, 196); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+body > h2:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child + h2 { margin-top: 0px; padding-top: 0px; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child { margin-top: 0px; padding-top: 0px; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 { margin-top: 0px; padding-top: 0px; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p { margin-top: 0px; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); }
+.md-fences, code, tt { border: 1px solid rgb(223, 226, 229); background-color: rgb(248, 248, 248); border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 4px 0px; font-size: 0.9em; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding: 8px 1em 6px; }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media screen and (min-width: 914px) {
+}
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { word-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: inherit; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+#md-notification::before { top: 10px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+
+
+
+
+
+ .typora-export p, .typora-export .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><h2><a name='header-n0' class='md-header-anchor '></a>Problem</h2><p>Zauważmy że naszym zadaniem jest dostarczenie modelu ekonimicznego który będzie generował motywację do działania dla następujących trzech podmitów:</p><ul><li>Dawca Informacji (służącej do weryfikacji tożsamości osoby K)</li><li>Biorca informacji (który potrzebuje zweryfikowac osobę K)</li><li>Osoba K, której dotyczy informacja i która jest przedmiotem weryfikacji</li></ul><p>Oczywisćie dodatkowym warunkiem jest sprawienie żeby token był postrzegany jako warty posiadnia, tj. żeby jego posiadanie rodziło wymierne korzyści i żeby tych korzyści było tym więcej im więcej mamy tego tokenu.</p><h2><a name='header-n273' class='md-header-anchor '></a>Geneza</h2><p>Pomysł na model ekonomiczny tokenu w systemie Sygnet Inspirowany jest mechanizmem ekonomicznym systemu Steem. </p><h4><a name='header-n193' class='md-header-anchor '></a>Jak działa Steem?</h4><p>W największym skrócie model Steema polega na tym że blockchain generuje pulę inflacyjną (w rytmie co 24h, w sumie około 9% rocznie), z której przyznawane są nagordy za posty. Dystrybucja nagród następuje w sposób proporcjionaly do uzyskanego poparcia poprzez tzw. upvote, a każdy głos jest ważony wiekością udziałów głosującego w całkowitej populacji tokenów Steem. Czyli jeśli osoba X ma 1% wszystkich tokenów Steem, a osoba Y ma 0.5%, to głos osoby X ma dwa razy większa siłę niż osoby Y i tym samym X ma dwa razy większy wpływ na sposób dytrybucji nagród danego dnia.</p><p>Zauważmy, że w powyżsyzm mechanizmi enagordy pochcodza z puli inflacyjnej, a nie z portfela osób które głosują na posty. Jest ot krytcyznie ważna właściwość, która w dużej mierze determinuje popularność systemu i relatywnie dużą aktywność uczystników. Rozdawanie wspólnej puli przychodzi ludziom znacznie łatwiej niż nagradzanie kogoś z własnej kieszeni.</p><p>Zauważymy też, że  systemie Steema liczba tokenów do rozdanie każdego dnia jest taka sama, tj. wszytskie tokeny muszą być rozdane. Więc decyzje głosujących wpływają jednynie na do kogo te nowo wygneerowane tokeny trafią, a nie na to ile ich zostanie danego dnia rozdane.</p><h4><a name='header-n181' class='md-header-anchor '></a>Krytyka modelu Steema</h4><p>Najczęszczym zarzutem jest porównanie Steema do piramidy finansowej. Krytycy zakładają że nagrody pochodzące z inflacji w ich rozumieniu biorą się &quot;z powietrza&quot; i tym samym jest tylko kwestią czasu kiedy cały ten system się zawali.</p><h4><a name='header-n213' class='md-header-anchor '></a>Sens modelu Steema</h4><p>Działający od prawie 10 lat system Bitcoin (a także wszytkie inne krypotowaluty, w tym Etehreum) udowodnił, że społecznościowo wspierany system ekonomiczny może finansować się z inflacji.</p><p>Muszą jednak być spełnione następujące trzy warunki:</p><ol><li>Poziom inflacji jest na rozsądnym poziomie, co zwykle oznacza przedział 5-10%.</li><li>Rynek postrzega potencjał ekspansji systemu (w sensie liczby użytkowników) na poziomie istotnie wyższym niż poziom inflacji.</li><li>Inflacja zmierza w długim okresie do zera  (klika lub kiladziesiąt lat).</li></ol><p>Dyskusyjne jest czy warunek (3) jest konieczny - być może nie jest.</p><h2><a name='header-n251' class='md-header-anchor '></a>Istota propozycji dla Sygnetu</h2><p>Dla systemu Sygnet proponujemy rozwiązanie analogiczne do modelu Steema.</p><p>Zauważmy że:</p><ul><li>Odpowiednikiem twórcy postów w Steemie jest w Sygnecie dawca informacji (służącej do weryfikacji tożsamości osoby K).</li><li>Odpowiednikiem kuratora postów w Steemie jest w Sygnecie bioraca informacji. Konsumuje on informację za pośrednictwem osoby K, bo to de facto ona dokonuje interakcji z dawcą informacji (i także ona decyduje z usług którego konkretnie dawcy informacji skorzystać).</li></ul><p>Wtedy:</p><ul><li>Podobnie jak w Steemie dzienną pulę inflacyjną dystrybujemy wśród dawców informacji (służącej do weryfikacji tożsamości). Każda konsumpcja tej informacji to oddanie głosu na danego dawcę informacji.</li><li>Podobnie jak w Steemie siła glosu jest proporcjonalna do liczby Sygnetowych tokenów będących w posiadaniu biorcy informacji (a dokładniej - do udziału tokenów biorcy informacji w całkowitej populacji Sygnetowych tokenów).</li><li>Podobnie jak w Steemie trzeba mieć jakąś minimalną lliczbę Sygnetowych tokenów żeby móc skorzystać z systemu Sygnet. Posiadanie tej minimalnej liczby tokenów powoduje, że z syetmu możesz korzystać rzadko (np. raz na minutę), a to ogrniaczenie maleje wraz ze wzrostem liczby posiadanych tokenów.</li><li>Podobnie jak w Steemie rozliczenie działa w cyklu dobowym, czy dystrybucja nagród z puli inflacyjnej następuje regularnie raz na dobę.</li></ul><h4><a name='header-n423' class='md-header-anchor '></a>Przykład</h4><p>Załóżmy, że Sygnet ma kapitalizację 10 mln USD, wyemitowano do tej pory 100 mln tokenów, a inflacja jest na poziomie 4% rocznie, co oznacza że codziennie jest około do rozdania około 10k tokenów z puli inflacyjnej (przy tej kapitalizacji jest to równowartość około 1k USD).</p><p>Załózmy że stan posiadania biorcy informacji to 1% więc dysponuje on pulą 100 tokenów (1% z 10k tokenów). Załóżmy dalej, że danym dniu skorzystał on z usługi dwóch dawców informacji, z takim rozkładem:</p><ul><li>80% zapytań było skierownaych do dawcy A,</li><li>20% do dawcy B,</li></ul><p>Wówczas w rozliczeniu puli inflacyjnej dawca A dostaje z tytuły powyższej sytuacji 80 tokenów, a dawca B dostaje 20 tokenów. Oczywiście to rozliczenie to jest tylko fragment większej całości, bo z tytułu obsługi klientów innych biorców inforacji dawcy A i B dostaną kolejne tokeny w tym cyklu rozliczeniowym.</p><h4><a name='header-n336' class='md-header-anchor '></a>Możliwość nadużycia</h4><p>Oczywiście jedna osoba może udawać że jest jednocześnie dawcą i biorcą informacji, co jest analogiczne do upvote&#39;u własnego postu na Steemie. Z doświadczenia Steema wynika, że tego rodzaju nadużycia nie są powszechne (bo są łatwo wykrywalne) i tym samym nie są groźne dla poprawengo funkcjonaowania systemu.</p><h4><a name='header-n526' class='md-header-anchor '></a>Co uzyskujemy?</h4><p>Korzyści są na wielu frontach jednoczesńie:</p><ul><li>Uzyskujemy system który jest <strong>postrzegany</strong> jako darmowy (chociaż w istocie nie jest, bo żywi się własną inflacją). Posiadane przez biorców informacji tokeny nie zużywają się.</li><li>Nie trzeba kupować tokenów żeby móc zacząć go używać, bo minimalną wymaganą dawkę tokenów dostajesz gratis przy założeniu Sygnetowego konta i te tokeny się nie zużywają.</li><li>Im więcej masz tokenów tym cenniejszy jest twój głos w dystrybucji puli inflacyjnej i z tym większą częstotliwością możesz korzystać z systemu jako biorca informacji.</li></ul><h4><a name='header-n346' class='md-header-anchor '></a>Innowacyjność</h4><p>W zakresie tokenów emitowanych poprzez ICO powszechnie obowiązujące podejście jest następujące: stwarzamy jakąś, wyrażoną za pomocą smart-kontraktu, usługę, a związany z ta usługą token jest po to żeby biorca tej usługi mógł nim zapłacić dawcy.</p><p>Podejście to ma jedną istotną wadę: potrzebujemy skłonić potencjalnego biorcę usługi do nabycia tokenu <strong>zanim</strong> ma on szansę z niej skorzystać. Jest to istotna przeszkoda w adopcji.</p><p>Natomiast powyższy model ekonomiczny sprawia że usługa w swojej podstawowej wersji jest oferowana <strong>za darmo</strong>, co w oczywisty sposób niweluje barierę wejscia dla nowych użytkowników. Żeby to osiągnąc wykorzystjemy atuty technologii blockchain, ktorych nie można zrealizować w żaden inny sposób: proponowany przez nas model inflacyjny jest realiowalny tylko za pomocą smart-kontraktu - nikt by temu mechanizmowi nie ufał gdyby było inaczej.</p><p>Według naszej wiedzy Sygnet ma szansę być pierwszym tokenem emitowanym na blockchainie (tj. nie posiadającym własnego natywnego blockchaina), który stosuje model ekonomiczny typowy dla blockchiana, tj. ekspansja poprzez inflację.</p><p>Poniżej porównanie wychwytujące analogie pomiędzy różnymi podjeściami:</p><ul><li>Bitcoin/Ethereum: mining poprzez spalanie prądu</li><li>Maidsafe/Sia: mining poprzez dostarczanie przestrzeni dyskowej</li><li>Golem: minng poprzez dostarczanie mocy obliczeniowej do machine learing / rendering</li><li>Steem: mining poprzez dostarczanie wartości intelektualnej/artystycznej (t.j. contentu internetowego)</li><li>EOS: mining poprzez dostarczanie mocy obliczeniowej do procesowania transakcji</li><li>Sygnet: mining poprzez dostarczanie informacji służącej do weryfikacji tożsamości</li></ul><p>&nbsp;</p><p>&nbsp;</p><blockquote><p>Pomysł super. Widzę tylko trudność w wytłumaczeniu tego innym podmiotom.</p></blockquote><p>To jest podobna trudność jaką ma Steem. Bardzo niewiele osób rzeczywiście rozumie mechanizm ekonomiczny Steema, a mnóstwo osób go używa i wierzy że ma on sens.
+Co więcej, ta wiara w sens Steema jest uzasadniona, bo rzeczywiście ma on sens.</p><p>&nbsp;</p><p>Zróbmy małą korektę modelu: te twoje 10 USD z puli inflacyjnej rozkłada się na dawców informacji proporcjonalnie do twojej liczby zapytań do każdego z nich.</p><p>Generalnie chodzi o to że płacisz z puli inflacyjnej a nie z własnej kieszeni, a twoja zapłata jest tym większa im większy masz stake. Na tym że de facto polega geniusz Steema - bo wszystko się upraszcza, a każdy ma wrażenie że system jest darmowy.</p><p>Koszty działania systemu są przerzucone na inflację - tak de facto działa każde krypto, w tym Bitcoin, Ethereum, Steem i EOS.</p><p>Tokeny emitowane na ICO <em>niepotrzebnie</em> starają się bilansować przychody z kosztami. To nie jest potrzebne, a jedynie powoduje problem z adopcją.</p><p>Jedyne co jest potrzebne, to założenie że tempo wzrostu popularności Sygnetu będzie większe niż poziom jego inflacji. A to da się łatwo spełnić jeśli ta inflacja jest na rozsądnym poziomie 5-10%.</p><p>Mamy szansę być pierwszym tokenem, który ma model ekonomiczny wzięty z blockchaina a nie tradycyjny - czyli taki który próbuje bilansować koszty z przychodami.</p><p>To jest rewolucyjne, przynajmniej w perspektywie ICO. </p><p>Nabywcy naszego Sygnetowego tokenu sprzedawanego w ICO obstawiają tylko jedną rzecz: że Tokenika jest w stanie wprowadzić w życie system potwierdzania tożsamości, którego popularność wśród użytkowników będzie rosła w tempie większym niż 5-10% rocznie.</p><p>Ja bym kupił taki token, jeśli tylko bym uznał że firma która za tym stoi jest w miarę kompetentna i uczciwa.</p><p>No tak, to się idealnie składa. Stosujemy model ekonomiczny blockchaina, na którym robimy emisję tokenu.</p><p>Bank/allegro jest w podobnej sytuacji jak osoba która umie doskonale pisać (i do tej pory nigdzie nie mogła tego publikować) i której odpowiadasz o takim systemie jak Steem.</p><p>Dość trudno jest spieprzyć sales pitch w takiej sytuacji. Jedyny wysiłek do którego musisz przekonać to założenie konta w naszym systemie, plus mniejsza lub większa modyfikacja API. Reszta to same korzyści.</p><p>&nbsp;</p><blockquote><p>Musimy założyć, że za rok, dwa banki otworzą się na krypto. Bo na razie to mają chyba taką nieformalną zmowę, żeby nie używać tokenów oficjalnie</p></blockquote><p>Ale one będą tylko dostawać od nas tokeny o niezerowej wartości. Jak nie będą chciały ich używać (tj. później sprzedać je na rynku i dostać za to fiat), to tym lepiej dla nas.</p><p>&nbsp;</p><blockquote><p>Tylko czy to je zachęci do współpracy jakieś tam “żetony”</p></blockquote><p>Zacznijmy od kogoś takiego jak Allegro. Posiadanie konta w systemie Sygnet na które regularnie ktoś wpłaca ci Sygnetowe tokeny o niezerowej wartości nie jest nielegalne.</p><p>A zachęcić do współpracy możemy kładąc na stół fiat uzyskany z ICO - przynajmniej na początku.</p><p>Banki są cennym partnerem bo tożsamość potwierdzona przez bank jest zapewne bardziej wiarygodna niż tożsamość potwierdzona przez Allegro.</p><p>Ale konkluzja z wczorajszej burzy mózgów jest taka że nie jesteśmy uzależnieni tylko od banków. Jeśli jakiś bank w to wejdzie to super, jeśli nie wejdzie to szukamy innych, niebankowych partnerów.</p><p>Czyli jesteśmy w dużo lepszej pozycji negocjacyjnej. Myślę że Korus z nami to zrobi, nawet jeśli pierwszym partnerem będzie nie-bank.</p><p>Może nawet chętniej to zrobi, bo łatwiej jest pójść z Sygnetem do banku, jeśli ma się wcześniej zaklepany deal z Allegro.
+Współpracę z Allegro można łatwiej kupić za fiat. Dla banku fiat jest na drugim planie, bardziej liczy się dla niego bezpieczeństwo. (edited)</p><p>&nbsp;</p><blockquote><p>Dla tradycyjnych biznesów może być problem z oszacowaniem przychodów. Bo czy nie jest tak ze wypłata dla kich będzie zależała od ilości zapytań? Tak jak upvote na Steemie?</p></blockquote><p>Rzeczywoście wypłata za dostarczanie informacji będzie zależała od wyceny całości systemu, podobnie jak w Steemie. Więc nie sposób tego dokładnie oszacować.</p><p>Mając zapas kapitału w postaci fiat z ICO jesteśmy w dobrej pozycji żeby przez dłuższy czas nakręcać ekspansję systemu.</p><p>Ale brak dokładnej wyceny wpływów z tytułu dostarczania informacji, nie stawia nas na straconej pozycji. W tej chwili Allegro/bank ma zero wpływów z tego tytułu. Jeśli dostarczymy cokolwiek istotnie większego niż zero to to się broni.</p><p>Trzeba ich przekonać że prawdopodobny przychód jest istotnie większy niż koszt wpięcia się w nasz system.</p><p>Ale nawet gdybyśmy to zrobili w sposób tradycyjny (tj. tak jak Civic, czyli jest token którym się płaci za usługi dostarczania informacji) to i tak problem braku dobrego oszacowania przychodów dla dawców informacji pozostaje.</p><p>W ogóle ten problem istnieje nawet jeśli by to robić poza blockchainem. To jest główne ryzyko dla Allegro/banku: popełnią wysiłek i nic z tego się nie uda, albo korzyści będą znikome w stosunku do poniesionych nakładów.</p><p>Ale chyba jest tak że minimalny przychod dla dawcy informacji to wartość tej informacji w oczach biorcy informacji. Tego celu nie osiągniemy tylko wtedy gdy wycena rynkowa Sygnetu będzie żenująco mała w stosunku do jego postrzeganej użyteczności. Wg mnie to się może zdarzyć tylko w przypadku generalnej depresji na całym rynku krypto.</p><p>Mi się wydaje że fakt że Steem przeżył dwa lata, i mimo fatalnego UI ma się dobrze i wciąż rośnie, to jest mega argument dla sceptyków.</p><p>Pamiętam że dwa lata temu miałem podobne rozmowy na temat Steema - nikt mi nie wierzył że to ma realną szansę przeżyć. Na pewno będzie opór mentalny, ale to da się pokonać jeśli samemu się to dobrze rozumie.</p><p>To co można zrobić (i to ma teraz Steem, ale na początku nie mial) to ustanowić w kodzie Sygnetowego smart-kontraktu górny limit liczby tokenów, który zostanie osiągnięty w jakimś w miarę odległym czasie np. 5-10 lat.</p><p>I wtedy Sygnetowa inflacja zmierzałaby asymptotycznie do zera w tej perspektywie czasowej, co oznacza że Sygnet ma tyle czasu żeby  wypracować inny niż inflacyjny mechanizm ekonomiczny, np ekspansja w obszar reputacji. I to ma sens, bo za kilka lat Sygnet będzie albo powszechnie używany albo martwy, raczej nie ma opcji pośredniej.</p><p>A cap inflacyjny daje uspokojenie posiadaczom tokenów: psującej wycenę inflacji jest z czasem coraz mniej.</p><p>Fakt że to budzi mentalny opór jest naturalny, bo blockchianowa ekonomia wykracza poza schematy które znamy. Mi to zajęło klika lat żeby zacząć klarownie widzieć mechanizm ekonomiczny blockchaina. Nie jest to łatwe, bo blockchain nie ma sensu z punktu widzenia klasycznej analizy ekonomicznej biznesu.</p><p>To co cenię w EOSie i Steemie to fakt, że te systemy są w pełnej harmonii z blockchianową ekonomią i niczego nie zmiatają pod dywan - w otwarty i świadomy sposób korzystają z właściwości tego nowego paradygmatu. Natomiast inne systemy blockchainowe dość nieświadomie udają coś innego niż to czym w istocie są, np. ludziom się wydaje że opłaty transakcyjne są istotnym elementem blockchanowej ekonomii,  podczas gdy ich znaczenie jest niemal zerowe, bo przychody z tytułu opłat transakcyjnych są znikome w porównaniu z kosztami operacyjnymi blockchaina.</p><p>Innymi słowy, na blockchainie nie ma sensu robić biznesów, które mają tradycyjny model ekonomiczny, który polega na tym że są jakieś koszty i jakieś przychody i one się muszą jakoś bilansować, a wartość firmy wynika z przewidywanego strumienia przyszłych dywidend. Biznes blockchainowy ma własną walutę i ten pozornie drobny fakt zmienia wszystko: biznes blockchainowy żyje z inflacji, a jedyną sensowną miarą jego kondycji finansowej jest to: w jakim stopniu inflacja jest zrównoważona potencjałem ekspansji danego biznesu na nowych użytkowników (bo ci nowi użytkownicy generują popyt na walutę tego biznesu i ten popyt równoważy inflację).</p><p>Można też spojrzeć na to w ten sposób: owszem można stosować tradycyjny model biznesowy na blockchainie, ale tego rodzaju podejście nie ma szans w konfrontacji z podejściem inflacyjnym. Biznes który może żyć z inflacji a tego nie robi, przegra z biznesem, który bierze inflację i obraca ją na swoją korzyść.</p><p>Dowód na to jest dość prosty: żaden z biznesów blockhainowych nie próbuje nawet żyć bez inflacji (tj. równoważyć koszty z przychodami), a te nieliczne które próbowały to zrobić (np. BitShares) poddały się po kilku miesiącach i przeszły na model inflacyjny. To co jest paradoksalne to fakt, że ludziom się <em>wydaje</em> że inflacja jest zła i ekspansja biznesu poprzez inflację to scam, podczas gdy ludzkie działanie pokazuje coś przeciwnego: rynek ładuje kasę w systemy inflacyjne, a unika systemów bezinflacyjnych.</p><p>Dla mnie miarą prawdy jest ludzkie działanie a nie wypowiadane poglądy.</p><blockquote><p>Z resztą inflacja jest prastarym, ukrytym podatkiem którego się używa żeby wywołać ruch w interesie i zapobiec przetrzymywania tokenów bez obrotu nimi.</p></blockquote><p>Tak, inflacja jest podatkiem, który napędza inwestycje (oczywiście gdy jest rozsądnie stosowany) i na który do tej pory miał aparat państwowy. Teraz ten mechanizm jest do dyspozycji podmiotów biznesowych. I to jest ogromna zmiana, której wagi jakoś nie doceniasz. Posiadanie przez biznes tego mechanizmu inflacyjnego jest prawdopodobnie największym atutem jaki daje blockchain.</p><blockquote><p>wycena opiera się na ludzkiej fantazji głównie
+Ale nam się porobiło. Ja widzę mądrość rynku a Ty uważasz że to zbiorowa fantazja. Dwa lata temu było dokładnie na odwrót. Mądrość nie w sensie że rynek jest nieomylny (jest omylny bo inaczej nie byłoby fluktuacji cen) ale bardziej w sensie że do większej mądrości nie mamy dostępu.</p></blockquote><blockquote><p>Ci użytkownicy generują popyt nie tyle na walutę, co na załatwienie konkretnej potrzeby. Takiej którą da się załatwić też inaczej - np autoryzację online. Stąd token w końcu dostanie właściwą wycenę, to jest kwestia czasu tylko. Jedyny parametr który to zaburza teraz to spekulacja że to będzie ogromny rynek itp. W związku z tym ludzie kupują spekulacyjnie, tworząc bańki, albo wyceny bez żadnych fundamentów.</p></blockquote><p>Bo tych fundamentów nie ma i nigdy nie będzie. Token dostanie wycenę ale ona nie ma nic wspólnego z marżą jaką ten biznes generuje. Marża jest zaniedbywalnie mała w porównaniu z potencjałem dalszej ekspansji.</p><p>Zróbmy taki eksperyment myślowy: w który token władowałbyś kasę? Ten co ma kapitalizację 10 mln USD, zrównoważone finanse i ma szansę rozwijać się w tempie 10% rocznie? Czy ten który ma kapitalizację 10 mld, niezrównoważone finanse (tj. same koszty, żadnych przychodów) i ma szansę rozwijać się w tempie 100% rocznie. Rynek wybiera ten drugi i ja się w sumie zgadzam z rynkiem. Gdy rozważamy biznesy futurystyczne (bo takimi zajmują się blockchainy) kapitalizacja nie ma znaczenia, bo dywidendy nie mają znaczenia.</p><p>Zróbmy taki eksperyment myślowy: w który token władowałbyś kasę? Ten co ma kapitalizację 10 mln USD, zrównoważone finanse i ma szansę rozwijać się w tempie 10% rocznie? Czy ten który ma kapitalizację 10 mld, niezrównoważone finanse (tj. same koszty, żadnych przychodów) i ma szansę rozwijać się w tempie 100% rocznie. Rynek wybiera ten drugi i ja się w sumie zgadzam z rynkiem. Gdy rozważamy biznesy futurystyczne (bo takimi zajmują się blockchainy) kapitalizacja nie ma znaczenia, bo dywidendy nie mają znaczenia.</p><p>&nbsp;</p></div>
+</body>
+</html>
