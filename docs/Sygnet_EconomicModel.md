@@ -14,11 +14,11 @@ Pomysł na model ekonomiczny tokenu w systemie Sygnet inspirowany jest mechanizm
 
 #### Jak działa Steem?
 
-W największym skrócie model Steema polega na tym, że blockchain generuje pulę inflacyjną (w rytmie co 24h, w sumie około 9% rocznie), z której przyznawane są nagrody za posty. Dystrybucja nagród następuje w sposób proporcjonalny do uzyskanego poparcia poprzez tzw. *upvote*, a każdy głos jest ważony wielkością udziałów głosującego w całkowitej populacji tokenów Steem. Czyli jeśli osoba X ma 1% wszystkich tokenów Steem, a osoba Y ma 0.5%, to głos osoby X ma dwa razy większą moc niż osoby Y i tym samym X ma dwa razy większy wpływ na sposób dystrybucji nagród danego dnia.
+W największym skrócie model Steema polega na tym, że blockchain generuje pulę inflacyjną (w rytmie co 24h, w sumie około 9% rocznie), z której przyznawane są nagrody za posty. Dystrybucja nagród następuje w sposób proporcjonalny do uzyskanego poparcia poprzez tzw. *upvote*, a każdy głos jest ważony wielkością udziałów danej osoby w całkowitej populacji tokenów Steem. Czyli jeśli osoba X ma 1% wszystkich tokenów Steem, a osoba Y ma 0.5%, to głos osoby X ma dwa razy większą moc niż osoby Y i tym samym X ma dwa razy większy wpływ na sposób dystrybucji nagród danego dnia.
 
 Zauważmy, że w powyższym układzie nagrody pochodzą z puli inflacyjnej, a nie z portfela osób, które głosują na posty. Jest to krytycznie ważna właściwość, która w dużej mierze determinuje popularność systemu i powoduje relatywnie dużą aktywność uczestników. Rozdawanie środków ze wspólnej puli przychodzi ludziom znacznie łatwiej niż nagradzanie kogoś z własnej kieszeni.
 
-Zauważymy też, że  systemie Steem liczba tokenów do rozdania każdego dnia jest taka sama, tj. wszystkie tokeny muszą być rozdane. Więc decyzje głosujących wpływają jedynie na do kogo te nowo wygenerowane tokeny trafią, a nie na to, ile ich zostanie danego dnia rozdane.
+Zauważymy też, że w systemie Steem liczba tokenów do rozdania każdego dnia jest taka sama, tj. wszystkie tokeny muszą być rozdane. Więc decyzje głosujących wpływają jedynie na do kogo te nowo wygenerowane tokeny trafią, a nie na to, ile ich zostanie danego dnia rozdane.
 
 #### Krytyka modelu Steema
 
@@ -32,7 +32,7 @@ Muszą jednak być spełnione następujące trzy warunki:
 
 1. Poziom inflacji jest na rozsądnym poziomie, co zwykle oznacza przedział 5-10%.
 2. Rynek postrzega potencjał ekspansji systemu (w sensie liczby użytkowników) na poziomie istotnie wyższym niż poziom inflacji.
-3. Inflacja zmierza w długim okresie do zera  (klika lub kilkadziesiąt lat).
+3. Inflacja zmierza w długim okresie do zera (klika lub kilkadziesiąt lat).
 
 Dyskusyjne jest czy warunek (3) jest konieczny - być może nie jest.
 
@@ -48,20 +48,21 @@ Zauważmy że:
 Wtedy:
 
 - Podobnie jak w Steemie dzienną pulę inflacyjną dystrybuujemy wśród dawców informacji (służącej do weryfikacji tożsamości). Każda konsumpcja tej informacji to oddanie głosu na danego dawcę informacji.
-- Podobnie jak w Steemie siła głosu jest proporcjonalna do liczby Sygnetowych tokenów będących w posiadaniu biorcy informacji (a dokładniej - do udziału tokenów biorcy informacji w całkowitej populacji Sygnetowych tokenów).
+- Podobnie jak w Steemie siła głosu jest proporcjonalna do liczby Sygnetowych tokenów będących w posiadaniu biorcy informacji (a dokładniej - do wielkości udziału tokenów biorcy informacji w całkowitej populacji Sygnetowych tokenów).
 - Podobnie jak w Steemie trzeba mieć jakąś minimalną liczbę Sygnetowych tokenów żeby móc skorzystać z systemu Sygnet. Posiadanie tej minimalnej liczby tokenów powoduje, że z systemu możesz korzystać rzadko (np. raz na minutę), a to ograniczenie szybko maleje wraz ze wzrostem liczby posiadanych tokenów.
-- Podobnie jak w Steemie rozliczenie działa w cyklu dobowym, czyli dystrybucja nagród z puli inflacyjnej następuje regularnie raz na dobę.
+- Podobnie jak w Steemie każde nowe konto zasilane jest minimalną liczbą Sygnetowych tokenów, tak żeby jego właściciel był w stanie korzystać z systemu jako biorca informacji. Zasilenia dokonujemy my, tj. beneficjenci ICO - jest to jeden z naszych kosztów.
+- Podobnie jak w Steemie rozliczenie puli inflacyjnej działa w cyklu dobowym, czyli regularnie raz na dobę.
 
 #### Przykład
 
 Załóżmy, że Sygnet ma kapitalizację 10 mln USD, wyemitowano do tej pory 100 mln tokenów, a inflacja jest na poziomie 4% rocznie, co oznacza, że codziennie jest do rozdania około 10k tokenów z puli inflacyjnej (przy tej kapitalizacji jest to równowartość około 1k USD).
 
-Załóżmy, że stan posiadania biorcy informacji to 1%, więc dysponuje on pulą 100 tokenów (1% z 10k tokenów). Załóżmy dalej, że danym dniu skorzystał on (a w zasadzie jego klienci skorzystali) z usługi dwóch dawców informacji, z takim rozkładem:
+Załóżmy, że stan posiadania danego biorcy informacji to 1% Sygnetowych udziałów, więc dysponuje on liczbą 100 tokenów z puli inflacyjnej (100 = 1% z 10k tokenów). Załóżmy dalej, że danym dniu skorzystał on (a w zasadzie jego klienci skorzystali) z usługi dwóch dawców informacji, z takim rozkładem:
 
 - 80% zapytań było skierowanych do dawcy A,
 - 20% do dawcy B,
 
-Wówczas w rozliczeniu puli inflacyjnej dawca A dostaje z tytułu zaistnienia powyższej sytuacji 80 tokenów, a dawca B dostaje 20 tokenów. Oczywiście powyższe rozliczenie to jest tylko fragment większej całości, bo z tytułu obsługi klientów innych biorców informacji dawcy A i B dostaną kolejne porcje tokenów w tym cyklu rozliczeniowym.
+Wówczas w rozliczeniu puli inflacyjnej dawca A dostaje z tytułu powyższej sytuacji 80 tokenów, a dawca B dostaje 20 tokenów. Oczywiście powyższe rozliczenie to jest tylko fragment większej całości, bo z tytułu obsługi klientów innych biorców informacji dawcy A i B dostaną kolejne porcje tokenów w tym cyklu rozliczeniowym.
 
 #### Czy jest możliwość nadużycia?
 
@@ -77,7 +78,7 @@ Korzyści są na wielu frontach jednocześnie:
 
 #### Innowacyjność
 
-W zakresie tokenów emitowanych poprzez ICO powszechnie obowiązujące podejście jest następujące: stwarzamy jakąś, wyrażoną za pomocą smart-kontraktu, usługę, a związany z ta usługą token jest po to żeby biorca tej usługi mógł nim zapłacić dawcy.
+W zakresie tokenów emitowanych poprzez ICO powszechnie obowiązujące podejście jest następujące: stwarzamy jakąś, wyrażoną za pomocą smart-kontraktu, usługę, a związany z tą usługą token istnieje tylko po to żeby biorca tej usługi mógł nim zapłacić dawcy.
 
 Powyższe podejście ma jedną istotną wadę: potrzebujemy skłonić potencjalnego biorcę usługi do nabycia tokenu **zanim** ma on szansę z niej skorzystać. Jest to istotna przeszkoda w adopcji.
 
@@ -98,7 +99,7 @@ Poniżej przedstawione jest porównanie wychwytujące analogie pomiędzy różny
 - Bitcoin/Ethereum: mining poprzez spalanie prądu
 - Maidsafe/Sia: mining poprzez dostarczanie przestrzeni dyskowej
 - Golem: minng poprzez dostarczanie mocy obliczeniowej do machine learing / rendering
-- Steem: mining poprzez dostarczanie wartości intelektualnej/artystycznej (t.j. contentu internetowego)
+- Steem: mining poprzez dostarczanie wartości intelektualnej i artystycznej (t.j. contentu internetowego)
 - EOS: mining poprzez dostarczanie mocy obliczeniowej do procesowania transakcji
 - Sygnet: mining poprzez dostarczanie informacji służącej do weryfikacji tożsamości
 
@@ -117,8 +118,8 @@ Jednak nasz mechanizm weryfikacji tożsamości jest na tyle abstrakcyjny, że po
 
 Więc być może optymalną strategią jest zacząć od współpracy z podmiotem niebankowym, np. kimś takim jak Allegro, z dwóch powodów:
 
-- proces współpracy technologicznej będzie tu prawdopodobnie łatwiejszy
-- dla takiego podmiotu bardziej przemawiają argumenty finansowe.
+- proces współpracy technologicznej będzie tu prawdopodobnie łatwiejszy,
+- do takiego podmiotu bardziej przemawiają argumenty finansowe.
 
 Ponadto, jeśli pierwszym partnerem będzie nie-bank, stawia to nas w dużo lepszej pozycji negocjacyjnej podczas rozmowy z bankiem. 
 
@@ -137,22 +138,22 @@ A instrukcja użycia w zakresie finansowym jest bardzo prosta:
 
 > Musimy założyć, że za rok, dwa banki otworzą się na krypto. Bo na razie to mają chyba taką nieformalną zmowę, żeby nie używać tokenów oficjalnie.
 
-Bank (albo inna firma dysponująca wiarygodną informacją o tożsamości, np. Allegro) ma majątek, który trudno jest zmonetyzować, bo potrzebna jest do tego duża skala działania. Takim firmom nie opłaca się wchodzić w układy, które mają małą szansę na uzyskanie dużej skali. My dajemy im propozycję, która ma potencjał na masowośćz prostego powodu: jest za darmo (z punktu widzenia użytkownika), podobnie jak np. płatność kartą.
+Bank (albo inna firma dysponująca wiarygodną informacją o tożsamości, np. Allegro) ma majątek w postaci informacji o tożsamości, który trudno jest zmonetyzować, bo potrzebna jest do tego duża skala działania. Takim firmom nie opłaca się wchodzić w układy, które mają małą szansę na uzyskanie dużej skali. My dajemy im propozycję, która ma potencjał na masowość z prostego powodu: jest ona za darmo (z punktu widzenia użytkownika), podobnie jak np. płatność kartą.
 
 Ponadto mając zapas kapitału w postaci fiat uzyskanego z ICO jesteśmy w dobrej pozycji żeby przez dłuższy czas nakręcać ekspansję systemu, co dodatkowo zwiększa szansę powodzenia.
 
-> Dla tradycyjnych biznesów może być problem z oszacowaniem przychodów. Bo czy nie jest tak ze wypłata dla kich będzie zależała od ilości zapytań? Tak jak upvote na Steemie?
+> Dla tradycyjnych biznesów może być problem z oszacowaniem przychodów. Bo czy nie jest tak ze wypłata dla nich będzie zależała od ilości zapytań? Tak jak upvote na Steemie?
 
 Rzeczywiście wypłata za dostarczanie informacji będzie zależała od wyceny całości systemu (tj. kapitalizacji tokenu), podobnie jak to ma miejsce w Steemie. Tak więc nie sposób tego dokładnie oszacować.
 
 Ale nawet gdybyśmy zastosowali tradycyjny model ekonomiczny (tj. taki jak np. [Civic](https://www.civic.com/), czyli mamy token, którym się płaci za usługi dostarczania informacji) to i tak problem braku dobrego oszacowania przychodów dla dawców informacji pozostaje.
 
-Brak dokładnej wyceny wpływów dla dawców informacji, nie stawia nas jednak na straconej pozycji. W tej chwili podmioty dysponujące informacją o tożsamości nie mają żadnych wpływów z tego tytułu, więc jeśli dostarczymy cokolwiek istotnie większego niż zero i co dodatkowo ma potencjał dużej skali, to to się broni.
+Jednak brak dokładnej wyceny wpływów dla dawców informacji, nie stawia nas na straconej pozycji. W tej chwili podmioty dysponujące informacją o tożsamości nie mają żadnych wpływów z tego tytułu, więc jeśli dostarczymy cokolwiek istotnie większego niż zero i co dodatkowo ma potencjał dużej skali, to to się broni.
 
 > Inflacja jest prastarym, ukrytym podatkiem którego się używa żeby wywołać ruch w interesie i zapobiec przetrzymywania tokenów bez obrotu nimi.
 
-Istotnie, inflacja jest ukrytym podatkiem, który ma potencjał napędzania inwestycji (oczywiście gdy jest rozsądnie stosowany) i na który do tej pory monopol miał aparat państwowy. Teraz ten mechanizm jest do dyspozycji podmiotów biznesowych. Posiadanie przez biznes tego mechanizmu inflacyjnego jest być może największym atutem jaki daje blockchain.
+Istotnie, inflacja jest ukrytym podatkiem, który ma potencjał napędzania inwestycji (oczywiście gdy jest on rozsądnie stosowany) i na który do tej pory monopol miał aparat państwowy. Teraz ten mechanizm jest do dyspozycji podmiotów biznesowych. Posiadanie przez biznes tego mechanizmu inflacyjnego jest być może największym atutem jaki daje blockchain.
 
-Biznes blockchainowy może mieć własną walutę i ten pozornie drobny fakt zmienia wszystko: biznes blockchainowy żyje z inflacji, a jedyną sensowną miarą jego kondycji finansowej jest to: w jakim stopniu inflacja jest zrównoważona potencjałem ekspansji danego biznesu na nowych użytkowników (bo ci nowi użytkownicy generują popyt na walutę tego biznesu i ten popyt równoważy inflację).
+Tak więc biznes blockchainowy może mieć własną walutę i ten pozornie drobny fakt zmienia wszystko: biznes blockchainowy żyje z inflacji, a jedyną sensowną miarą jego kondycji finansowej jest to: w jakim stopniu inflacja jest zrównoważona potencjałem ekspansji danego biznesu na nowych użytkowników (bo ci nowi użytkownicy generują popyt na walutę tego biznesu i ten popyt równoważy inflację).
 
 Można też spojrzeć na to w ten sposób: owszem można stosować tradycyjny model biznesowy na blockchainie, ale tego rodzaju podejście nie ma szans w konfrontacji z podejściem inflacyjnym. Biznes który może żyć z inflacji a tego nie robi, przegra z biznesem, który bierze inflację i obraca ją na swoją korzyść.
