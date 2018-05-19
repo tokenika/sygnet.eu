@@ -16,6 +16,7 @@ Documentation
 
     Sygnet_Vision
     Sygnet_EconomicModel
+    Sygnet_LegalIssues
 
 
 Metadata
