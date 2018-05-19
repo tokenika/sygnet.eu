@@ -1,5 +1,9 @@
 # Sygnet - Propozycja Modelu Ekonomicznego
 
+## Streszczenie
+
+*W zakresie tokenów emitowanych poprzez ICO powszechnie obowiązujące podejście jest następujące: token przepływa z portfela beneficjenta usługi do portfela dawcy usługi. To podejście ma fundamentalną wadę, która radykalnie utrudnia adopcję: potrzebujemy skłonić potencjalnego biorcę usługi do nabycia tokenu zanim ma on szansę z niej skorzystać. Proponowany przez nas model ekonomiczny jest zupełnie inny: token przepływa do portfela dawcy z puli inflacyjnej, a portfel biorcy pozostaje nienaruszony. Oznacza to, że usługa w swojej podstawowej wersji jest oferowana za darmo, co w oczywisty sposób niweluje barierę wejścia dla nowych użytkowników.*
+
 ## 1. Kto jest uczestnikiem modelu?
 
 W systemie Sygnet mamy trzy rodzaje uczestników:
@@ -104,23 +108,27 @@ Korzyści są na wielu frontach jednocześnie:
 
 Wygląda to na win-win dla każdego, a jedyną stroną, która ponosi negatywne konsekwencje jest inwestor (bo inflacja, z której to wszystko jest finansowane, stopniowo rozwadnia jego udziały). Jednak to co skłania inwestora do ponoszenia tych konsekwencji, to perspektywa aprecjacji tokenu wynikająca z radykalnego wzrostu jego popularności.
 
-## 5. Uzsadnienie wartości modelu
+## 5. Uzsadnienie wyboru modelu
 
-#### 5.1 Masowa adopcja jest priorytetem
+#### 5.1 Różnica wobec modelu "tradycyjnego"
 
-W zakresie tokenów emitowanych poprzez ICO powszechnie obowiązujące podejście jest następujące: stwarzamy jakąś smart-kontraktową usługę, a związany z tą usługą token istnieje tylko po to żeby biorca tej usługi mógł nim zapłacić dawcy.
+W zakresie tokenów emitowanych poprzez ICO powszechnie obowiązujące podejście jest następujące: stwarzamy jakąś smart-kontraktową usługę, a związany z tą usługą token istnieje tylko po to żeby biorca tej usługi mógł nim zapłacić dawcy. Czyli token przepływa z portfela biorcy do portfela dawcy.
 
 Powyższe podejście ma jedną istotną wadę: potrzebujemy skłonić potencjalnego biorcę usługi do nabycia tokenu **zanim** ma on szansę z niej skorzystać. Jest to istotna przeszkoda w adopcji.
 
-Natomiast proponowany przez nas model ekonomiczny sprawia, że usługa w swojej podstawowej wersji jest oferowana **za darmo**, co w oczywisty sposób niweluje barierę wejścia dla nowych użytkowników. Żeby to osiągnąć w pełni wykorzystujemy atuty technologii blockchain i uzyskujemy właściwości ekonomiczne, których nie można zrealizować w żaden inny sposób: proponowany przez nas model inflacyjny jest realizowalny tylko za pomocą smart-kontraktu, bo w przeciwnym przypadku nikt by temu mechanizmowi nie zaufał. Tylko niemodyfikowalny smart-kontrakt jest w stanie zagwarantować nienaruszalność inflacji i tym samym niezmienność reguł gry z punktu widzenia inwestora.
+Natomiast proponowany przez nas model ekonomiczny jest zupełnie inny: token przepływa do portfela dawcy z puli inflacyjnej, a portfel biorcy pozostaje nienaruszony. Oznacza to, że usługa w swojej podstawowej wersji jest oferowana **za darmo**, co w oczywisty sposób niweluje barierę wejścia dla nowych użytkowników.
 
-Nasza konkluzja jest następująca: modele ekonomiczne tokenów emitowanych do tej pory na ICO **niepotrzebnie** próbują obciążyć użytkownika kosztami w postaci opłat za oferowane usługi. Powoduje to istotny problem z adopcją, a niewiele to zmienia z punktu widzenia inwestora.
+Żeby to osiągnąć w pełni wykorzystujemy atuty technologii blockchain i uzyskujemy właściwości ekonomiczne, których nie można zrealizować w żaden inny sposób: proponowany przez nas model inflacyjny jest realizowalny tylko za pomocą smart-kontraktu, bo w przeciwnym przypadku nikt by temu mechanizmowi nie zaufał. Tylko niemodyfikowalny smart-kontrakt jest w stanie zagwarantować nienaruszalność inflacji i tym samym niezmienność reguł gry z punktu widzenia inwestora.
 
-**Wychodzimy z założenia, że dla inwestora ważniejsze jest istotne zwiększenie szans na masową adopcję (co spowoduje istotną aprecjację tokenu) niż kilkuprocentowe rozwodnienie kapitału spowodowane inflacją.**
+#### 5.2 Masowa adopcja jest priorytetem
+
+Nasza konkluzja jest następująca: stosowane do tej pory modele ekonomiczne tokenów emitowanych w formie ICO **niepotrzebnie** próbują obciążyć użytkownika kosztami w postaci opłat za oferowane usługi. Powoduje to istotny problem z adopcją, a niewiele to zmienia z punktu widzenia inwestora.
+
+**W naszym podejściu wychodzimy z założenia, że dla inwestora ważniejsze jest istotne zwiększenie szans na masową adopcję (co spowoduje istotną aprecjację tokenu) niż kilkuprocentowe rozwodnienie kapitału spowodowane inflacją.**
 
 Łatwo zauważyć racjonalność tego podejścia. Bazuje ono na założeniu, które jak najbardziej ma rację bytu: że roczne tempo wzrostu popularności systemu (manifestujące się poprzez wzrost popytu na token) będzie większe niż 5-10% na rok, czyli poziom jego inflacji.
 
-#### 5.2 Limit liczby tokenów
+#### 5.3 Limit liczby tokenów
 
 To co można dodatkowo zrobić (i to ma teraz Steem, ale na początku nie miał) to ustanowić w kodzie Sygnetowego smart-kontraktu górny limit liczby tokenów, który zostanie osiągnięty w jakimś w miarę odległym czasie np. 5-10 lat.
 
@@ -128,7 +136,7 @@ I wtedy Sygnetowa inflacja zmierzałaby asymptotycznie do zera w wybranej przez 
 
 Cap inflacyjny niewątpliwie daje uspokojenie posiadaczom tokenów: inflacji postrzeganej jako czynnik psujący wycenę jest z upływem czasu coraz mniej. Doświadczenie z ICO EOSa dowodzi, że inwestor jest w stanie znieść dość dużą inflację (nawet 100% rocznie), o ile ma ona wyraźny cel i limit czasowy.
 
-#### 5.3 Model sprawdzony empirycznie
+#### 5.4 Model sprawdzony empirycznie
 
 Według naszej wiedzy Sygnet ma szansę być pierwszym tokenem emitowanym na blockchainie (tj. nie posiadającym własnego natywnego blockchaina), który stosuje model ekonomiczny typowy dla blockchaina, tj. ekspansję poprzez inflację.
 
