@@ -1,8 +1,10 @@
-# Sygnet: skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta
+# Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta
 
-Wersja 4.5 (11/04/2018)
+Wersja 5.0 (19/05/2018)
 
-**Proponujemy rozwiązanie w zakresie KYC, które bazując na legislacji PSD2 umożliwia wykorzystanie, będącej w posiadaniu banku, informacji o tożsamości klienta. Skalowanie procesu KYC uzyskujemy poprzez, uzyskane od banku, kryptograficzne poświadczenie tożsamości klienta. Dzięki temu bank, oprócz świadczenia usług finansowych, jest w stanie radykalnie ułatwić swoim klientom proces weryfikacji KYC w sytuacji, gdy chcą oni skorzystać z usług innych podmiotów w branży FinTech (zarówno bankowych jak i niebankowych), a w dalszej konsekwencji, staje się dla nich generatorem ich cyfrowej tożsamości w Internecie.**
+*Proponujemy rozwiązanie w zakresie KYC, które bazując na legislacji PSD2 umożliwia wykorzystanie, będącej w posiadaniu banku, informacji o tożsamości klienta. Skalowanie procesu KYC uzyskujemy poprzez, uzyskane od banku, kryptograficzne poświadczenie tożsamości klienta. Dzięki temu bank, oprócz świadczenia usług finansowych, jest w stanie radykalnie ułatwić swoim klientom proces weryfikacji KYC w sytuacji, gdy chcą oni skorzystać z usług innych podmiotów w branży FinTech (zarówno bankowych jak i niebankowych), a w dalszej konsekwencji, staje się dla nich generatorem ich cyfrowej tożsamości w Internecie.*
+
+DISCLAIMER: Niniejszy dokument jest tylko wstępnym zarysem pomysłu i na tym etapie należy go traktować jako jedynie tekst wizjonerski. W swojej obecnej formie nie wyczerpuje on wszystkich tematów, które będą wymagać analizy, zanim ostatecznie uznamy, że opisane rozwiązanie jest warte wdrożenia.
 
 ## 1. Wprowadzenie
 
@@ -35,7 +37,7 @@ Warty podkreślenia jest fakt, że outsourcing procesu KYC do specjalistycznej f
 Szukamy rozwiązania dla procesu KYC, które:
 
 - umożliwi skalowanie procedury KYC, czyli wyeliminuje konieczność powtarzania tego procesu przez kolejne firmy,
-- będzie działać dla wszystkich firm, które podlegają wymogom KYC (tj. nie tylko dla podmiotów bankowych),
+- będzie działać dla wszystkich firm, które podlegają wymogom KYC (tj. nie tylko dla podmiotów bankowych), a także dla firm które nie są prawnie zobligowane do KYC, ale chcą to robić dla własnych potrzeb,
 - będzie miało realną szansę na masową adopcję, zarówno po stronie biznesów jak i ich klientów,
 - otworzy drogę na inne niż KYC zastosowania, w szczególności do rozpowszechnienia koncepcji cyfrowej tożsamości.
 
@@ -79,7 +81,7 @@ Oznacza to, że nasz pomysł w zakresie KYC sprowadza się *de facto* do tego: w
 
 W swojej wersji podstawowej system Sygnet może być zrealizowany w formie prostej usługi webowej. W zakresie funkcjonalności interfejsu istotne jest jednak rozróżnienie między dwoma typami użytkowników:
 
-* Dla użytkownika aktywnego (tj. firma F) potrzebny będzie bardziej rozbudowany interfejs stwarzający możliwość stworzenia konta w naszym systemie i jego doładowanie środkami pieniężnymi.
+* Dla użytkownika aktywnego (tj. firma F) potrzebny będzie bardziej rozbudowany interfejs stwarzający możliwość stworzenia konta w naszym systemie.
 * Dla użytkownika pasywnego (tj. klient K) wystarczy prosty interfejs o nieograniczonym dostępie, tj. nie wymagający zakładania konta i logowania. Możliwe jest stworzenie do tego celu dedykowanej aplikacji mobilnej, ale dla potrzeb MVP prawdopodobnie nie będzie to konieczne.
 
 #### 2.5 Wymagania
@@ -90,8 +92,6 @@ Aby system Sygnet mógł poprawnie funkcjonować potrzebne jest spełnienie nast
 2. Aby system mógł być realnie użyteczny w zakresie KYC, docelowo powinno w nim uczestniczyć co najmniej kliku partnerów bankowych. Potrzebne więc będzie wystandaryzowanie procesu tak, żeby firma F otrzymywała dane KYC w jednolitym formacie niezależnie od instancji banku, który jest ich źródłem.
 3. Integralną częścią naszej aplikacji musi być możliwość weryfikacji certyfikowanego podpisu elektronicznego banku, tak żeby firma F mogła w łatwy sposób uzyskać pewność, że otrzymane od banku B informacje na temat klienta K rzeczywiście zostały przez ten bank wygenerowane i nie zostały zmodyfikowane po ich podpisaniu. Jest to funkcjonalność podobna do tej, która jest oferowana przez powszechnie dostępne serwisy internetowe, np. [MadKom](https://madkom.pl/weryfikacja-podpisu-elektronicznego/).
 4. Ponieważ my, jako twórcy i operatorzy aplikacji mobilnej będącej w posiadaniu klienta K, pełnimy rolę TPP (Third Party Provider), musimy być podmiotem zarejestrowanym w KNF zgodnie z wymaganiami PSD2. Wydaje się, że licencja AIS (Account Information Service) w tym przypadku będzie wystarczająca.
-
-
 
 #### 2.6 Schemat procesu
 
@@ -109,7 +109,7 @@ Wtedy proces KYC w systemie Sygnet może wyglądać następująco:
 
 Nasuwa się pytanie, czy firma F po uzyskaniu kryptograficznie podpisanego pakietu informacji KYC od banku B nie przekaże go kolejnej firmie, negując tym samym jej motywację do korzystania z naszego systemu.
 
-Możliwe jest zmodyfikowanie powyższego schematu działania w taki sposób, aby zapobiec tego rodzaju problemowi.
+Możliwe jest zmodyfikowanie powyższego schematu działania w taki sposób, aby zapobiec tego rodzaju nadużyciu.
 
 Zmodyfikowany proces mógłby wyglądać następująco:
 
@@ -117,13 +117,13 @@ Zmodyfikowany proces mógłby wyglądać następująco:
 2. Zarówno identyfikator ID jak i klucz publiczny firmy F są przekazywane do banku B, który generuje pakiet KYC w sposób opisany powyżej, ale przed podpisaniem go własnym kluczem, szyfruje go kluczem publicznym firmy F.
 3. Firma F po otrzymaniu pakietu jest w stanie go odkodować i zweryfikować prawdziwość zawartych w nim danych. 
 
-Tym samym przekazanie przez firmę F otrzymanego od banku pakietu KYC innej firmie przestaje mieć sens, bo wymagałoby to także ujawnienia swojego klucza prywatnego umożliwiającego jego rozkodowanie, do czego firma F raczej nie będzie skłonna.
+Tym samym przekazanie przez firmę F otrzymanego od banku pakietu KYC innej firmie przestaje mieć sens, bo wymagałoby to także ujawnienia swojego klucza prywatnego umożliwiającego jego rozkodowanie, do czego firma F nie będzie skłonna.
 
 ## 3. Kierunki potencjalnego rozwoju systemu
 
 #### 3.1 Podpis cyfrowy niewymagający klucza prywatnego
 
-Ogólny schemat systemu Sygnet można opisać w sposób następujący: klient K przekazuje do banku B dowolny ciąg znaków (np. wygenerowany przez firmę F identyfikator ID), a bank B zwraca, podpisany kryptograficznie swoim kluczem prywatnym, pakiet zawierający i łączący w jedną całość dwa elementy:
+Zauważmy, że zaprezentowany powyżej schemat systemu Sygnet można opisać w sposób następujący: klient K przekazuje do banku B dowolny ciąg znaków (np. wygenerowany przez firmę F identyfikator ID), a bank B zwraca, podpisany kryptograficznie swoim kluczem prywatnym, pakiet zawierający i łączący w jedną całość dwa elementy:
 
 - dane osobowe klienta K, które pozwalają na jego jednoznaczną identyfikację (np. imię, nazwisko, nr dowodu osobistego albo PESEL),
 - wyżej wspomniany ciąg znaków w formie nienaruszonej.
@@ -142,7 +142,7 @@ Możemy jednak przyjąć, że tego rodzaju *trade-off* ma sens, ponieważ fundam
 
 #### 3.2 Klucz prywatny certyfikowany przez bank
 
-Gdybyśmy jednak chcieli usunąć powyższy *trade-off*, system Sygnet w wersji profesjonalnej mógłby mieć funkcjonalność pozwalającą na:
+Gdybyśmy jednak chcieli usunąć powyższy *trade-off*, system Sygnet w wersji "pro" mógłby mieć funkcjonalność pozwalającą na:
 
 * wygenerowanie dla klienta K unikalnego klucza prywatnego i odpowiadającego mu klucza publicznego, 
 * uzyskanie od banku B elektronicznie podpisanego certyfikatu, który połączyłby w jedną całość tożsamość klienta K z jego kluczem publicznym.
@@ -153,7 +153,7 @@ Założenie to oczywiście nie spełnia wymogów ustawy o kwalifikowanym podpisi
 
 #### 3.3 Autoryzacja w PSD2
 
-Idąc dalej, w wyżej opisanej wersji profesjonalnej (tzn. gdy klient ma swój własny klucz prywatny certyfikowany przez bank), możliwe staje się stworzenie niezależnego kanału autoryzacji dla transakcji bankowych, zgodnie z wymogami PSD2.
+Idąc dalej, w wyżej opisanej wersji "pro" (tzn. gdy klient ma swój własny klucz prywatny certyfikowany przez bank), możliwe staje się stworzenie niezależnego kanału autoryzacji dla transakcji bankowych, zgodnie z wymogami PSD2.
 
 Podpisana przez klienta jego kluczem prywatnym zgoda na wykonanie konkretnego przelewu jest doskonałą alternatywą dla powszechnie stosowanej autoryzacji poprzez esemes.
 
@@ -177,9 +177,7 @@ Jest jednak istotna różnica: zastosowanie profilu zaufanego jest ograniczone d
 
 Niemniej porównanie naszego rozwiązania do profilu zaufanego wydaje się jak najbardziej uzasadnione. Można nawet powiedzieć, że nasz system oferuje biznesom rozwiązanie w zakresie KYC analogiczne do tego, jakie profil zaufany oferuje urzędom państwowym w zakresie mechanizmu weryfikacji tożsamości obywatela w warunkach online.
 
-## 5. Monetyzacja systemu
-
-#### 5.1 Uzasadnienie roli pośrednika
+## 5. Uzasadnienie przydatności systemu
 
 System Sygnet ma szansę być postrzeganym jako sytuacja typu *win-win* dla wszystkich interesowanych, ponieważ:
 
@@ -189,34 +187,82 @@ System Sygnet ma szansę być postrzeganym jako sytuacja typu *win-win* dla wszy
 
 System Sygnet występuje więc w roli pośrednika pomiędzy:
 
-- firmą F która potrzebuje zweryfikować nowego klienta pod kątem KYC,
-- bankiem B który uprzednio dokonał weryfikacji KYC dla danego klienta.
+- biorcą informacji, czyli firmą F która potrzebuje zweryfikować nowego klienta pod kątem KYC,
+- dawcą informacji, czyli bankiem B który uprzednio dokonał weryfikacji KYC dla danego klienta.
 
-Nasza rola pośrednika jest tu dość mocno uzasadniona, bo dzięki systemowi Sygnet firma F unika dwóch relatywnie trudno wykonalnych kwestii, które bierze na siebie nasz system:
+Czy ta rola pośrednika jest w naszym przypadku dobrze uzasadniona? Wydaje się że tak, bo dzięki systemowi Sygnet biorca informacji (tj. firma F) unika dwóch relatywnie trudno wykonalnych kwesti:
 
-- firma F nie musi posiadać statusu TPP (Third Party Provider) w PSD2,
-- firma F nie musi integrować się z wieloma bankami.
+- nie musi posiadać statusu TPP (Third Party Provider) w PSD2,
+- nie musi integrować się z wieloma bankami.
 
-Zakładamy, że korzyści dla firmy F będą na tyle istotne, że uzasadniony stanie się przepływ finansowy między firmą F i bankiem B, i tym samym powstanie okazja dla nas do pobierania prowizji z tytułu tego przepływu.
+## 6. Model ekonomiczny
 
-#### 5.2 Metoda poboru prowizji
+W zakresie wyboru modelu ekonomicznego dla systemu Sygnet widzimy trzy możliwe podejścia.
 
-Najbardziej oczywistą metodą jest pobieranie prowizji w tradycyjny sposób, tj. poprzez zaproponowanie firmom dokonania przedpłaty na określoną liczbę weryfikacji KYC, a następnie rozliczanie przychodów uzyskanych w ten sposób z partnerami bankowymi.
+1. **Rozliczenia w fiat**
 
-Jednak rozwiązaniem o znacznie większym potencjale wydaje się emisja tokenu na blockchainie i posługiwanie się nim do rozliczeń związanych z KYC: token byłby przekazywany przez firmę F do banku B w zamian za uzyskany certyfikat KYC.
+   Najbardziej oczywistą metodą jest pobieranie prowizji w tradycyjny sposób, tj. poprzez pobieranie od biorców informacji przedpłaty na określoną liczbę weryfikacji KYC, a następnie rozliczanie przychodów uzyskanych w ten sposób z partnerami bankowymi.
 
-Możliwe są dwa podejścia:
+   Wówczas uzyskujemy model, w którym wszystkie rozliczenia są w fiat, a ewentualne tokeny służą jedynie jako system ewidencyjny do dystrybucji korzyści z ich posiadania (np. rabaty albo dywidendy z naszych zysków). Jednak taka konstrukcja ma niewielką innowacyjność i w 100% opiera się na wierze w uczciwość emitenta.
 
-1. Każdy pojedynczy token uprawniałby do jednej weryfikacji KYC w systemie Sygnet. Jego cena byłaby wynikiem równowagi uzyskanej w naszym systemie między popytem ze strony firm i podażą ze strony banków.
-2. Token byłyby nominowany w stabilnej walucie (np. EUR), a liczba tokenów potrzebnych do weryfikacji KYC w systemie Sygnet byłaby wynikiem równowagi między popytem i podażą. Ciekawym produktem ubocznym tego podejścia jest wygenerowanie stabilnej waluty, która miałaby realną użyteczność i tym samym zwiększoną wiarygodność.
+2. **Rozliczenia w kryptowalutowym tokenie**
 
-Niezależnie od tego, które podejście wybierzemy, my jako organizator tego procesu zajmowalibyśmy się sprzedażą tokenów firmom i ich odkupywaniem od banków, oczywiście przy założeniu niewielkiej marży w postaci różnicy między ceną kupna i ceną sprzedaży.
+   Drugą opcją jest zastosowanie modelu, który jest powszechny w emisjach tokenów poprzez proces ICO. Na blockchainie tworzymy smart-kontrakt, który organizuje wyżej opisany proces przesyłu informacji między jej dawcą i biorcą, a związany z tą usługą token istnieje po to, żeby biorca tej usługi mógł nim zapłacić dawcy. Czyli token przepływa z portfela biorcy do portfela dawcy.
 
-Użycie blockchaina jest na razie hipotezą, bo oprócz potencjalnych komplikacji technologicznych na pewno trzeba dobrze przemyśleć wszystkie konsekwencje biznesowe wynikające z jego użycia:
+   Powyższe podejście ma jedną istotną wadę: potrzebujemy skłonić potencjalnego biorcę usługi do nabycia tokenu **zanim** ma on szansę z niej skorzystać. Jest to istotna przeszkoda w adopcji.
 
-- Po stronie zalet mamy zapewnienie transparentności całego procesu i uwiarygodnienie naszej roli jako pośrednika.
-- Potencjalną wadą jest otwarcie się na systemy konkurencyjne do naszego, które mogłyby starać się robić to, co my robimy, używając naszych tokenów ale stosując niższą marżę.
+3. **Finansowanie z puli inflacyjnej tokenu**
 
-## 6. Disclaimer
+   Trzecie podejście jest naszym zdaniem najciekawsze i najbardziej adekwatne do sytuacji, w której głównym czynnikem decydującym o sukcesie jest uzyskanie efektu sieciowego.
 
-Niniejszy dokument jest tylko wstępnym zarysem pomysłu i na tym etapie należy go traktować jako jedynie tekst wizjonerski. W swojej obecnej formie nie wyczerpuje on wszystkich tematów, które będą wymagać analizy, zanim zdecydujemy się na pójście z propozycją współpracy do potencjalnego partnera bankowego i ostatecznie uznamy, że opisane rozwiązanie jest warte wdrożenia.
+   W największym skrócie rozwiązania to polega na tym, że do smart-kontraktu, organizującego  przepływ informacji między jej dawcą i biorcą, dodajemy token, który ma wbudowaną inflację i wtedy koszty operacyjne funkcjonowania systemu Sygent są finansowane bezpośrednio z funduszu inflacyjnego tego tokenu.
+
+   W takim układzie token przepływa do portfela dawcy z puli inflacyjnej, a portfel biorcy pozostaje nienaruszony. Oznacza to, że usługa w swojej podstawowej wersji jest oferowana za darmo, co w oczywisty sposób niweluje barierę wejścia dla nowych użytkowników.
+
+   Bardziej szczegółowy opis tego rozwiązania jest zawarty w [tym dokumencie](Sygnet_EconomicModel.html).
+
+## 7. Nie tylko banki
+
+Bank, jako dawca informacji, jest dla nas cennym partnerem, bo tożsamość potwierdzona przez bank jest bardziej wiarygodna niż tożsamość potwierdzona przez inne podmioty.
+Jednak nasz mechanizm weryfikacji tożsamości jest na tyle abstrakcyjny, że podmiotem będącym dawcą informacji może być także podmiot niebankowy.
+
+Więc być może optymalną strategią jest zacząć od współpracy z podmiotem niebankowym, np. kimś takim jak Allegro, z dwóch powodów:
+
+- proces współpracy technologicznej będzie tu prawdopodobnie łatwiejszy,
+- do takiego podmiotu bardziej przemawiają argumenty finansowe.
+
+Ponadto, jeśli pierwszym partnerem będzie nie-bank, stawia to nas w dużo lepszej pozycji negocjacyjnej podczas rozmowy z bankiem. 
+
+Bank (albo inna firma dysponująca wiarygodną informacją o tożsamości, np. Allegro) ma majątek w postaci informacji o tożsamości, który trudno jest zmonetyzować, bo potrzebna jest do tego duża skala działania. Takim firmom nie opłaca się wchodzić w układy, które mają małą szansę na uzyskanie dużej skali. My dajemy im propozycję, która ma potencjał na masowość z prostego powodu: jest ona za darmo (z punktu widzenia użytkownika), podobnie jak np. płatność kartą.
+
+Ponadto mając zapas kapitału w postaci fiat uzyskanego z ICO jesteśmy w dobrej pozycji żeby przez dłuższy czas nakręcać ekspansję systemu, co dodatkowo zwiększa szansę powodzenia.
+
+## 8. Dlaczego do tej pory nikomu nie udało się zrobić eID?
+
+## 9. Pytania w domenie prawnej
+
+W pierwszej kolejności potrzebujemy uzyskać perspektywę ograniczoną do polskiego prawa, a dopiero w dalszej kolejności UE - szczególnie jeśli odpowiedzi dotyczące Polski będą podważać nasz model biznesowy.
+
+#### 9.1 Obowiązek udostępniania danych osobowych przez banki
+
+Czy z legislacji PSD2 (albo jakiejkolwiek innej) wynika, że bankowe API ma obowiązek obsługiwać zapytania TPP dotyczące danych osobowych klienta banku? Mamy tu na myśli tylko bardzo podstawowe dane (tj. te które są zawarte w dowodzie osobistym i nie służą niczemu innemu poza ustaleniem tożsamości danej osoby). I oczywiście zakładamy, że klient banku explicite wyraża na to zgodę - generalnie lub każdorazowo. Jeśli po stronie banku takiego obowiązku nie ma - czy jest jakieś prawo, które zabrania bankowi oferowanie tego rodzaju usługi dla TPP (działającym w imieniu klienta)?
+
+*ASPSP ciągle walczą o to, aby przyjęła się wykładnia, że nie mają obowiązku podawać danych innych niż imię nazwisko i numer rachunku posiadacza. TPP próbują wywalczyć dostęp do wszystkich informacji, które są w bankowości elektronicznej. ASPSP powołują się na kluczowy argument, że PSD2 to jest obowiązku dostęp do rachunku płatniczego, a nie do bankowości elektronicznej. TPP powołują się na przepis RTS o ekwiwalentności informacji w interfejsie klienta vs interfejsie PSD2. W mojej ocenie początkowo może zwyciężyć podejście, że udostępnia się jedynie imie nazwisko i numer rachunku. Nie ma przeszkód, aby ASPSP zaoferował tego rodzaju usługę dla TPP – wtedy jedna najpewniej bank zażąda umowy z TPP.* 
+
+#### 9.2 Obowiązek stosowania przez banki kwalifikowanego podpisu elektronicznego
+
+Czy z legislacji PSD2 (albo jakiejkolwiek innej) wynika, że **na życzenia klienta** bank ma obowiązek podpisać dane (dotyczące tego klienta) uzyskane poprzez bankowe API swoim kwalifikowanym podpisem elektronicznym? Zakładamy tu, że celem tego podpisu jest uwiarygodnienie źródła pochodzenia tych danych. Jeśli po stronie banku takiego obowiązku nie ma - czy jest jakieś prawo, które uniemożliwia bankowi oferowanie tego rodzaju usługi dla TPP (działającym w imieniu klienta)?
+
+*ASPSP ma obowiązek ZIDENTYFIKOWAĆ się certyfikatem eIDAS, ale nie ma obowiązku podpisywania konkretnych danych. Zasadniczo nie ma przeszkód, aby ASPSP coś takiego zaoferował.*
+
+#### 9.3 Moc prawna weryfikacji tożsamości na podstawie certyfikatu banku
+
+Wiemy, że drogą specjalnej umowy firma X może powierzyć firmie Y proces ustalenia tożsamości klienta (np. klient okazuje kurierowi dowód osobisty i na oczach kuriera podpisuje się) i to ustalenie tożsamości ma moc prawną. Czy firma X może z podobnym dla siebie skutkiem prawnym powierzyć firmie Y wyżej opisany proces ustalenia tożsamości klienta, jeśli jest on wykonywany w sposób alternatywny, tj. poprzez wykazanie, że **specjalnie w tym jednorazowym celu** klient dokonał autoryzacji wymaganej przez interfejs swojego banku i uzyskał od tego banku (certyfikowany podpisem elektronicznym banku) zestaw danych poświadczających jego (tj. klienta) tożsamość?
+
+*Wymaga analizy.*
+
+#### 9.4 Esemes jak 2FA w świetle PSD2
+
+Czy 2FA wykonywany poprzez mechanizm esemesa spełnia wymogi SCA, o których mowa w PSD2? Czy wątpliwości wyrażone w [tej publikacji](https://blog.vasco.com/application-security/psd2/) są zasadne? W załączeniu znajduje się też plik PDF z analizą w tym zakresie wykonaną przez [paymentscompliance.com](https://paymentscompliance.com/premium-content/insights_analysis/current-authentication-tools-%E2%80%98not-compatible-psd2%E2%80%99). Czy jesteśmy w stanie dostarczyć argumenty prawne przemawiające za słusznością wątpliwości wyrażonych w tym dokumencie?
+
+*Zgodnie z opiniami autorytetów IT SMS w powiązaniu z inicjacją transakcji w przeglądarce w telefonie łącznie nie zapewniają spełnienia warunków, których RTS wymaga wobec urządzeń wielofunkcyjnych.*

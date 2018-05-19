@@ -1,6 +1,6 @@
-# Sygnet - Propozycja Modelu Ekonomicznego
+# Sygnet - propozycja modelu ekonomicznego
 
-## Streszczenie
+Wersja 1.0 (19/05/2018)
 
 *W zakresie tokenów emitowanych poprzez ICO powszechnie obowiązujące podejście jest następujące: token przepływa z portfela beneficjenta usługi do portfela dawcy usługi. To podejście ma fundamentalną wadę, która radykalnie utrudnia adopcję: potrzebujemy skłonić potencjalnego biorcę usługi do nabycia tokenu zanim ma on szansę z niej skorzystać. Proponowany przez nas model ekonomiczny jest zupełnie inny: token przepływa do portfela dawcy z puli inflacyjnej, a portfel biorcy pozostaje nienaruszony. Oznacza to, że usługa w swojej podstawowej wersji jest oferowana za darmo, co w oczywisty sposób niweluje barierę wejścia dla nowych użytkowników.*
 
