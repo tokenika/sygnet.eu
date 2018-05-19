@@ -102,7 +102,7 @@ Korzyści są na wielu frontach jednocześnie:
 - Im więcej masz tokenów, tym cenniejszy jest twój głos w dystrybucji puli inflacyjnej (więc dostawcy informacji mają silną motywację żeby spełnić wszystkie twoje potrzeby), z tym większą częstotliwością możesz korzystać z systemu w roli biorcy informacji i tym większy masz dostęp do dawców o wyższej wiarygodności.
 - Im większa wiarygodność dawcy, tym wyższe otrzymuje on nagrody.
 
-Wygląda to na win-win dla każdego, a jedyną stroną, która ponosi negatywne konsekwencje jest inwestor (bo inflacja, z której to wszytsko jest finansowane, stopniowo rozwadnia jego udziały). Jednak to co skłania inwestora do ponoszenia tych konsekwencji, to perspektywa aprecjacji tokenu wynikająca z radykalnego wzrostu jego popularności.
+Wygląda to na win-win dla każdego, a jedyną stroną, która ponosi negatywne konsekwencje jest inwestor (bo inflacja, z której to wszystko jest finansowane, stopniowo rozwadnia jego udziały). Jednak to co skłania inwestora do ponoszenia tych konsekwencji, to perspektywa aprecjacji tokenu wynikająca z radykalnego wzrostu jego popularności.
 
 ## 5. Uzsadnienie wartości modelu
 
