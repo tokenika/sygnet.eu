@@ -17,6 +17,8 @@ Documentation
     Sygnet_Vision
     Sygnet_EconomicModel
     Sygnet_LegalIssues
+    Sygnet_MarketAnalysis
+    Sygnet_CompetitionAnalysis
 
 
 Metadata

@@ -236,5 +236,3 @@ Bank, jako dawca informacji, jest dla nas najcenniejszym partnerem, bo spośród
 
 Ponadto fakt udanej współpracy z podmiotem niebankowym stawia nas w dużo lepszej pozycji negocjacyjnej podczas rozmowy z bankiem.
 
-## 8. Dlaczego do tej pory nikomu nie udało się zrobić eID?
-

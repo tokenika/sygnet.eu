@@ -1,3 +1,5 @@
+# Sygnet - analiza rynkowa
+
 ## Jakie podmioty w Polsce (i Europie) potrzebują weryfikować swoich klientów w zakresie KYC? Jak dużo ich jest?
 
 Europejską podstawę prawną w zakresie KYC stanowi tzw. IV DYREKTYWA AML. 
@@ -107,9 +109,7 @@ Podczas gdy rejestr KYC jest przeznaczony raczej do użytku międzybankowego ni�
 
 <https://www.youtube.com/watch?time_continue=92&v=0xmT_0H_iDI>
 
-------
-
-Dodatkowe linki:
+## Dodatkowe linki:
 
 <http://www.certge.pl/kyc-monitoring-relacji-klientem>
 
