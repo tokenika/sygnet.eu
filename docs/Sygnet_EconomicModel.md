@@ -103,8 +103,9 @@ Korzyści są na wielu frontach jednocześnie:
 
 - Uzyskujemy system który jest **postrzegany** jako darmowy (chociaż w istocie nie jest, bo żywi się własną inflacją).
 - Nie trzeba kupować tokenów żeby móc zacząć używać systemu Sygnet, bo minimalną wymaganą dawkę tokenów dostajesz gratis przy założeniu Sygnetowego konta i te tokeny się nie zużywają.
-- Im więcej masz tokenów, tym cenniejszy jest twój głos w dystrybucji puli inflacyjnej (więc dostawcy informacji mają silną motywację żeby spełnić wszystkie twoje potrzeby), z tym większą częstotliwością możesz korzystać z systemu w roli biorcy informacji i tym większy masz dostęp do dawców o wyższej wiarygodności.
+- Im więcej tokenów ma biorca, tym cenniejszy jest jego głos w dystrybucji puli inflacyjnej (więc dostawcy informacji mają silną motywację żeby spełnić wszystkie jego potrzeby), z tym większą częstotliwością może on korzystać z systemu i tym większy ma dostęp do dawców o wyższej wiarygodności.
 - Im większa wiarygodność dawcy, tym wyższe otrzymuje on nagrody.
+- Biorca informacji ma dostęp do systemu na poziomie, który jest niezależny od fluktuacji cenowych tokenu. (Natomiast dochód dawcy, wyrażony w fiat, jest zależny od bieżącej ceny tokenu, ale przyjmujemy że każda istotnie niezerowa wartość jest dla niego satysfakcjonująca.)
 
 Wygląda to na win-win dla każdego, a jedyną stroną, która ponosi negatywne konsekwencje jest inwestor (bo inflacja, z której to wszystko jest finansowane, stopniowo rozwadnia jego udziały). Jednak to co skłania inwestora do ponoszenia tych konsekwencji, to perspektywa aprecjacji tokenu wynikająca z radykalnego wzrostu jego popularności.
 
@@ -176,7 +177,7 @@ Warto zauważyć, że problem ten istnieje niezależnie od wyboru modelu ekonomi
 
 Rzeczywiście wypłata za dostarczanie informacji będzie zależała od wyceny całości systemu (tj. kapitalizacji tokenu), podobnie jak to ma miejsce w Steemie. Tak więc nie sposób tego dokładnie oszacować.
 
-Ale nawet gdybyśmy zastosowali bardziej "tradycyjny" model ekonomiczny (tj. taki jak np. [Civic](https://www.civic.com/), czyli mamy token, którym się płaci za usługi oferowane przez system) to i tak problem pozostaje, bo nie sposób przewidzieć rynkowej wartości tokenu.
+Ale nawet gdybyśmy zastosowali bardziej "tradycyjny" model ekonomiczny (tj. taki jak np. [Civic](https://www.civic.com/)) to i tak problem pozostaje, bo płatność za oferowaną usługę jest zawsze w tokenach, a nie sposób przewidzieć jego rynkowej wartości.
 
 Jednak brak dokładnej wyceny wpływów dla dawców informacji, nie stawia nas na straconej pozycji. W tej chwili podmioty dysponujące informacją o tożsamości nie mają żadnych wpływów z tego tytułu, więc jeśli dostarczymy cokolwiek istotnie większego niż zero i co dodatkowo ma potencjał dużej skali, to to się broni.
 
