@@ -8,13 +8,13 @@ W systemie Sygnet mamy trzy rodzaje uczestników:
 - Biorca informacji (który potrzebuje zweryfikować osobę K)
 - Osoba K, której dotyczy informacja i która jest przedmiotem weryfikacji
 
-Zakładamy, że model ekonomiczny dotyczy tylko pierwszych dwóch typów uczestników, tj. dawcy i biorcy informacji, natomiast trzeci uczestnik, tj. osoba K, nie powinna być zaangażowana w tym modelu, ponieważ jest ona tylko przedmiotem transakcji (a nie podmiotem), a jej główną motywacją jest tylko, to żeby proces weryfikacji jej tożsamości był szybki i wygodny.
+Zakładamy, że model ekonomiczny dotyczy tylko pierwszych dwóch typów uczestników, tj. dawcy i biorcy informacji, natomiast trzeci uczestnik, tj. osoba K, nie powinna brać udziału w tym modelu, ponieważ jest ona tylko przedmiotem transakcji (a nie podmiotem), a jej główną motywacją jest tylko, to żeby proces weryfikacji jej tożsamości był szybki i wygodny.
 
 ## 2. Cel modelu
 
 Jest oczywiste, że skoro kierunek przepływu korzyści w systemie Sygnet jest od dawcy informacji do biorcy informacji, to głównym celem funkcjonowania tokenu jest motywowanie dawców informacji do aktywnej partycypacji w systemie.
 
-Z punktu widzenia biznesowego musimy spełnić następujące kryteria:
+Z punktu widzenia biznesowego chcemy spełnić następujące kryteria:
 
 1. Token musi być postrzegany jako warty posiadania, tj. jego posiadanie powinno rodzić wymierne korzyści i tych korzyści powinno być tym więcej, im więcej mamy tego tokenu.
 2. Sposób działania tokenu powinien wspierać masową adopcję systemu. Idealnie by było żeby użytkownik mógł zacząć używać systemu bez konieczności wcześniejszego zakupu tokenu.
@@ -70,16 +70,16 @@ Wtedy możemy zaproponować następujący schemat działania:
 
 #### 4.2 Przykład
 
-Załóżmy, że Sygnet ma kapitalizację 10 mln USD, wyemitowano do tej pory 100 mln tokenów, a inflacja jest na poziomie 4% rocznie, co oznacza, że codziennie jest do rozdania około 10k tokenów z puli inflacyjnej (przy tej kapitalizacji jest to równowartość około 1k USD).
+Załóżmy, że w danym momencie Sygnet ma kapitalizację 10 mln USD, wyemitowano do tej pory 100 mln tokenów, a inflacja jest na poziomie 4% rocznie, co oznacza, że codziennie jest do rozdania około 10k tokenów z puli inflacyjnej (przy tej kapitalizacji jest to równowartość około 1k USD).
 
-Załóżmy, że stan posiadania danego biorcy informacji to 1% Sygnetowych udziałów, więc dysponuje on liczbą 100 tokenów z puli inflacyjnej (100 = 1% z 10k tokenów). Załóżmy dalej, że danym dniu skorzystał on (a w zasadzie skorzystali jego klienci będący przedmiotem weryfikacji tożsamości) z usługi dwóch dawców informacji, z takim rozkładem:
+Załóżmy, że stan posiadania danego biorcy informacji to 1 mln tokenów, czyli ma on 1% udziału w całkowitej populacji 100 mln Sygnetowych tokenów. Oznacza to, że dysponuje on liczbą 100 tokenów z puli inflacyjnej (1% z 10k tokenów które są w puli). Załóżmy dalej, że w danym dniu skorzystał on (a w zasadzie skorzystali jego klienci, będący przedmiotem weryfikacji tożsamości) z usługi dwóch dawców informacji, z następującym rozkładem:
 
 - 80% zapytań było skierowanych do dawcy A,
 - 20% do dawcy B.
 
 Wówczas w rozliczeniu puli inflacyjnej (ale tylko w zakresie tej części tej puli, którą dysponuje w/w biorca) dawca A dostaje z tytułu powyższej sytuacji 80 tokenów, a dawca B dostaje 20 tokenów.
 
-Oczywiście powyższe rozliczenie to jest tylko fragment większej całości, bo w tym samym cyklu rozliczeniowym z tytułu obsługi klientów innych biorców informacji dawcy A i B będą nagrodzeni w analogiczny sposób.
+Oczywiście powyższe rozliczenie to jest tylko fragment większej całości, bo w tym samym cyklu rozliczeniowym z tytułu obsługi klientów innych biorców informacji dawcy A i B będą nagrodzeni dodatkowymi tokenami w analogiczny sposób.
 
 #### 4.3 Dodatkowe zwiększenie atrakcyjności systemu nagród
 
@@ -102,7 +102,7 @@ Korzyści są na wielu frontach jednocześnie:
 - Im więcej masz tokenów, tym cenniejszy jest twój głos w dystrybucji puli inflacyjnej (więc dostawcy informacji mają silną motywację żeby spełnić wszystkie twoje potrzeby), z tym większą częstotliwością możesz korzystać z systemu w roli biorcy informacji i tym większy masz dostęp do dawców o wyższej wiarygodności.
 - Im większa wiarygodność dawcy, tym wyższe otrzymuje on nagrody.
 
-Wygląda to na win-win dla każdego, a jedyną stroną, która ponosi negatywne konsekwencje jest inwestor (bo inflacja stopniowo rozwadnia jego udziały). Jednak to co skłania inwestora do ponoszenia tych konsekwencji to perspektywa aprecjacji tokenu wynikająca z radykalnego wzrostu jego popularności.
+Wygląda to na win-win dla każdego, a jedyną stroną, która ponosi negatywne konsekwencje jest inwestor (bo inflacja, z której to wszytsko jest finansowane, stopniowo rozwadnia jego udziały). Jednak to co skłania inwestora do ponoszenia tych konsekwencji, to perspektywa aprecjacji tokenu wynikająca z radykalnego wzrostu jego popularności.
 
 ## 5. Uzsadnienie wartości modelu
 
@@ -151,16 +151,16 @@ To co jest ważne, to to żeby system był łatwo wytłumaczalny w zakresie spos
 
 A instrukcja użycia w zakresie finansowym jest bardzo prosta:
 
-- Dla biorcy informacji: *Usługa jest za darmo, nic nie musisz płacić. Gdybyś chciał jednak korzystać z systemu z większą częstotliwością albo uzyskać do informacji o większej wiarygodności, to musisz wejść w posiadanie tokenów (odpowiednik nabycia licencji na wersję pro), ale te tokeny się nie zużywają, więc wysiłek (czasowy i finansowy) popełniasz tylko raz.*
+- Dla biorcy informacji: *Usługa jest za darmo, nic nie musisz płacić. Gdybyś chciał jednak korzystać z systemu z większą częstotliwością albo uzyskać dostęp do informacji o większej wiarygodności, to musisz wejść w posiadanie tokenów (odpowiednik nabycia licencji na wersję pro), ale te tokeny się nie zużywają, więc wysiłek (czasowy i finansowy) popełniasz tylko raz.*
 - Dla dawców informacji: *Za oferowanie informacji dostajesz tokeny, które mają wartość finansową wyznaczaną przez rynek. Możesz te tokeny trzymać licząc na aprecjację albo sprzedać i uzyskać fiat.*
 
 
 
 > Musimy założyć, że za rok, dwa banki otworzą się na krypto. Bo na razie to mają chyba taką nieformalną zmowę, żeby nie używać tokenów oficjalnie.
 
-W naszym przypadku używanie krypto przez banki sprowadza się do przyjęcia płatności w Sygnetowym tokenie. Jeśli dany podmiot nie będzie chciał mieć do czynienia z tym tokenem, to może nam przekazać dostęp do swojego konta w Sygnecie i my możemy uzyskane przez niego tokeny sprzedawać na rynku i przekazywać mu fiat.
+W naszym przypadku używanie kryptowaluty przez banki sprowadza się do przyjęcia płatności w Sygnetowym tokenie. Jeśli dany podmiot nie będzie chciał mieć do czynienia z tym tokenem, to może nam przekazać dostęp do swojego konta w Sygnecie i my wtedy możemy uzyskane przez niego tokeny sprzedawać na rynku i przekazywać mu fiat.
 
-Warto zauważyć, że problem ten istnieje niezależnie od wyboru modelu ekonomicznego. No chyba że zastosujemy model, w którym wszystkie rozliczenia są w fiat, a tokeny służą jedynie jako system ewidencyjny do dystrybucji korzyści z ich posiadania (np. rabaty albo dywidendy z naszych zysków). Jednak taka konstrukcja ma zerową innowacyjność i w 100% opiera się na wierze w wiarygodność emitenta.
+Warto zauważyć, że problem ten istnieje niezależnie od wyboru modelu ekonomicznego. No chyba że zastosujemy model, w którym wszystkie rozliczenia są w fiat, a tokeny służą jedynie jako system ewidencyjny do dystrybucji korzyści z ich posiadania (np. rabaty albo dywidendy z naszych zysków). Jednak taka konstrukcja ma zerową innowacyjność i w 100% opiera się na wierze w uczciwość emitenta.
 
 
 
