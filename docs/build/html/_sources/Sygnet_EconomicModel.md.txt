@@ -152,7 +152,7 @@ Poniżej przedstawione jest porównanie wychwytujące analogie pomiędzy różny
 
 ## Q&A
 
-###### Widzę tylko trudność w wytłumaczeniu tego innym podmiotom.
+###### Prawdopodobnie będzie trudno wytłumaczyć to rozwiązanie innym podmiotom.
 
 To jest podobna trudność jaką ma Steem. Relatywnie niewiele osób rzeczywiście rozumie mechanizm ekonomiczny Steema, chociaż mnóstwo osób go używa i tym samym przyjmuje, że ma on sens. Okazuje się, że użytkownicy nie muszą dokładnie rozumieć mechanizmów ekonomicznych żeby móc w nich aktywnie uczestniczyć.
 

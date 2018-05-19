@@ -165,7 +165,7 @@ Istnieje mnóstwo biznesów (np. sieci społecznościowe), które nie podlegają
 
 Wydaje się oczywiste, że system Sygnet mógłby być przydatny w tym zakresie i prawdopodobnie znacznie bardziej skuteczny niż tradycyjna metoda polegająca na weryfikacji dostępu do konta mailowego lub numeru telefonicznego. Unikalna tożsamość poświadczona przez bank ma niewątpliwie większą wiarygodność niż jakakolwiek inna metoda.
 
-## 4. Czym nasze rozwiązanie różni się od profilu zaufanego?
+## 4. Czym Sygnet różni się od profilu zaufanego?
 
 Wedle [dokumentacji](https://www.gov.pl/cyfryzacja/profil-zaufany-ego-) Ministerstwa Cyfryzacji profil zaufany to bezpłatna metoda potwierdzania tożsamości obywatela w systemach elektronicznej administracji.
 
