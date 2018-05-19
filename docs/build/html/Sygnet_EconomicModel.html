@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Sygnet - propozycja modelu ekonomicznego &#8212; Sygnet 1.0 documentation</title>
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/readable.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -19,149 +21,35 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta" href="Sygnet_Vision.html" />
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
-<meta name="apple-mobile-web-app-capable" content="yes">
+   
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
 
   </head>
   <body>
+  
+  
 
-  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">
-          Sygnet</a>
-        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
-      </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Sygnet_Vision.html" title="Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Sygnet 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
 
-        <div class="collapse navbar-collapse nav-collapse">
-          <ul class="nav navbar-nav">
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
             
-            
-              <li class="dropdown globaltoc-container">
-  <a role="button"
-     id="dLabelGlobalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="index.html">Site <b class="caret"></b></a>
-  <ul class="dropdown-menu globaltoc"
-      role="menu"
-      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Sygnet_Vision.html">Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sygnet - propozycja modelu ekonomicznego</a></li>
-</ul>
-</ul>
-</li>
-              
-                <li class="dropdown">
-  <a role="button"
-     id="dLabelLocalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="#">Page <b class="caret"></b></a>
-  <ul class="dropdown-menu localtoc"
-      role="menu"
-      aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Sygnet - propozycja modelu ekonomicznego</a><ul>
-<li><a class="reference internal" href="#kto-jest-uczestnikiem-modelu">1. Kto jest uczestnikiem modelu?</a></li>
-<li><a class="reference internal" href="#cel-modelu">2. Cel modelu</a></li>
-<li><a class="reference internal" href="#inspiracja">3. Inspiracja</a><ul>
-<li><a class="reference internal" href="#jak-dziala-steem">3.1 Jak działa Steem?</a></li>
-<li><a class="reference internal" href="#krytyka-modelu-steema">3.2 Krytyka modelu Steema</a></li>
-<li><a class="reference internal" href="#uzasadnienie-modelu-steema">3.3 Uzasadnienie modelu Steema</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#istota-proponowanego-modelu-ekonomicznego">4. Istota proponowanego modelu ekonomicznego</a><ul>
-<li><a class="reference internal" href="#mechanizm-dzialania">4.1 Mechanizm działania</a></li>
-<li><a class="reference internal" href="#przyklad">4.2 Przykład</a></li>
-<li><a class="reference internal" href="#dodatkowe-zwiekszenie-atrakcyjnosci-systemu-nagrod">4.3 Dodatkowe zwiększenie atrakcyjności systemu nagród</a></li>
-<li><a class="reference internal" href="#czy-jest-mozliwosc-naduzycia">4.4 Czy jest możliwość nadużycia?</a></li>
-<li><a class="reference internal" href="#co-uzyskujemy">4.5 Co uzyskujemy?</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#uzsadnienie-wyboru-modelu">5. Uzsadnienie wyboru modelu</a><ul>
-<li><a class="reference internal" href="#roznica-wobec-modelu-tradycyjnego">5.1 Różnica wobec modelu “tradycyjnego”</a></li>
-<li><a class="reference internal" href="#masowa-adopcja-jest-priorytetem">5.2 Masowa adopcja jest priorytetem</a></li>
-<li><a class="reference internal" href="#limit-liczby-tokenow">5.3 Limit liczby tokenów</a></li>
-<li><a class="reference internal" href="#model-sprawdzony-empirycznie">5.4 Model sprawdzony empirycznie</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#q-a">Q&amp;A</a></li>
-</ul>
-</li>
-</ul>
-</ul>
-</li>
-              
-            
-            
-              
-                
-  <li>
-    <a href="Sygnet_Vision.html" title="Previous Chapter: Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Sygnet - skal...</span>
-    </a>
-  </li>
-              
-            
-            
-            
-            
-              <li class="hidden-sm">
-<div id="sourcelink">
-  <a href="_sources/Sygnet_EconomicModel.md.txt"
-     rel="nofollow">Source</a>
-</div></li>
-            
-          </ul>
-
-          
-            
-<form class="navbar-form navbar-right" action="search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-          
-        </div>
-    </div>
-  </div>
-
-<div class="container">
-  <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary">
-  <li>
-    <a href="Sygnet_Vision.html" title="Previous Chapter: Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Sygnet - skal...</span>
-    </a>
-  </li>
-<form action="search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-        </div>
-      </div>
-    <div class="col-md-9 content">
-      
   <div class="section" id="sygnet-propozycja-modelu-ekonomicznego">
 <span id="sygnet-propozycja-modelu-ekonomicznego"></span><h1>Sygnet - propozycja modelu ekonomicznego<a class="headerlink" href="#sygnet-propozycja-modelu-ekonomicznego" title="Permalink to this headline">¶</a></h1>
 <p>Wersja 1.0 (19/05/2018)</p>
@@ -302,8 +190,8 @@
 </div>
 <div class="section" id="q-a">
 <span id="q-a"></span><h2>Q&amp;A<a class="headerlink" href="#q-a" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div>Widzę tylko trudność w wytłumaczeniu tego innym podmiotom.</div></blockquote>
+<div class="section" id="widze-tylko-trudnosc-w-wytlumaczeniu-tego-innym-podmiotom">
+<span id="widze-tylko-trudnosc-w-wytlumaczeniu-tego-innym-podmiotom"></span><h3>Widzę tylko trudność w wytłumaczeniu tego innym podmiotom.<a class="headerlink" href="#widze-tylko-trudnosc-w-wytlumaczeniu-tego-innym-podmiotom" title="Permalink to this headline">¶</a></h3>
 <p>To jest podobna trudność jaką miał i ma Steem. Relatywnie niewiele osób rzeczywiście rozumie mechanizm ekonomiczny Steema, chociaż mnóstwo osób go używa i tym samym przyjmuje, że ma on sens. Okazuje się, że użytkownicy nie muszą dokładnie rozumieć mechanizmów ekonomicznych żeby móc w nich aktywnie uczestniczyć.</p>
 <p>To co jest ważne, to to żeby system był łatwo wytłumaczalny w zakresie sposobu korzystania z niego (w przeciwieństwie do sposobu w jaki jest on skonstruowany).</p>
 <p>A instrukcja użycia w zakresie finansowym jest bardzo prosta:</p>
@@ -311,40 +199,57 @@
 <li>Dla biorcy informacji: <em>Usługa jest za darmo, nic nie musisz płacić. Gdybyś chciał jednak korzystać z systemu z większą częstotliwością albo uzyskać dostęp do informacji o większej wiarygodności, to musisz wejść w posiadanie tokenów (odpowiednik nabycia licencji na wersję pro), ale te tokeny się nie zużywają, więc wysiłek (czasowy i finansowy) popełniasz tylko raz.</em></li>
 <li>Dla dawców informacji: <em>Za oferowanie informacji dostajesz tokeny, które mają wartość finansową wyznaczaną przez rynek. Możesz te tokeny trzymać licząc na aprecjację albo sprzedać i uzyskać fiat.</em></li>
 </ul>
-<blockquote>
-<div>Musimy założyć, że za rok, dwa banki otworzą się na krypto. Bo na razie to mają chyba taką nieformalną zmowę, żeby nie używać tokenów oficjalnie.</div></blockquote>
+</div>
+<div class="section" id="musimy-zalozyc-ze-za-rok-dwa-banki-otworza-sie-na-krypto-bo-na-razie-to-maja-chyba-taka-nieformalna-zmowe-zeby-nie-uzywac-tokenow-oficjalnie">
+<span id="musimy-zalozyc-ze-za-rok-dwa-banki-otworza-sie-na-krypto-bo-na-razie-to-maja-chyba-taka-nieformalna-zmowe-zeby-nie-uzywac-tokenow-oficjalnie"></span><h3>Musimy założyć, że za rok, dwa banki otworzą się na krypto. Bo na razie to mają chyba taką nieformalną zmowę, żeby nie używać tokenów oficjalnie.<a class="headerlink" href="#musimy-zalozyc-ze-za-rok-dwa-banki-otworza-sie-na-krypto-bo-na-razie-to-maja-chyba-taka-nieformalna-zmowe-zeby-nie-uzywac-tokenow-oficjalnie" title="Permalink to this headline">¶</a></h3>
 <p>W naszym przypadku używanie kryptowaluty przez banki sprowadza się do przyjęcia płatności w Sygnetowym tokenie. Jeśli dany podmiot nie będzie chciał mieć do czynienia z tym tokenem, to może nam przekazać dostęp do swojego konta w Sygnecie i my wtedy możemy uzyskane przez niego tokeny sprzedawać na rynku i przekazywać mu fiat.</p>
 <p>Warto zauważyć, że problem ten istnieje niezależnie od wyboru modelu ekonomicznego. No chyba że zastosujemy model, w którym wszystkie rozliczenia są w fiat, a tokeny służą jedynie jako system ewidencyjny do dystrybucji korzyści z ich posiadania (np. rabaty albo dywidendy z naszych zysków). Jednak taka konstrukcja ma zerową innowacyjność i w 100% opiera się na wierze w uczciwość emitenta.</p>
-<blockquote>
-<div>Dla tradycyjnych biznesów może być problem z oszacowaniem przychodów. Bo czy nie jest tak ze wypłata dla nich będzie zależała od ilości zapytań? Tak jak upvote na Steemie?</div></blockquote>
+</div>
+<div class="section" id="dla-tradycyjnych-biznesow-moze-byc-problem-z-oszacowaniem-przychodow-bo-czy-nie-jest-tak-ze-wyplata-dla-nich-bedzie-zalezala-od-ilosci-zapytan-tak-jak-upvote-na-steemie">
+<span id="dla-tradycyjnych-biznesow-moze-byc-problem-z-oszacowaniem-przychodow-bo-czy-nie-jest-tak-ze-wyplata-dla-nich-bedzie-zalezala-od-ilosci-zapytan-tak-jak-upvote-na-steemie"></span><h3>Dla tradycyjnych biznesów może być problem z oszacowaniem przychodów. Bo czy nie jest tak ze wypłata dla nich będzie zależała od ilości zapytań? Tak jak upvote na Steemie?<a class="headerlink" href="#dla-tradycyjnych-biznesow-moze-byc-problem-z-oszacowaniem-przychodow-bo-czy-nie-jest-tak-ze-wyplata-dla-nich-bedzie-zalezala-od-ilosci-zapytan-tak-jak-upvote-na-steemie" title="Permalink to this headline">¶</a></h3>
 <p>Rzeczywiście wypłata za dostarczanie informacji będzie zależała od wyceny całości systemu (tj. kapitalizacji tokenu), podobnie jak to ma miejsce w Steemie. Tak więc nie sposób tego dokładnie oszacować.</p>
 <p>Ale nawet gdybyśmy zastosowali bardziej “tradycyjny” model ekonomiczny (tj. taki jak np. <a class="reference external" href="https://www.civic.com/">Civic</a>) to i tak problem pozostaje, bo płatność za oferowaną usługę jest zawsze w tokenach, a nie sposób przewidzieć jego rynkowej wartości.</p>
 <p>Jednak brak dokładnej wyceny wpływów dla dawców informacji, nie stawia nas na straconej pozycji. W tej chwili podmioty dysponujące informacją o tożsamości nie mają żadnych wpływów z tego tytułu, więc jeśli dostarczymy cokolwiek istotnie większego niż zero i co dodatkowo ma potencjał dużej skali, to to się broni.</p>
-<blockquote>
-<div>Inflacja jest prastarym, ukrytym podatkiem którego się używa żeby wywołać ruch w interesie i zapobiec przetrzymywania tokenów bez obrotu nimi.</div></blockquote>
+</div>
+<div class="section" id="inflacja-jest-prastarym-ukrytym-podatkiem-ktorego-sie-uzywa-zeby-wywolac-ruch-w-interesie-i-zapobiec-przetrzymywania-tokenow-bez-obrotu-nimi">
+<span id="inflacja-jest-prastarym-ukrytym-podatkiem-ktorego-sie-uzywa-zeby-wywolac-ruch-w-interesie-i-zapobiec-przetrzymywania-tokenow-bez-obrotu-nimi"></span><h3>Inflacja jest prastarym, ukrytym podatkiem którego się używa żeby wywołać ruch w interesie i zapobiec przetrzymywania tokenów bez obrotu nimi.<a class="headerlink" href="#inflacja-jest-prastarym-ukrytym-podatkiem-ktorego-sie-uzywa-zeby-wywolac-ruch-w-interesie-i-zapobiec-przetrzymywania-tokenow-bez-obrotu-nimi" title="Permalink to this headline">¶</a></h3>
 <p>Istotnie, inflacja jest ukrytym podatkiem, ale ma ona potencjał napędzania inwestycji, oczywiście gdy jest stosowana z umiarem.</p>
 <p>Do tej pory monopol na posługiwanie się inflacją miał emitent waluty narodowej, czyli aparat państwowy. Teraz, dzięki istnieniu wynalazku blockchaina, ten mechanizm jest do dyspozycji podmiotów biznesowych.</p>
 <p>Blockchain powoduje, że biznes może mieć własną walutę i ten pozornie drobny fakt ma istotne konsekwencje: biznes blockchainowy ma opcję finansowania się z inflacji. Wówczas jedyną sensowną miarą jego kondycji finansowej jest to: w jakim stopniu inflacja jest zrównoważona potencjałem ekspansji danego biznesu na nowych użytkowników (bo ci nowi użytkownicy generują popyt na walutę tego biznesu i ten popyt równoważy inflację).</p>
 <p>Można też spojrzeć na to w ten sposób: owszem można stosować tradycyjny (tj. nieinflacyjny) model biznesowy na blockchainie, ale tego rodzaju podejście nie ma szans w konfrontacji z podejściem inflacyjnym. W branżach, w których lojalność użytkownika jest niska (a w takiej branży my działamy) biznes który może żyć z inflacji a tego nie robi, zapewne przegra z biznesem, który bierze inflację i obraca ją na swoją korzyść.</p>
 </div>
 </div>
-
-
-    </div>
-      
-  </div>
 </div>
-<footer class="footer">
-  <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      
-    </p>
-    <p>
-        &copy; Copyright 2018, Tokenika.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.<br/>
-    </p>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation index</a><ul>
+      <li>Previous: <a href="Sygnet_Vision.html" title="previous chapter">Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta</a></li>
+  </ul></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  <div class="footer">
+    &copy; Copyright 2018, Tokenika.
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
   </div>
-</footer>
+  
   </body>
 </html>

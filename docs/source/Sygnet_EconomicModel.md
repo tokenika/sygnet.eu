@@ -152,7 +152,7 @@ Poniżej przedstawione jest porównanie wychwytujące analogie pomiędzy różny
 
 ## Q&A
 
-> Widzę tylko trudność w wytłumaczeniu tego innym podmiotom.
+###### Widzę tylko trudność w wytłumaczeniu tego innym podmiotom.
 
 To jest podobna trudność jaką miał i ma Steem. Relatywnie niewiele osób rzeczywiście rozumie mechanizm ekonomiczny Steema, chociaż mnóstwo osób go używa i tym samym przyjmuje, że ma on sens. Okazuje się, że użytkownicy nie muszą dokładnie rozumieć mechanizmów ekonomicznych żeby móc w nich aktywnie uczestniczyć.
 
@@ -165,7 +165,7 @@ A instrukcja użycia w zakresie finansowym jest bardzo prosta:
 
 
 
-> Musimy założyć, że za rok, dwa banki otworzą się na krypto. Bo na razie to mają chyba taką nieformalną zmowę, żeby nie używać tokenów oficjalnie.
+###### Musimy założyć, że za rok, dwa banki otworzą się na krypto. Bo na razie to mają chyba taką nieformalną zmowę, żeby nie używać tokenów oficjalnie.
 
 W naszym przypadku używanie kryptowaluty przez banki sprowadza się do przyjęcia płatności w Sygnetowym tokenie. Jeśli dany podmiot nie będzie chciał mieć do czynienia z tym tokenem, to może nam przekazać dostęp do swojego konta w Sygnecie i my wtedy możemy uzyskane przez niego tokeny sprzedawać na rynku i przekazywać mu fiat.
 
@@ -173,7 +173,7 @@ Warto zauważyć, że problem ten istnieje niezależnie od wyboru modelu ekonomi
 
 
 
-> Dla tradycyjnych biznesów może być problem z oszacowaniem przychodów. Bo czy nie jest tak ze wypłata dla nich będzie zależała od ilości zapytań? Tak jak upvote na Steemie?
+###### Dla tradycyjnych biznesów może być problem z oszacowaniem przychodów. Bo czy nie jest tak ze wypłata dla nich będzie zależała od ilości zapytań? Tak jak upvote na Steemie?
 
 Rzeczywiście wypłata za dostarczanie informacji będzie zależała od wyceny całości systemu (tj. kapitalizacji tokenu), podobnie jak to ma miejsce w Steemie. Tak więc nie sposób tego dokładnie oszacować.
 
@@ -183,7 +183,7 @@ Jednak brak dokładnej wyceny wpływów dla dawców informacji, nie stawia nas n
 
 
 
-> Inflacja jest prastarym, ukrytym podatkiem którego się używa żeby wywołać ruch w interesie i zapobiec przetrzymywania tokenów bez obrotu nimi.
+###### Inflacja jest prastarym, ukrytym podatkiem którego się używa żeby wywołać ruch w interesie i zapobiec przetrzymywania tokenów bez obrotu nimi.
 
 Istotnie, inflacja jest ukrytym podatkiem, ale ma ona potencjał napędzania inwestycji, oczywiście gdy jest stosowana z umiarem.
 
