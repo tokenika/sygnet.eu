@@ -12,7 +12,7 @@ W systemie Sygnet mamy trzy rodzaje uczestników:
 - Biorca informacji (który potrzebuje zweryfikować osobę K)
 - Osoba K, której dotyczy informacja i która jest przedmiotem weryfikacji
 
-Zakładamy, że model ekonomiczny dotyczy tylko pierwszych dwóch typów uczestników, tj. dawcy i biorcy informacji, natomiast trzeci uczestnik, tj. osoba K, nie powinna brać udziału w tym modelu, ponieważ jest ona tylko przedmiotem transakcji (a nie podmiotem), a jej główną motywacją jest tylko, to żeby proces weryfikacji jej tożsamości był szybki i wygodny.
+Zakładamy, że model ekonomiczny dotyczy tylko pierwszych dwóch typów uczestników, tj. dawcy i biorcy informacji, natomiast trzeci uczestnik, tj. osoba K, nie powinna brać udziału w tym modelu, ponieważ jest ona tylko przedmiotem transakcji (a nie podmiotem), a jej główną motywacją jest tylko to, żeby proces weryfikacji jej tożsamości był szybki i wygodny.
 
 ## 2. Cel modelu
 

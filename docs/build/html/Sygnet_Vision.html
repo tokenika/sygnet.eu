@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta &#8212; Sygnet 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Sygnet - propozycja modelu ekonomicznego" href="Sygnet_EconomicModel.html" />
+    <link rel="prev" title="Welcome to Sygnet’s documentation!" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Sygnet</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sygnet_EconomicModel.html">Sygnet - propozycja modelu ekonomicznego</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta</a><ul>
+<li><a class="reference internal" href="#wprowadzenie">1. Wprowadzenie</a><ul>
+<li><a class="reference internal" href="#jak-weryfikowac-tozsamosc-online">1.1 Jak weryfikować tożsamość online?</a></li>
+<li><a class="reference internal" href="#problem-nieskalowalnosc-kyc">1.2 Problem: nieskalowalność KYC</a></li>
+<li><a class="reference internal" href="#co-chcemy-osiagnac">1.3 Co chcemy osiągnąć?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#skalowalny-proces-kyc">2. Skalowalny proces KYC</a><ul>
+<li><a class="reference internal" href="#zalozenia">2.1 Założenia</a></li>
+<li><a class="reference internal" href="#system-sygnet">2.2 System Sygnet</a></li>
+<li><a class="reference internal" href="#koncepcja">2.3 Koncepcja</a></li>
+<li><a class="reference internal" href="#forma-dzialania">2.4 Forma działania</a></li>
+<li><a class="reference internal" href="#wymagania">2.5 Wymagania</a></li>
+<li><a class="reference internal" href="#schemat-procesu">2.6 Schemat procesu</a></li>
+<li><a class="reference internal" href="#ochrona-przed-nieautoryzowanym-rozpowszechnianiem">2.7 Ochrona przed nieautoryzowanym rozpowszechnianiem</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#kierunki-potencjalnego-rozwoju-systemu">3. Kierunki potencjalnego rozwoju systemu</a><ul>
+<li><a class="reference internal" href="#podpis-cyfrowy-niewymagajacy-klucza-prywatnego">3.1 Podpis cyfrowy niewymagający klucza prywatnego</a></li>
+<li><a class="reference internal" href="#klucz-prywatny-certyfikowany-przez-bank">3.2 Klucz prywatny certyfikowany przez bank</a></li>
+<li><a class="reference internal" href="#autoryzacja-w-psd2">3.3 Autoryzacja w PSD2</a></li>
+<li><a class="reference internal" href="#weryfikacja-unikalnosci-uzytkownika">3.4 Weryfikacja unikalności użytkownika</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#czym-nasze-rozwiazanie-rozni-sie-od-profilu-zaufanego">4. Czym nasze rozwiązanie różni się od profilu zaufanego?</a></li>
+<li><a class="reference internal" href="#uzasadnienie-przydatnosci-systemu">5. Uzasadnienie przydatności systemu</a></li>
+<li><a class="reference internal" href="#model-ekonomiczny">6. Model ekonomiczny</a></li>
+<li><a class="reference internal" href="#nie-tylko-banki">7. Nie tylko banki</a></li>
+<li><a class="reference internal" href="#dlaczego-do-tej-pory-nikomu-nie-udalo-sie-zrobic-eid">8. Dlaczego do tej pory nikomu nie udało się zrobić eID?</a></li>
+<li><a class="reference internal" href="#pytania-w-domenie-prawnej">9. Pytania w domenie prawnej</a><ul>
+<li><a class="reference internal" href="#obowiazek-udostepniania-danych-osobowych-przez-banki">9.1 Obowiązek udostępniania danych osobowych przez banki</a></li>
+<li><a class="reference internal" href="#obowiazek-stosowania-przez-banki-kwalifikowanego-podpisu-elektronicznego">9.2 Obowiązek stosowania przez banki kwalifikowanego podpisu elektronicznego</a></li>
+<li><a class="reference internal" href="#moc-prawna-weryfikacji-tozsamosci-na-podstawie-certyfikatu-banku">9.3 Moc prawna weryfikacji tożsamości na podstawie certyfikatu banku</a></li>
+<li><a class="reference internal" href="#esemes-jak-2fa-w-swietle-psd2">9.4 Esemes jak 2FA w świetle PSD2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="index.html" title="Previous Chapter: Welcome to Sygnet’s documentation!"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Welcome to Sy...</span>
+    </a>
+  </li>
+  <li>
+    <a href="Sygnet_EconomicModel.html" title="Next Chapter: Sygnet - propozycja modelu ekonomicznego"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Sygnet - prop... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/Sygnet_Vision.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+  <li>
+    <a href="index.html" title="Previous Chapter: Welcome to Sygnet’s documentation!"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Welcome to Sy...</span>
+    </a>
+  </li>
+  <li>
+    <a href="Sygnet_EconomicModel.html" title="Next Chapter: Sygnet - propozycja modelu ekonomicznego"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Sygnet - prop... &raquo;</span>
+    </a>
+  </li>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="sygnet-skalowanie-procesu-kyc-poprzez-bankowe-poswiadczenie-tozsamosci-klienta">
+<span id="sygnet-skalowanie-procesu-kyc-poprzez-bankowe-poswiadczenie-tozsamosci-klienta"></span><h1>Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta<a class="headerlink" href="#sygnet-skalowanie-procesu-kyc-poprzez-bankowe-poswiadczenie-tozsamosci-klienta" title="Permalink to this headline">¶</a></h1>
+<p>Wersja 5.0 (19/05/2018)</p>
+<p><em>Proponujemy rozwiązanie w zakresie KYC, które bazując na legislacji PSD2 umożliwia wykorzystanie, będącej w posiadaniu banku, informacji o tożsamości klienta. Skalowanie procesu KYC uzyskujemy poprzez, uzyskane od banku, kryptograficzne poświadczenie tożsamości klienta. Dzięki temu bank, oprócz świadczenia usług finansowych, jest w stanie radykalnie ułatwić swoim klientom proces weryfikacji KYC w sytuacji, gdy chcą oni skorzystać z usług innych podmiotów w branży FinTech (zarówno bankowych jak i niebankowych), a w dalszej konsekwencji, staje się dla nich generatorem ich cyfrowej tożsamości w Internecie.</em></p>
+<p>DISCLAIMER: Niniejszy dokument jest tylko wstępnym zarysem pomysłu i na tym etapie należy go traktować jako jedynie tekst wizjonerski. W swojej obecnej formie nie wyczerpuje on wszystkich tematów, które będą wymagać analizy, zanim ostatecznie uznamy, że opisane rozwiązanie jest warte wdrożenia.</p>
+<div class="section" id="wprowadzenie">
+<span id="wprowadzenie"></span><h2>1. Wprowadzenie<a class="headerlink" href="#wprowadzenie" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="jak-weryfikowac-tozsamosc-online">
+<span id="jak-weryfikowac-tozsamosc-online"></span><h3>1.1 Jak weryfikować tożsamość online?<a class="headerlink" href="#jak-weryfikowac-tozsamosc-online" title="Permalink to this headline">¶</a></h3>
+<p>Internetowa weryfikacja tożsamości to próba rozwiązania następującego problemu: w jaki sposób w warunkach online uzyskać pewność, że osoba (klient) podająca się jako K rzeczywiście jest tą osobą K?</p>
+<p>Istotne jest tu to, że jest to sytuacja online, czyli <em>nie</em> w realu. W sytuacji kontaktu w realu dokument ze zdjęciem można uznać za wystarczająco dobry sposób weryfikacji tożsamości (mimo swoich oczywistych wad: jest kosztowny w produkcji i relatywnie łatwo może być podrobiony, zwłaszcza w przypadku, gdy nie wiemy jak dokładnie powinien wyglądać oryginalny dokument, np. dowód tożsamości obcokrajowca).</p>
+<p>Z oczywistych powodów w warunkach online zdjęcie, które jest integralną częścią dokumentu tożsamości, przestaje być użyteczne, bo nie ma go z czym porównać.</p>
+</div>
+<div class="section" id="problem-nieskalowalnosc-kyc">
+<span id="problem-nieskalowalnosc-kyc"></span><h3>1.2 Problem: nieskalowalność KYC<a class="headerlink" href="#problem-nieskalowalnosc-kyc" title="Permalink to this headline">¶</a></h3>
+<p>Wymogi KYC narzucają na firmy konieczność ustalenia tożsamości każdego nowego klienta.</p>
+<p>Wszystkie obecne procedury KYC mają jedną istotną wadę: nie skalują się. Przy pozyskaniu nowego klienta każda firma, która podlega wymogom KYC, musi samodzielnie dokonać ustalenia jego tożsamości, co jest kosztowne (dla firmy) i czasochłonne (dla obu stron: firmy i jej klienta). Tak więc w obecnie istniejącym paradygmacie ten sam kosztowny i czasochłonny proces musi być wykonywany wielokrotnie przez kolejne firmy.</p>
+<p>Jedynym znanym nam sposobem na skalowanie KYC jest wykorzystanie procedury tzw. testowego przelewu, który polega na tym, że klient poświadcza swoją tożsamość poprzez wykonanie przelewu ze swojego rachunku w innym banku do banku, który potrzebuje dokonać weryfikacji KYC. Oczywiste są wady tego rozwiązania:</p>
+<ul class="simple">
+<li>nie rozwiązuje to problemu dla podmiotów niebankowych,</li>
+<li>nie skaluje się więcej niż raz (bo nie można w ten sposób potwierdzić tożsamości w kolejnym banku),</li>
+<li>wymaga to od klienta dodatkowego wysiłku.</li>
+</ul>
+<p>Niemniej tego rodzaju kombinowanie (tj. używanie przelewu bankowego do celów niefinansowych) pokazuje, że problem nieskalowalności KYC rzeczywiście istnieje.</p>
+<p>Warty podkreślenia jest fakt, że outsourcing procesu KYC do specjalistycznej firmy, która się tym zajmuje, nie rozwiązuje problemu skalowania KYC. Nawet jeśli podmiot specjalizujący się w KYC dostanie zlecenie weryfikacji klienta K, którego wcześniej weryfikował dla innej firmy, to i tak cały proces KYC będzie musiał być uruchomiony od nowa, bo nie ma żadnego formalnego dowodu, że w obu przypadkach jest to rzeczywiście ten sam klient K.</p>
+</div>
+<div class="section" id="co-chcemy-osiagnac">
+<span id="co-chcemy-osiagnac"></span><h3>1.3 Co chcemy osiągnąć?<a class="headerlink" href="#co-chcemy-osiagnac" title="Permalink to this headline">¶</a></h3>
+<p>Szukamy rozwiązania dla procesu KYC, które:</p>
+<ul class="simple">
+<li>umożliwi skalowanie procedury KYC, czyli wyeliminuje konieczność powtarzania tego procesu przez kolejne firmy,</li>
+<li>będzie działać dla wszystkich firm, które podlegają wymogom KYC (tj. nie tylko dla podmiotów bankowych), a także dla firm które nie są prawnie zobligowane do KYC, ale chcą to robić dla własnych potrzeb,</li>
+<li>będzie miało realną szansę na masową adopcję, zarówno po stronie biznesów jak i ich klientów,</li>
+<li>otworzy drogę na inne niż KYC zastosowania, w szczególności do rozpowszechnienia koncepcji cyfrowej tożsamości.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="skalowalny-proces-kyc">
+<span id="skalowalny-proces-kyc"></span><h2>2. Skalowalny proces KYC<a class="headerlink" href="#skalowalny-proces-kyc" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="zalozenia">
+<span id="zalozenia"></span><h3>2.1 Założenia<a class="headerlink" href="#zalozenia" title="Permalink to this headline">¶</a></h3>
+<p>Najogólniej mówiąc, skalowalny KYC polega na tym, że jeden podmiot (w naszym przypadku bank) przeprowadza weryfikację tożsamości danej osoby (klienta) K, a następnie wynik tej weryfikacji jest udostępniany innym podmiotom (bankowym i niebankowym).</p>
+<p>Do konstrukcji skalowalnego KYC wykorzystujemy następujący zestaw założeń:</p>
+<ul class="simple">
+<li>(niemal) każdy dorosły człowiek ma konto w banku,</li>
+<li>każdy bank zna tożsamość każdego swojego klienta,</li>
+<li>w ramach wprowadzonego przez PSD2 API możliwe jest wydobywanie z banku informacji dotyczących tożsamości danego klienta,</li>
+<li>każdy bank dysponuje <a class="reference external" href="https://pl.wikipedia.org/wiki/Podpis_kwalifikowany">kwalifikowanym podpisem elektronicznym</a> i może go użyć do kryptograficznego podpisywania informacji przesyłanych poprzez API.</li>
+</ul>
+<p>Naturalną konsekwencją wydaje się zatem istnienie możliwości zrobienia użytku z informacji o tożsamości klientów bankowych (tj. informacji, które banki i tak posiadają) w celu radykalnego usprawnienia procesu KYC.</p>
+</div>
+<div class="section" id="system-sygnet">
+<span id="system-sygnet"></span><h3>2.2 System Sygnet<a class="headerlink" href="#system-sygnet" title="Permalink to this headline">¶</a></h3>
+<p>W dalszej części niniejszego dokumentu opisujemy propozycję systemu o nazwie <em>Sygnet</em>, który realizuje koncepcję skalowania KYC przy wykorzystaniu konkluzji płynących z powyższych założeń.</p>
+<p>Nazwa <em>Sygnet</em> w zamierzeniu kojarzyć się ma (zarówno w języku polskim jak i angielskim) z własnoręcznym podpisem i ma nawiązywać do czegoś, co służy do potwierdzania tożsamości użytkownika i autoryzacji różnego rodzaju działań.</p>
+<blockquote>
+<div>Signet - a small seal, especially one set in a ring, used instead of or with a signature to give authentication to an official document.</div></blockquote>
+</div>
+<div class="section" id="koncepcja">
+<span id="koncepcja"></span><h3>2.3 Koncepcja<a class="headerlink" href="#koncepcja" title="Permalink to this headline">¶</a></h3>
+<p>System Sygnet osiąga skalowanie procesu KYC poprzez, uzyskane od banku, kryptograficzne poświadczenie tożsamości klienta. Poświadczenie to jest generowane za zgodą klienta przez jego bank i udostępniane naszemu systemowi poprzez bankowe API na mocy legislacji PSD2.</p>
+<p>Oczywiście zakładamy tutaj, że system autoryzacji banku działa poprawnie, co oznacza, że tylko osoba która <em>jest</em> klientem K, może uzyskać od banku poświadczenie dotyczące tożsamości klienta K.</p>
+<p>Patrząc z dwóch różnych perspektyw możemy powiedzieć, że:</p>
+<ul class="simple">
+<li>Z punktu widzenia użytkownika aktywnego (tj. firmy F której obowiązkiem jest przeprowadzenie procesu KYC) system Sygnet umożliwia wykorzystanie do celów KYC podpisanego elektronicznie przez bank certyfikatu poświadczającego tożsamość klienta.</li>
+<li>Z punktu widzenia użytkownika pasywnego (tj. klienta K który jest obiektem KYC) system Sygnet umożliwia dostarczenie dowolnej firmie podpisanego elektronicznie przez bank certyfikatu poświadczającego jego tożsamość.</li>
+</ul>
+<p>Oznacza to, że nasz pomysł w zakresie KYC sprowadza się <em>de facto</em> do tego: w kontrolowany sposób wyprowadzamy na zewnątrz informacje (tj. dane osobowe klienta), które do tej pory leżały bezużytecznie (z perspektywy świata zewnętrznego) w systemie bankowym. Dzięki temu bank, oprócz świadczenia usług finansowych, staje się generatorem cyfrowej tożsamości swoich klientów.</p>
+</div>
+<div class="section" id="forma-dzialania">
+<span id="forma-dzialania"></span><h3>2.4 Forma działania<a class="headerlink" href="#forma-dzialania" title="Permalink to this headline">¶</a></h3>
+<p>W swojej wersji podstawowej system Sygnet może być zrealizowany w formie prostej usługi webowej. W zakresie funkcjonalności interfejsu istotne jest jednak rozróżnienie między dwoma typami użytkowników:</p>
+<ul class="simple">
+<li>Dla użytkownika aktywnego (tj. firma F) potrzebny będzie bardziej rozbudowany interfejs stwarzający możliwość stworzenia konta w naszym systemie.</li>
+<li>Dla użytkownika pasywnego (tj. klient K) wystarczy prosty interfejs o nieograniczonym dostępie, tj. nie wymagający zakładania konta i logowania. Możliwe jest stworzenie do tego celu dedykowanej aplikacji mobilnej, ale dla potrzeb MVP prawdopodobnie nie będzie to konieczne.</li>
+</ul>
+</div>
+<div class="section" id="wymagania">
+<span id="wymagania"></span><h3>2.5 Wymagania<a class="headerlink" href="#wymagania" title="Permalink to this headline">¶</a></h3>
+<p>Aby system Sygnet mógł poprawnie funkcjonować potrzebne jest spełnienie następujących warunków:</p>
+<ol class="simple">
+<li>Wymagane jest żeby nasz partner bankowy zgodził się kryptograficznie podpisywać informacje udostępniane w ramach wprowadzonego przez PSD2 API (w szczególności chodzi nam o dane osobowe klienta). Tak więc wymaganą inwestycją ze strony banku jest dostarczenie dodatkowej, tj. nie wymaganej przez PSD2, funkcjonalności w swoim API.</li>
+<li>Aby system mógł być realnie użyteczny w zakresie KYC, docelowo powinno w nim uczestniczyć co najmniej kliku partnerów bankowych. Potrzebne więc będzie wystandaryzowanie procesu tak, żeby firma F otrzymywała dane KYC w jednolitym formacie niezależnie od instancji banku, który jest ich źródłem.</li>
+<li>Integralną częścią naszej aplikacji musi być możliwość weryfikacji certyfikowanego podpisu elektronicznego banku, tak żeby firma F mogła w łatwy sposób uzyskać pewność, że otrzymane od banku B informacje na temat klienta K rzeczywiście zostały przez ten bank wygenerowane i nie zostały zmodyfikowane po ich podpisaniu. Jest to funkcjonalność podobna do tej, która jest oferowana przez powszechnie dostępne serwisy internetowe, np. <a class="reference external" href="https://madkom.pl/weryfikacja-podpisu-elektronicznego/">MadKom</a>.</li>
+<li>Ponieważ my, jako twórcy i operatorzy aplikacji mobilnej będącej w posiadaniu klienta K, pełnimy rolę TPP (Third Party Provider), musimy być podmiotem zarejestrowanym w KNF zgodnie z wymaganiami PSD2. Wydaje się, że licencja AIS (Account Information Service) w tym przypadku będzie wystarczająca.</li>
+</ol>
+</div>
+<div class="section" id="schemat-procesu">
+<span id="schemat-procesu"></span><h3>2.6 Schemat procesu<a class="headerlink" href="#schemat-procesu" title="Permalink to this headline">¶</a></h3>
+<p>Załóżmy, że firma F potrzebuje dokonać weryfikacji KYC klienta K i ma zaufanie do banku B, tj. podpisane elektronicznie oświadczenie banku B w zakresie tożsamości klienta K uznaje za prawdziwe.</p>
+<p>Wtedy proces KYC w systemie Sygnet może wyglądać następująco:</p>
+<ol class="simple">
+<li>Klient K zainteresowany skorzystaniem z usług firmy F, potwierdza, że ma konto w banku, który jest wspierany przez system Sygnet i wybiera ten system jako mechanizm weryfikacji tożsamości w procesie KYC.</li>
+<li>Klient K jest przekierowany na stronę webową systemu Sygnet. Przekierowanie zawiera wygenerowany przez firmę F unikalny identyfikator ID, którego rolą jest uwiarygodnienie niniejszego procesu z punktu widzenia firmy F: uzyska ona w ten sposób pewność, że odpowiedź banku B zostanie wygenerowana specjalnie dla tej konkretnej sytuacji.</li>
+<li>W ramach systemu Sygnet klient K loguje się do swojego banku B, a następnie autoryzuje wygenerowane przez system Sygnet zapytanie do bankowego API. Zapytanie to dotyczy danych osobowych klienta K, które są wymagane w procesie weryfikacji KYC, a także zawiera wyżej opisany identyfikator ID.</li>
+<li>W odpowiedzi na wyżej opisane zapytanie, bank B zwraca podpisany elektronicznie pakiet zawierający i łączący w jedną całość wymagane w KYC dane osobowe klienta oraz wyżej opisany identyfikator ID.</li>
+<li>Po weryfikacji podpisu banku B i identyfikatora ID firma F uznaje uzyskane od banku dane osobowe klienta K za prawdziwe i aktualne, i tym samym spełniające kryteria KYC.</li>
+</ol>
+</div>
+<div class="section" id="ochrona-przed-nieautoryzowanym-rozpowszechnianiem">
+<span id="ochrona-przed-nieautoryzowanym-rozpowszechnianiem"></span><h3>2.7 Ochrona przed nieautoryzowanym rozpowszechnianiem<a class="headerlink" href="#ochrona-przed-nieautoryzowanym-rozpowszechnianiem" title="Permalink to this headline">¶</a></h3>
+<p>Nasuwa się pytanie, czy firma F po uzyskaniu kryptograficznie podpisanego pakietu informacji KYC od banku B nie przekaże go kolejnej firmie, negując tym samym jej motywację do korzystania z naszego systemu.</p>
+<p>Możliwe jest zmodyfikowanie powyższego schematu działania w taki sposób, aby zapobiec tego rodzaju nadużyciu.</p>
+<p>Zmodyfikowany proces mógłby wyglądać następująco:</p>
+<ol class="simple">
+<li>Oprócz unikalnego identyfikatora ID, firma F wysyła do systemu Sygnet swój klucz publiczny.</li>
+<li>Zarówno identyfikator ID jak i klucz publiczny firmy F są przekazywane do banku B, który generuje pakiet KYC w sposób opisany powyżej, ale przed podpisaniem go własnym kluczem, szyfruje go kluczem publicznym firmy F.</li>
+<li>Firma F po otrzymaniu pakietu jest w stanie go odkodować i zweryfikować prawdziwość zawartych w nim danych.</li>
+</ol>
+<p>Tym samym przekazanie przez firmę F otrzymanego od banku pakietu KYC innej firmie przestaje mieć sens, bo wymagałoby to także ujawnienia swojego klucza prywatnego umożliwiającego jego rozkodowanie, do czego firma F nie będzie skłonna.</p>
+</div>
+</div>
+<div class="section" id="kierunki-potencjalnego-rozwoju-systemu">
+<span id="kierunki-potencjalnego-rozwoju-systemu"></span><h2>3. Kierunki potencjalnego rozwoju systemu<a class="headerlink" href="#kierunki-potencjalnego-rozwoju-systemu" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="podpis-cyfrowy-niewymagajacy-klucza-prywatnego">
+<span id="podpis-cyfrowy-niewymagajacy-klucza-prywatnego"></span><h3>3.1 Podpis cyfrowy niewymagający klucza prywatnego<a class="headerlink" href="#podpis-cyfrowy-niewymagajacy-klucza-prywatnego" title="Permalink to this headline">¶</a></h3>
+<p>Zauważmy, że zaprezentowany powyżej schemat systemu Sygnet można opisać w sposób następujący: klient K przekazuje do banku B dowolny ciąg znaków (np. wygenerowany przez firmę F identyfikator ID), a bank B zwraca, podpisany kryptograficznie swoim kluczem prywatnym, pakiet zawierający i łączący w jedną całość dwa elementy:</p>
+<ul class="simple">
+<li>dane osobowe klienta K, które pozwalają na jego jednoznaczną identyfikację (np. imię, nazwisko, nr dowodu osobistego albo PESEL),</li>
+<li>wyżej wspomniany ciąg znaków w formie nienaruszonej.</li>
+</ul>
+<p>Łatwo jest zauważyć, że zamiast identyfikatora ID, który jest niczym innym niż losowym (i przez to unikalnym) ciągiem znaków, moglibyśmy użyć ciągu znaków, który jest nielosowy i przez to może być nośnikiem jakiegoś znaczenia, w szczególności być hashem dowolnego dokumentu, np. oświadczenia woli albo umowy cywilno-prawnej.</p>
+<p>Idąc tym tropem widzimy, że system Sygnet może nie tylko służyć do skalowania procesu KYC, ale także funkcjonować jako ogólny mechanizm podpisywania przez bank w imieniu swojego klienta (i na jego żądanie) dowolnego dokumentu. (W rzeczywistości podpisywany jest hash dokumentu, a nie sam dokument, ale z punktu widzenia kryptografii efekt jest ten sam).</p>
+<p>Oznacza to, że pod względem kryptograficznej wiarygodności uzyskujemy <em>de facto</em> ten sam efekt, który mielibyśmy, gdyby klient K używał swojego własnego certyfikowanego podpisu elektronicznego, a podmiotem certyfikującym ten podpis byłby jego bank.</p>
+<p>Efekt jest ten sam, jednak z punktu widzenia <em>user experience</em> uzyskujemy istotny atut: w naszym podejściu nie wymagamy, aby użytkownik posiadał i dbał o klucz prywatny (co jest istotą podpisu elektronicznego), bo w naszym schemacie to <strong>bank podpisuje się swoim kluczem prywatnym w imieniu i na żądanie klienta</strong>.</p>
+<p>Oczywistą konsekwencją powyższego rozwiązania jest to, że bank może uzurpować sobie tożsamość klienta (tj. podpisać się pod czymkolwiek za niego bez jego wiedzy), ale taki jest nieusuwalny <em>trade-off</em> tego rodzaju rozwiązania. Zdejmujemy z użytkownika obowiązek troski o klucz prywatny, ale odbywa się to kosztem konieczności zwiększonego zaufania do banku.</p>
+<p>Możemy jednak przyjąć, że tego rodzaju <em>trade-off</em> ma sens, ponieważ fundamentem działalności bankowej tak czy inaczej jest zaufanie klienta.</p>
+</div>
+<div class="section" id="klucz-prywatny-certyfikowany-przez-bank">
+<span id="klucz-prywatny-certyfikowany-przez-bank"></span><h3>3.2 Klucz prywatny certyfikowany przez bank<a class="headerlink" href="#klucz-prywatny-certyfikowany-przez-bank" title="Permalink to this headline">¶</a></h3>
+<p>Gdybyśmy jednak chcieli usunąć powyższy <em>trade-off</em>, system Sygnet w wersji “pro” mógłby mieć funkcjonalność pozwalającą na:</p>
+<ul class="simple">
+<li>wygenerowanie dla klienta K unikalnego klucza prywatnego i odpowiadającego mu klucza publicznego,</li>
+<li>uzyskanie od banku B elektronicznie podpisanego certyfikatu, który połączyłby w jedną całość tożsamość klienta K z jego kluczem publicznym.</li>
+</ul>
+<p>Posiadając taki bankowy certyfikat, klient K w ramach systemu Sygnet mógłby posługiwać się swoim kluczem prywatnym w analogiczny sposób do posługiwania się certyfikowanym podpisem elektronicznym - oczywiście przy założeniu, że uznamy podmiot bankowy za wiarygodne źródło certyfikacji tego podpisu.</p>
+<p>Założenie to oczywiście nie spełnia wymogów ustawy o kwalifikowanym podpisie elektronicznym, ale w praktyce biznesowej niewątpliwie jest to bardziej wiarygodne podejście niż np. metoda oferowana przez <a class="reference external" href="https://www.docusign.com/">DocuSign</a>.</p>
+</div>
+<div class="section" id="autoryzacja-w-psd2">
+<span id="autoryzacja-w-psd2"></span><h3>3.3 Autoryzacja w PSD2<a class="headerlink" href="#autoryzacja-w-psd2" title="Permalink to this headline">¶</a></h3>
+<p>Idąc dalej, w wyżej opisanej wersji “pro” (tzn. gdy klient ma swój własny klucz prywatny certyfikowany przez bank), możliwe staje się stworzenie niezależnego kanału autoryzacji dla transakcji bankowych, zgodnie z wymogami PSD2.</p>
+<p>Podpisana przez klienta jego kluczem prywatnym zgoda na wykonanie konkretnego przelewu jest doskonałą alternatywą dla powszechnie stosowanej autoryzacji poprzez esemes.</p>
+<p>Metoda ta ma też dodatkową zaletę w postaci możliwości bezpiecznego delegowania na inne osoby uprawnień w zakresie autoryzacji transakcji bankowych. Co więcej, autoryzacja poprzez klucz prywatny ma zastosowanie nie tylko w bankowości - może być stosowana wszędzie tam, gdzie użytkownik chce mieć pełną kontrolę nad swoją tożsamością (i związaną z nią reputacją), tak jak to np. zostało opisane w projekcie <a class="reference external" href="https://jolocom.com/">Jolocom</a>.</p>
+</div>
+<div class="section" id="weryfikacja-unikalnosci-uzytkownika">
+<span id="weryfikacja-unikalnosci-uzytkownika"></span><h3>3.4 Weryfikacja unikalności użytkownika<a class="headerlink" href="#weryfikacja-unikalnosci-uzytkownika" title="Permalink to this headline">¶</a></h3>
+<p>Istnieje mnóstwo biznesów (np. sieci społecznościowe), które nie podlegają wymogom KYC, ale mają następujący problem: jak skutecznie ograniczyć możliwość zakładania przez użytkowników fikcyjnych kont?</p>
+<p>Wydaje się oczywiste, że system Sygnet mógłby być przydatny w tym zakresie i prawdopodobnie znacznie bardziej skuteczny niż tradycyjna metoda polegająca na weryfikacji dostępu do konta mailowego lub numeru telefonicznego. Unikalna tożsamość poświadczona przez bank ma niewątpliwie większą wiarygodność niż jakakolwiek inna metoda.</p>
+</div>
+</div>
+<div class="section" id="czym-nasze-rozwiazanie-rozni-sie-od-profilu-zaufanego">
+<span id="czym-nasze-rozwiazanie-rozni-sie-od-profilu-zaufanego"></span><h2>4. Czym nasze rozwiązanie różni się od profilu zaufanego?<a class="headerlink" href="#czym-nasze-rozwiazanie-rozni-sie-od-profilu-zaufanego" title="Permalink to this headline">¶</a></h2>
+<p>Wedle <a class="reference external" href="https://www.gov.pl/cyfryzacja/profil-zaufany-ego-">dokumentacji</a> Ministerstwa Cyfryzacji profil zaufany to bezpłatna metoda potwierdzania tożsamości obywatela w systemach elektronicznej administracji.</p>
+<blockquote>
+<div>Profil zaufany działa jak odręczny podpis. Możesz dzięki niemu wysyłać przez Internet dokumenty i wnioski do różnych urzędów (np. wnieść podanie, odwołanie, skargę). Profil zaufany potwierdza tożsamość obywatela. Podpis potwierdzony profilem zaufanym, podobnie jak kwalifikowany podpis elektroniczny, skutecznie zastępuje w kontaktach z podmiotami publicznymi podpis własnoręczny.</div></blockquote>
+<p>Na pierwszy rzut oka profil zaufany wygląda na rozwiązanie bardzo podobne do naszego. Co więcej, podobnie jak w naszym podejściu jednym z podmiotów zdolnych do wygenerowania takiego profilu dla użytkownika jest serwis bankowy. Kilka banków w Polsce oferuje taką usługę.</p>
+<p>Jest jednak istotna różnica: zastosowanie profilu zaufanego jest ograniczone do serwisów państwowych. Ograniczenie to wynika ze sposobu działania tego systemu: polega on na tym, że po założeniu profilu zaufanego użytkownik uzyskuje dostęp do wspólnego dla systemów państwowych mechanizmu logowania, lecz nie jest to równoważne z uzyskaniem uniwersalnej cyfrowej tożsamości. Tak więc profil zaufany z założenia nie może być rozszerzony na sferę niepaństwową i tym samym nie rozwiązuje problemu KYC dla firm.</p>
+<p>Niemniej porównanie naszego rozwiązania do profilu zaufanego wydaje się jak najbardziej uzasadnione. Można nawet powiedzieć, że nasz system oferuje biznesom rozwiązanie w zakresie KYC analogiczne do tego, jakie profil zaufany oferuje urzędom państwowym w zakresie mechanizmu weryfikacji tożsamości obywatela w warunkach online.</p>
+</div>
+<div class="section" id="uzasadnienie-przydatnosci-systemu">
+<span id="uzasadnienie-przydatnosci-systemu"></span><h2>5. Uzasadnienie przydatności systemu<a class="headerlink" href="#uzasadnienie-przydatnosci-systemu" title="Permalink to this headline">¶</a></h2>
+<p>System Sygnet ma szansę być postrzeganym jako sytuacja typu <em>win-win</em> dla wszystkich interesowanych, ponieważ:</p>
+<ol class="simple">
+<li>Dostarczamy bankom możliwość monetyzowania informacji o tożsamości ich klientów, z wykorzystaniem mechanizmów autoryzacji, które zgodnie z PSD2 muszą zostać dostarczone na potrzeby TPP. Dodatkową korzyścią dla banków jest możliwość dostarczenia nowego typu usługi dla swoich klientów: oprócz oferowania im usług stricte finansowych bank może stać się generatorem ich cyfrowej tożsamości w Internecie.</li>
+<li>Dostarczamy wszystkim podmiotom, których biznes podlega wymogom KYC, mechanizm szybkiej weryfikacji tożsamości klientów. Jego użycie przede wszystkim radyklanie zredukuje problemy związane z procesem KYC, a także istotnie skróci czas, jaki upływa od momentu zainteresowania klienta ofertą do momentu faktycznej sprzedaży towaru lub usługi, eliminując tym samym okazję do rozmyślenia się przed zakupem.</li>
+<li>Konsument nie jest rozpraszany formalnymi wymogami i może skoncentrować się na tym, co dla niego ważne, czyli na konsumpcji. Więc także i on powinien postrzegać system Sygnet jako wyraźne udogodnienie.</li>
+</ol>
+<p>System Sygnet występuje więc w roli pośrednika pomiędzy:</p>
+<ul class="simple">
+<li>biorcą informacji, czyli firmą F która potrzebuje zweryfikować nowego klienta pod kątem KYC,</li>
+<li>dawcą informacji, czyli bankiem B który uprzednio dokonał weryfikacji KYC dla danego klienta.</li>
+</ul>
+<p>Czy ta rola pośrednika jest w naszym przypadku dobrze uzasadniona? Wydaje się że tak, bo dzięki systemowi Sygnet biorca informacji (tj. firma F) unika dwóch relatywnie trudno wykonalnych kwesti:</p>
+<ul class="simple">
+<li>nie musi posiadać statusu TPP (Third Party Provider) w PSD2,</li>
+<li>nie musi integrować się z wieloma bankami.</li>
+</ul>
+</div>
+<div class="section" id="model-ekonomiczny">
+<span id="model-ekonomiczny"></span><h2>6. Model ekonomiczny<a class="headerlink" href="#model-ekonomiczny" title="Permalink to this headline">¶</a></h2>
+<p>W zakresie wyboru modelu ekonomicznego dla systemu Sygnet widzimy trzy możliwe podejścia.</p>
+<ol>
+<li><p class="first"><strong>Rozliczenia w fiat</strong></p>
+<p>Najbardziej oczywistą metodą jest pobieranie prowizji w tradycyjny sposób, tj. poprzez pobieranie od biorców informacji przedpłaty na określoną liczbę weryfikacji KYC, a następnie rozliczanie przychodów uzyskanych w ten sposób z partnerami bankowymi.</p>
+<p>Wówczas uzyskujemy model, w którym wszystkie rozliczenia są w fiat, a ewentualne tokeny służą jedynie jako system ewidencyjny do dystrybucji korzyści z ich posiadania (np. rabaty albo dywidendy z naszych zysków). Jednak taka konstrukcja ma niewielką innowacyjność i w 100% opiera się na wierze w uczciwość emitenta.</p>
+</li>
+<li><p class="first"><strong>Rozliczenia w kryptowalutowym tokenie</strong></p>
+<p>Drugą opcją jest zastosowanie modelu, który jest powszechny w emisjach tokenów poprzez proces ICO. Na blockchainie tworzymy smart-kontrakt, który organizuje wyżej opisany proces przesyłu informacji między jej dawcą i biorcą, a związany z tą usługą token istnieje po to, żeby biorca tej usługi mógł nim zapłacić dawcy. Czyli token przepływa z portfela biorcy do portfela dawcy.</p>
+<p>Powyższe podejście ma jedną istotną wadę: potrzebujemy skłonić potencjalnego biorcę usługi do nabycia tokenu <strong>zanim</strong> ma on szansę z niej skorzystać. Jest to istotna przeszkoda w adopcji.</p>
+</li>
+<li><p class="first"><strong>Finansowanie z puli inflacyjnej tokenu</strong></p>
+<p>Trzecie podejście jest naszym zdaniem najciekawsze i najbardziej adekwatne do sytuacji, w której głównym czynnikem decydującym o sukcesie jest uzyskanie efektu sieciowego.</p>
+<p>W największym skrócie rozwiązania to polega na tym, że do smart-kontraktu, organizującego  przepływ informacji między jej dawcą i biorcą, dodajemy token, który ma wbudowaną inflację i wtedy koszty operacyjne funkcjonowania systemu Sygent są finansowane bezpośrednio z funduszu inflacyjnego tego tokenu.</p>
+<p>W takim układzie token przepływa do portfela dawcy z puli inflacyjnej, a portfel biorcy pozostaje nienaruszony. Oznacza to, że usługa w swojej podstawowej wersji jest oferowana za darmo, co w oczywisty sposób niweluje barierę wejścia dla nowych użytkowników.</p>
+<p>Bardziej szczegółowy opis tego rozwiązania jest zawarty w <a class="reference external" href="Sygnet_EconomicModel.html">tym dokumencie</a>.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="nie-tylko-banki">
+<span id="nie-tylko-banki"></span><h2>7. Nie tylko banki<a class="headerlink" href="#nie-tylko-banki" title="Permalink to this headline">¶</a></h2>
+<p>Bank, jako dawca informacji, jest dla nas cennym partnerem, bo tożsamość potwierdzona przez bank jest bardziej wiarygodna niż tożsamość potwierdzona przez inne podmioty.
+Jednak nasz mechanizm weryfikacji tożsamości jest na tyle abstrakcyjny, że podmiotem będącym dawcą informacji może być także podmiot niebankowy.</p>
+<p>Więc być może optymalną strategią jest zacząć od współpracy z podmiotem niebankowym, np. kimś takim jak Allegro, z dwóch powodów:</p>
+<ul class="simple">
+<li>proces współpracy technologicznej będzie tu prawdopodobnie łatwiejszy,</li>
+<li>do takiego podmiotu bardziej przemawiają argumenty finansowe.</li>
+</ul>
+<p>Ponadto, jeśli pierwszym partnerem będzie nie-bank, stawia to nas w dużo lepszej pozycji negocjacyjnej podczas rozmowy z bankiem.</p>
+<p>Bank (albo inna firma dysponująca wiarygodną informacją o tożsamości, np. Allegro) ma majątek w postaci informacji o tożsamości, który trudno jest zmonetyzować, bo potrzebna jest do tego duża skala działania. Takim firmom nie opłaca się wchodzić w układy, które mają małą szansę na uzyskanie dużej skali. My dajemy im propozycję, która ma potencjał na masowość z prostego powodu: jest ona za darmo (z punktu widzenia użytkownika), podobnie jak np. płatność kartą.</p>
+<p>Ponadto mając zapas kapitału w postaci fiat uzyskanego z ICO jesteśmy w dobrej pozycji żeby przez dłuższy czas nakręcać ekspansję systemu, co dodatkowo zwiększa szansę powodzenia.</p>
+</div>
+<div class="section" id="dlaczego-do-tej-pory-nikomu-nie-udalo-sie-zrobic-eid">
+<span id="dlaczego-do-tej-pory-nikomu-nie-udalo-sie-zrobic-eid"></span><h2>8. Dlaczego do tej pory nikomu nie udało się zrobić eID?<a class="headerlink" href="#dlaczego-do-tej-pory-nikomu-nie-udalo-sie-zrobic-eid" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="pytania-w-domenie-prawnej">
+<span id="pytania-w-domenie-prawnej"></span><h2>9. Pytania w domenie prawnej<a class="headerlink" href="#pytania-w-domenie-prawnej" title="Permalink to this headline">¶</a></h2>
+<p>W pierwszej kolejności potrzebujemy uzyskać perspektywę ograniczoną do polskiego prawa, a dopiero w dalszej kolejności UE - szczególnie jeśli odpowiedzi dotyczące Polski będą podważać nasz model biznesowy.</p>
+<div class="section" id="obowiazek-udostepniania-danych-osobowych-przez-banki">
+<span id="obowiazek-udostepniania-danych-osobowych-przez-banki"></span><h3>9.1 Obowiązek udostępniania danych osobowych przez banki<a class="headerlink" href="#obowiazek-udostepniania-danych-osobowych-przez-banki" title="Permalink to this headline">¶</a></h3>
+<p>Czy z legislacji PSD2 (albo jakiejkolwiek innej) wynika, że bankowe API ma obowiązek obsługiwać zapytania TPP dotyczące danych osobowych klienta banku? Mamy tu na myśli tylko bardzo podstawowe dane (tj. te które są zawarte w dowodzie osobistym i nie służą niczemu innemu poza ustaleniem tożsamości danej osoby). I oczywiście zakładamy, że klient banku explicite wyraża na to zgodę - generalnie lub każdorazowo. Jeśli po stronie banku takiego obowiązku nie ma - czy jest jakieś prawo, które zabrania bankowi oferowanie tego rodzaju usługi dla TPP (działającym w imieniu klienta)?</p>
+<p><em>ASPSP ciągle walczą o to, aby przyjęła się wykładnia, że nie mają obowiązku podawać danych innych niż imię nazwisko i numer rachunku posiadacza. TPP próbują wywalczyć dostęp do wszystkich informacji, które są w bankowości elektronicznej. ASPSP powołują się na kluczowy argument, że PSD2 to jest obowiązku dostęp do rachunku płatniczego, a nie do bankowości elektronicznej. TPP powołują się na przepis RTS o ekwiwalentności informacji w interfejsie klienta vs interfejsie PSD2. W mojej ocenie początkowo może zwyciężyć podejście, że udostępnia się jedynie imie nazwisko i numer rachunku. Nie ma przeszkód, aby ASPSP zaoferował tego rodzaju usługę dla TPP – wtedy jedna najpewniej bank zażąda umowy z TPP.</em></p>
+</div>
+<div class="section" id="obowiazek-stosowania-przez-banki-kwalifikowanego-podpisu-elektronicznego">
+<span id="obowiazek-stosowania-przez-banki-kwalifikowanego-podpisu-elektronicznego"></span><h3>9.2 Obowiązek stosowania przez banki kwalifikowanego podpisu elektronicznego<a class="headerlink" href="#obowiazek-stosowania-przez-banki-kwalifikowanego-podpisu-elektronicznego" title="Permalink to this headline">¶</a></h3>
+<p>Czy z legislacji PSD2 (albo jakiejkolwiek innej) wynika, że <strong>na życzenia klienta</strong> bank ma obowiązek podpisać dane (dotyczące tego klienta) uzyskane poprzez bankowe API swoim kwalifikowanym podpisem elektronicznym? Zakładamy tu, że celem tego podpisu jest uwiarygodnienie źródła pochodzenia tych danych. Jeśli po stronie banku takiego obowiązku nie ma - czy jest jakieś prawo, które uniemożliwia bankowi oferowanie tego rodzaju usługi dla TPP (działającym w imieniu klienta)?</p>
+<p><em>ASPSP ma obowiązek ZIDENTYFIKOWAĆ się certyfikatem eIDAS, ale nie ma obowiązku podpisywania konkretnych danych. Zasadniczo nie ma przeszkód, aby ASPSP coś takiego zaoferował.</em></p>
+</div>
+<div class="section" id="moc-prawna-weryfikacji-tozsamosci-na-podstawie-certyfikatu-banku">
+<span id="moc-prawna-weryfikacji-tozsamosci-na-podstawie-certyfikatu-banku"></span><h3>9.3 Moc prawna weryfikacji tożsamości na podstawie certyfikatu banku<a class="headerlink" href="#moc-prawna-weryfikacji-tozsamosci-na-podstawie-certyfikatu-banku" title="Permalink to this headline">¶</a></h3>
+<p>Wiemy, że drogą specjalnej umowy firma X może powierzyć firmie Y proces ustalenia tożsamości klienta (np. klient okazuje kurierowi dowód osobisty i na oczach kuriera podpisuje się) i to ustalenie tożsamości ma moc prawną. Czy firma X może z podobnym dla siebie skutkiem prawnym powierzyć firmie Y wyżej opisany proces ustalenia tożsamości klienta, jeśli jest on wykonywany w sposób alternatywny, tj. poprzez wykazanie, że <strong>specjalnie w tym jednorazowym celu</strong> klient dokonał autoryzacji wymaganej przez interfejs swojego banku i uzyskał od tego banku (certyfikowany podpisem elektronicznym banku) zestaw danych poświadczających jego (tj. klienta) tożsamość?</p>
+<p><em>Wymaga analizy.</em></p>
+</div>
+<div class="section" id="esemes-jak-2fa-w-swietle-psd2">
+<span id="esemes-jak-2fa-w-swietle-psd2"></span><h3>9.4 Esemes jak 2FA w świetle PSD2<a class="headerlink" href="#esemes-jak-2fa-w-swietle-psd2" title="Permalink to this headline">¶</a></h3>
+<p>Czy 2FA wykonywany poprzez mechanizm esemesa spełnia wymogi SCA, o których mowa w PSD2? Czy wątpliwości wyrażone w <a class="reference external" href="https://blog.vasco.com/application-security/psd2/">tej publikacji</a> są zasadne? W załączeniu znajduje się też plik PDF z analizą w tym zakresie wykonaną przez <a class="reference external" href="https://paymentscompliance.com/premium-content/insights_analysis/current-authentication-tools-%E2%80%98not-compatible-psd2%E2%80%99">paymentscompliance.com</a>. Czy jesteśmy w stanie dostarczyć argumenty prawne przemawiające za słusznością wątpliwości wyrażonych w tym dokumencie?</p>
+<p><em>Zgodnie z opiniami autorytetów IT SMS w powiązaniu z inicjacją transakcji w przeglądarce w telefonie łącznie nie zapewniają spełnienia warunków, których RTS wymaga wobec urządzeń wielofunkcyjnych.</em></p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2018, Tokenika.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
