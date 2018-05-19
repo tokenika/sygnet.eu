@@ -1,10 +1,8 @@
 # Sygnet - analiza rynkowa
 
-## Jakie podmioty w Polsce (i Europie) potrzebują weryfikować swoich klientów w zakresie KYC? Jak dużo ich jest?
+## 1. Jakie podmioty w Polsce (i Europie) potrzebują weryfikować swoich klientów w zakresie KYC? Jak dużo ich jest?
 
-Europejską podstawę prawną w zakresie KYC stanowi tzw. IV DYREKTYWA AML. 
-
-<https://eur-lex.europa.eu/legal-content/PL/TXT/PDF/?uri=CELEX:32015L0849&from=EN>
+Europejską podstawę prawną w zakresie KYC stanowi tzw. [IV DYREKTYWA AML](https://eur-lex.europa.eu/legal-content/PL/TXT/PDF/?uri=CELEX:32015L0849&from=EN).
 
 Niniejszą dyrektywę stosuje się do następujących podmiotówzobowiązanych:
 
@@ -57,7 +55,7 @@ Instytucjami obowiązanymi są:
 24. przedsiębiorcy w rozumieniu ustawy z dnia 2 lipca 2004r. o swobodzie działalności gospodarczej w zakresie, w jakim prowadządziałalność polegającą na udostępnianiu skrytek sejfowych, oraz oddziałyprzedsiębiorców zagranicznych prowadzące taką działalność na terytoriumRzeczypospolitej Polskiej; 
 25. instytucje pożyczkowe w rozumieniu ustawy z dnia 12 maja2011 r. o kredycie konsumenckim (Dz. U. z 2016 r. poz. 1528 oraz z 2017 r. poz.819)
 
-## Jakie koszty ponoszą podmioty (zarówno bankowe jak i niebankowe) w związku z KYC?
+## 2. Jakie koszty ponoszą podmioty (zarówno bankowe jak i niebankowe) w związku z KYC?
 
 https://globenewswire.com/news-release/2017/06/26/1028793/0/en/Typical-UK-bank-will-waste-10m-annually-on-inefficient-KYC-checks-as-AMLD4-regulation-comes-into-force.html
 
@@ -79,7 +77,7 @@ https://www.lexisnexis.com/risk/intl/en/resources/research/true-cost-of-aml-comp
 
 > Firms were asked to estimate the annual cost of theiroverall AML compliance operations. Figure 4 shows the average AML compliancecost by firm size. Firms with less than USD 1 billion in assets averaged some USD 850,000 in AML operational costs. Mid-tier firms averaged USD 7.4 million,and top tier firms with more than USD 100 billion in assets spend an average ofUSD 15.8 million on AML compliance annually.
 
-## W jakim kierunku będzie się zmieniać zapotrzebowanie na KYC w przyszłości?
+## 3. W jakim kierunku będzie się zmieniać zapotrzebowanie na KYC w przyszłości?
 
 Jeżeli chodzi o włączenie w procedury KYC kolejnych instytucji i organizacji to wydaje mi się, że nie powinno się wiele zmienić wtym aspekcie. Od momentu wprowadzenia w życie III dyrektywy AML do momentu ogłoszenia nowej, IV dyrektywy, minęło 12 lat a pomimo to rozszerza ona definicje podmiotów zobowiązanych tylko o podmioty świadczące usługi w zakresie gier hazardowych oraz osoby prowadzące handel towarami, dokonujące płatności w gotówce w kwocie 10 000 EUR lub wyższej. W tym drugim przypadku obniżono tylko próg z 15000 EUR do 10000 EUR. Wydaje się , że lista jest kompletna. Czas oczywiście pokaże. Nie udało mi się znaleźć żadnego źródła wiedzy na ten temat. 
 
@@ -109,7 +107,7 @@ Podczas gdy rejestr KYC jest przeznaczony raczej do użytku międzybankowego ni�
 
 <https://www.youtube.com/watch?time_continue=92&v=0xmT_0H_iDI>
 
-## Dodatkowe linki:
+## 4. Dodatkowe linki
 
 <http://www.certge.pl/kyc-monitoring-relacji-klientem>
 
