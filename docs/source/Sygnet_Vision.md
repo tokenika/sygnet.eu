@@ -195,7 +195,22 @@ Czy ta rola pośrednika jest w naszym przypadku dobrze uzasadniona? Wydaje się 
 - nie musi posiadać statusu TPP (Third Party Provider) w PSD2,
 - nie musi integrować się z wieloma bankami.
 
-## 6. Model ekonomiczny
+## 6. Współpraca z podmiotami niebankowymi
+
+Wyżej opisany mechanizm weryfikacji tożsamości jest na tyle abstrakcyjny, że podmiotem będącym dawcą informacji może być nie tylko bank lecz także dowolny inny podmiot, który posiada:
+
+- wiarygodne informacje o tożsamości swoich klientów,
+- publiczne API,
+- sprawnie działający system logowania dla swoich klientów.
+
+Bank, jako dawca informacji, jest dla nas najcenniejszym partnerem, bo spośród podmiotów gospodarczych tożsamość potwierdzona przez bank jest najbardziej wiarygodna. Jednak być może optymalną strategią jest zacząć od współpracy z podmiotem niebankowym, np. Allegro, z następujących powodów:
+
+- proces współpracy technologicznej będzie tu prawdopodobnie łatwiejszy,
+- do takiego podmiotu bardziej przemawiają argumenty finansowe.
+
+Ponadto fakt udanej współpracy z podmiotem niebankowym stawia nas w dużo lepszej pozycji negocjacyjnej podczas rozmowy z bankiem.
+
+## 7. Model ekonomiczny
 
 W zakresie wyboru modelu ekonomicznego dla systemu Sygnet widzimy trzy możliwe podejścia.
 
@@ -221,18 +236,5 @@ W zakresie wyboru modelu ekonomicznego dla systemu Sygnet widzimy trzy możliwe 
 
    Bardziej szczegółowy opis tego rozwiązania jest zawarty w [tym dokumencie](Sygnet_EconomicModel.html).
 
-## 7. Współpraca z podmiotami niebankowymi
 
-Wyżej opisany mechanizm weryfikacji tożsamości jest na tyle abstrakcyjny, że podmiotem będącym dawcą informacji może być nie tylko bank lecz także dowolny inny podmiot, który posiada:
-
-- wiarygodne informacje o tożsamości swoich klientów,
-- publiczne API,
-- sprawnie działający system logowania dla swoich klientów.
-
-Bank, jako dawca informacji, jest dla nas najcenniejszym partnerem, bo spośród podmiotów gospodarczych tożsamość potwierdzona przez bank jest najbardziej wiarygodna. Jednak być może optymalną strategią jest zacząć od współpracy z podmiotem niebankowym, np. Allegro, z następujących powodów:
-
-- proces współpracy technologicznej będzie tu prawdopodobnie łatwiejszy,
-- do takiego podmiotu bardziej przemawiają argumenty finansowe.
-
-Ponadto fakt udanej współpracy z podmiotem niebankowym stawia nas w dużo lepszej pozycji negocjacyjnej podczas rozmowy z bankiem.
 
