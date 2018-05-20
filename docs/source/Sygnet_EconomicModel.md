@@ -37,13 +37,13 @@ Wówczas uzyskujemy model, w którym wszystkie rozliczenia są w fiat, a tokeny 
 
 #### 3.2 Token płatniczy
 
-Drugą opcją jest zastosowanie modelu, który jest obecnie dominującym rozwiązaniem. Na blockchainie tworzymy smart-kontrakt, który organizuje wyżej opisany proces przesyłu informacji między jej dawcą i biorcą, a związany z tą usługą token istnieje po to, żeby biorca tej usługi mógł nim zapłacić dawcy. Czyli token przepływa z portfela biorcy do portfela dawcy.
+Drugą opcją jest zastosowanie modelu, który jest obecnie dominującym rozwiązaniem. Na blockchainie tworzymy smart-kontrakt, który organizuje wyżej opisany proces transferu informacji między jej dawcą i biorcą, a związany z tą usługą token istnieje po to, żeby biorca tej usługi mógł nim zapłacić dawcy. Czyli token przepływa z portfela biorcy do portfela dawcy.
 
 #### 3.3 Token inflacyjny 
 
 Trzecia opcja jest podobna do drugiej, z tym że ma jedną istotną różnicę: token przepływa do portfela dawcy nie z portfela biorcy lecz z puli inflacyjnej tokenu. Tak więc portfel biorcy pozostaje nienaruszony, jego token się nie zużywa. Tym samym koszty operacyjne funkcjonowania systemu są finansowane bezpośrednio z funduszu inflacyjnego tokenu.
 
-To trzecie podejście jest naszym zdaniem najbardziej adekwatne do wymogów sytuacji i ono własnie jest przedmiotem dalszego opisu.
+To trzecie podejście jest naszym zdaniem najbardziej adekwatne do wymogów sytuacji i ono właśnie jest przedmiotem dalszego opisu.
 
 ## 4. Inspiracja
 
@@ -179,7 +179,7 @@ Poniżej przedstawione jest porównanie wychwytujące analogie pomiędzy różny
 
 #### 6.5 Porównanie z innymi podejściami
 
-Poniżej porównanie wad i zalet tych trzech alternatywnych metod. Wynika z niego, że proponowany przez nas token inflacyjny (ostatnia kolumna) jest relatywnie najlepszym wyborem, szczególnie w sytuacji, w której głównym czynnikem decydującym o sukcesie jest uzyskanie efektu sieciowego.
+Poniżej porównanie wad i zalet trzech alternatywnych metod konstrukcji tokenu. Wynika z niego, że proponowany przez nas token inflacyjny (ostatnia kolumna) jest relatywnie najlepszym wyborem, szczególnie w sytuacji, w której głównym czynnikiem decydującym o sukcesie jest uzyskanie efektu sieciowego.
 
 ```eval_rst
    +----------------------------------------------+--------------------+----------------------+------------------+
@@ -197,7 +197,7 @@ Poniżej porównanie wad i zalet tych trzech alternatywnych metod. Wynika z nieg
    +----------------------------------------------+--------------------+----------------------+------------------+
    | Brak zagrożenia konkurencją cenową           | ---                | ---                  | Tak              |
    +----------------------------------------------+--------------------+----------------------+------------------+
-   | Stabilna liczba wyemitownaych tokenów        | Tak                | Tak                  | ---              |
+   | Stabilna liczba wyemitowanych tokenów        | Tak                | Tak                  | ---              |
    +----------------------------------------------+--------------------+----------------------+------------------+
    | Potencjał dynamicznej ekspansji systemu      | ---                | ---                  | Tak              |
    +----------------------------------------------+--------------------+----------------------+------------------+
