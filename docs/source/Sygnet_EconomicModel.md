@@ -153,8 +153,8 @@ Warto też zauważyć, że kryptowaluty rządzą się innymi prawami niż akcje 
 
 Tak więc w przypadku tradycyjnych, nieblockchainowych biznesów próba finansowania się poprzez ciągłą emisję własnych akcji prawdopodobnie skończyłaby się samobójstwem finansowym. W przypadku kryptowalut nie jest to takie oczywiste, bo mamy istotną różnicę:
 
-* Spekulacja inwestorów na rynku akcji jest w następującym zakresie: *jaki będzie popyt na daną akcję ze strony przyszłych inwestorów?* 
-* Natomiast w przypadku kryptowalut spekulacja inwestorów jest w innym zakresie: *jaki będzie popyt na dany token ze strony przyszłego użytkownika?*
+* Spekulacja inwestorów na rynku akcji jest w następującym zakresie: *jaki będzie popyt na daną akcję ze strony przyszłych inwestorów?* Liczy się zdolność do generowania zysków (i tym samym dywidendy).
+* Natomiast w przypadku kryptowalut spekulacja inwestorów jest w innym zakresie: *jaki będzie popyt na dany token ze strony przyszłych użytkowników?* Liczy się zdolność do masowej adopcji, niezależnie od istnienia zysków (bo i tak nie ma dywidendy).
 
 #### 6.3 Limit liczby tokenów
 
