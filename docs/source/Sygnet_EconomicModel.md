@@ -151,8 +151,8 @@ Warto też zauważyć, że kryptowaluty rządzą się innymi prawami niż akcje 
 
 Tak więc w przypadku tradycyjnych, nieblockchainowych biznesów próba finansowania się poprzez ciągłą emisję własnych akcji prawdopodobnie skończyłaby się samobójstwem finansowym. Natomiast w przypadku kryptowalut nie jest to takie oczywiste, bo mamy istotną różnicę w aspekcie finansowym:
 
-* Spekulacja inwestorów na rynku akcji jest w następującym zakresie: *jaki będzie popyt na daną akcję ze strony przyszłych inwestorów?* Liczy się zdolność do generowania zysków (i tym samym wysokość przewidywanej w przyszłości dywidendy).
-* Natomiast w przypadku kryptowalut spekulacja inwestorów jest w innym zakresie: *jaki będzie popyt na dany token ze strony przyszłych użytkowników?* Liczy się zdolność do masowej adopcji, niezależnie od istnienia zysków (bo i tak nie ma dywidendy).
+* Spekulacja inwestorów na rynku akcji jest w następującym zakresie: *jaki będzie popyt na daną akcję ze strony przyszłych **inwestorów**?* Liczy się zdolność do generowania zysków (i tym samym wysokość przewidywanej w przyszłości dywidendy).
+* Natomiast w przypadku kryptowalut spekulacja inwestorów jest w innym zakresie: *jaki będzie popyt na dany token ze strony przyszłych **użytkowników**?* Liczy się zdolność do masowej adopcji, niezależnie od istnienia zysków (bo i tak nie ma dywidendy).
 
 #### 6.3 Limit liczby tokenów
 
@@ -203,7 +203,7 @@ Poniżej prezentujemy porównanie wad i zalet trzech alternatywnych metod konstr
 
 ## Q&A
 
-###### Prawdopodobnie będzie trudno wytłumaczyć to rozwiązanie innym podmiotom.
+###### 1. Prawdopodobnie będzie trudno wytłumaczyć to rozwiązanie innym podmiotom.
 
 To jest podobna trudność jaką ma Steem. Relatywnie niewiele osób rzeczywiście rozumie model ekonomiczny Steema, chociaż mnóstwo osób go używa i tym samym przyjmuje, że ma on sens. Okazuje się, że użytkownicy nie muszą dokładnie rozumieć mechanizmów ekonomicznych żeby móc w nich aktywnie uczestniczyć.
 
@@ -214,17 +214,13 @@ A w przypadku tokenu inflacyjnego instrukcja użycia jest bardzo prosta:
 - Dla biorcy informacji: *Usługa jest za darmo, nic nie musisz płacić. Gdybyś chciał jednak korzystać z systemu z większą częstotliwością albo uzyskać dostęp do informacji o większej wiarygodności, to musisz wejść w posiadanie tokenów (odpowiednik nabycia licencji na wersję pro), ale te tokeny się nie zużywają, więc wysiłek (czasowy i finansowy) popełniasz tylko raz.*
 - Dla dawców informacji: *Za oferowanie informacji dostajesz tokeny, które mają wartość finansową wyznaczaną przez rynek. Możesz te tokeny trzymać licząc na aprecjację albo sprzedać i uzyskać fiat.*
 
-
-
-###### Musimy założyć, że za rok, dwa banki otworzą się na krypto. Bo na razie to mają chyba taką nieformalną zmowę, żeby nie używać tokenów oficjalnie.
+###### 2. Musimy założyć, że za rok, dwa banki otworzą się na krypto. Bo na razie to mają chyba taką nieformalną zmowę, żeby nie używać tokenów oficjalnie.
 
 W naszym przypadku używanie kryptowaluty przez banki sprowadza się do przyjęcia płatności w Sygnetowym tokenie. Jeśli dany podmiot nie będzie chciał mieć do czynienia z tym tokenem, to może nam przekazać dostęp do swojego konta w Sygnecie i my wtedy możemy uzyskane przez niego tokeny sprzedawać na rynku i przekazywać mu fiat.
 
 Warto zauważyć, że problem ten istnieje niezależnie od wyboru modelu ekonomicznego. No chyba że zastosujemy model z tokenem dywidendowym. Jednak taka konstrukcja w 100% opiera się na wierze w uczciwość emitenta.
 
-
-
-###### Dla tradycyjnych biznesów może być problem z oszacowaniem przychodów. Bo czy nie jest tak ze wypłata dla nich będzie zależała od ilości zapytań? Tak jak upvote na Steemie?
+###### 3. Dla tradycyjnych biznesów może być problem z oszacowaniem przychodów. Bo czy nie jest tak ze wypłata dla nich będzie zależała od ilości zapytań? Tak jak upvote na Steemie?
 
 Rzeczywiście wypłata za dostarczanie informacji będzie zależała od wyceny całości systemu (tj. kapitalizacji tokenu), podobnie jak to ma miejsce w Steemie. Tak więc nie sposób tego dokładnie oszacować.
 
@@ -232,9 +228,7 @@ Ale nawet gdybyśmy zastosowali token płatniczy (tak jak to robi np. [Civic](ht
 
 Jednak brak dokładnej wyceny wpływów dla dawców informacji, nie stawia nas na straconej pozycji. W tej chwili podmioty dysponujące informacją o tożsamości nie mają żadnych wpływów z tego tytułu, więc jeśli dostarczymy cokolwiek istotnie większego niż zero i co dodatkowo ma potencjał dużej skali, to to się broni.
 
-
-
-###### Inflacja jest prastarym, ukrytym podatkiem którego się używa żeby wywołać ruch w interesie i zapobiec przetrzymywania tokenów bez obrotu nimi.
+###### 4. Inflacja jest prastarym, ukrytym podatkiem którego się używa żeby wywołać ruch w interesie i zapobiec przetrzymywania tokenów bez obrotu nimi.
 
 Istotnie, inflacja jest ukrytym podatkiem, ale ma ona potencjał napędzania inwestycji, oczywiście gdy jest stosowana z umiarem.
 
@@ -243,3 +237,21 @@ Do tej pory monopol na posługiwanie się inflacją miał emitent waluty narodow
 Blockchain powoduje, że biznes może mieć własną walutę i ten pozornie drobny fakt ma istotne konsekwencje: biznes blockchainowy ma opcję finansowania się z inflacji. Wówczas sensowną miarą jego kondycji finansowej jest estymacja, w jakim stopniu inflacja jest zrównoważona potencjałem ekspansji danego biznesu na nowych użytkowników (bo ci nowi użytkownicy generują popyt na walutę tego biznesu i ten popyt równoważy inflację).
 
 Można też spojrzeć na to w ten sposób: owszem można stosować tradycyjny (tj. nieinflacyjny) model biznesowy na blockchainie, ale tego rodzaju podejście nie ma szans w konfrontacji z podejściem inflacyjnym. W branżach, w których lojalność użytkownika jest niska (a w takiej branży my działamy) biznes który może żyć z inflacji a tego nie robi, prawdopodobnie przegra z biznesem, który bierze inflację i obraca ją na swoją korzyść.
+
+###### 5. To może być bardzo trudne w przyjęciu, bo co jeśli jednak system nie będzie rósł tak szybko, niby nic, ale jak do tak śmiałego założenia podejdą gracze typu Allegro?
+
+Sygnet to start-up, więc jeśli w okresie początkowym nie będzie rósł w tempie większym niż 10% rocznie, to znaczy, że coś jest w nim fundamentalnie źle pomyślane. Allegro ryzykuje "tylko" to, że nie otrzyma zysków w skali, która rekompensuje mu włożony wysiłek w integrację z naszym systemem. Główne ryzyko ponoszą inwestorzy ICO.
+
+###### 6. Ten temat [tj. zmniejszanie inflacji do zera] musimy mieć zaadresowany od razu, bo inaczej to brzmi a'la : "na razie żyjemy na kredyt, a potem się zobaczy".
+
+Wszystkie kryptowaluty żyją "na kredyt" - mają malejącą z czasem inflację i brak rozwiązania kwestii finansowania w momencie, gdy inflacja dojdzie do zera. Wygląda na to, że rynkowi to nie przeszkadza. Niemniej możemy to zrobić. Monetyzacja w jakimkolwiek kierunku (np. reputacji) jest dość łatwa, jeśli jest już uzyskana masa krytyczna.
+
+###### 7. W sytuacji współpracy z krypto światem nie ma problemu, natomiast inne podmioty mogą mieć kłopot z dokupowaniem tokenów z jednej strony (biorcy) i spieniężaniem ich z drugiej (dawcy). Powinniśmy pomyśleć o jakimś mechanizmie, który w prosty sposób robiłyby to za nich, tak żeby niespecjalnie musieli słyszeć o tokenach, inaczej sypiemy sobie kolejną górkę w rozmowach sprzedażowych.
+
+To jest problem, który będą miały wszystkie tego typu projekty. W ostateczności sami możemy wejść w rolę market makera.
+
+###### 8. Dystrybucja tokenów. Skrajny przypadek: Jeśli mam w całym systemie 100 mln tokenów, które są w 100% zajęte przed podmioty, które wykorzystują je do KYC i pojawia się 100 nowych podmiotów, to skąd wezmą tokeny, żeby dołączyć do systemu? (zakładam, że inflacja jest mała i nie obsłuży nagłego popytu). I co jeśli mała płynność spowoduje taki ruch cenowy, który spowoduje, że dla nowych graczy wejście do systemu będzie nieopłacalne, bo krańcowa użyteczność z posiadania kolejnego tokenu będzie drastycznie spadać?
+
+Chyba najlepiej będzie skorzystać z doświadczeń Steema albo podpatrzeć jak to się rozwiąże w EOSie. W Steemie głównym fundatorem nowy kont jest największy udziałowiec, tj. Steemit. My, jako beneficjent ICO, moglibyśmy zarezerwować jakąś pulę tokenów (np. 10%) na ten cel - wtedy smart-kontrakt będzie gwarantował, że tokeny z tej puli mogą być użyte tylko inicjacji nowych kont.
+
+Warto też wiedzieć, że w Steemie (i pewnie też w EOSie) tokeny inicjujące nowe konto nie przyczyniają się do zwiększenia inflacji, bo są one tylko wydelegowane do nowego konta (a nie mu przekazane), więc nie mogą być sprzedane na rynku.
