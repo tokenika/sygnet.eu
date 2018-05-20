@@ -1,6 +1,6 @@
 # Sygnet - propozycja modelu ekonomicznego
 
-Wersja 1.0 (19/05/2018)
+Wersja 1.1 (19/05/2018)
 
 *W zakresie tokenów emitowanych poprzez ICO powszechnie obowiązujące podejście jest następujące: token przepływa z portfela beneficjenta usługi do portfela dawcy usługi. To podejście ma fundamentalną wadę, która radykalnie utrudnia adopcję: potrzebujemy skłonić potencjalnego biorcę usługi do nabycia tokenu zanim ma on szansę z niej skorzystać. Proponowany przez nas model ekonomiczny jest zupełnie inny: token przepływa do portfela dawcy z puli inflacyjnej, a portfel biorcy pozostaje nienaruszony. Oznacza to, że usługa w swojej podstawowej wersji jest oferowana za darmo, co w oczywisty sposób niweluje barierę wejścia dla nowych użytkowników.*
 
@@ -25,11 +25,31 @@ Z punktu widzenia biznesowego chcemy spełnić następujące kryteria:
 3. Używanie tokenu powinno być uwolnione od ryzyka cenowego. Większość użytkowników chce używać tokenu w celu uzyskania usługi, a nie spekulować na jego wartości.
 4. Token powinien w większym stopniu nagradzać tych dawców informacji którzy mają większą wiarygodność i tym samym informacja dostarczona przez nich jest cenniejsza niż informacja z innych źródeł.
 
-## 3. Inspiracja
+## 3. Alternatywne podejścia do konstrukcji tokenu
+
+W zakresie wyboru modelu ekonomicznego dla systemu Sygnet widzimy trzy możliwe podejścia.
+
+#### 3.1 Token dywidendowy 
+
+Najbardziej oczywistą metodą jest pobieranie prowizji w tradycyjny sposób, tj. poprzez pobieranie od biorców informacji przedpłaty (w walucie fiat) na określoną liczbę weryfikacji tożsamości, a następnie rozliczanie przychodów uzyskanych w ten sposób z dawcami informacji.
+
+Wówczas uzyskujemy model, w którym wszystkie rozliczenia są w fiat, a tokeny służą jedynie jako system ewidencyjny do dystrybucji korzyści z ich posiadania (np. rabaty albo dywidendy z naszych zysków).
+
+#### 3.2 Token bezinflacyjny
+
+Drugą opcją jest zastosowanie modelu, który jest obecnie dominującym rozwiązaniem. Na blockchainie tworzymy smart-kontrakt, który organizuje wyżej opisany proces przesyłu informacji między jej dawcą i biorcą, a związany z tą usługą token istnieje po to, żeby biorca tej usługi mógł nim zapłacić dawcy. Czyli token przepływa z portfela biorcy do portfela dawcy.
+
+#### 3.3 Token inflacyjny 
+
+Trzecia opcja jest podobna do drugiej, z tym że ma jedną istotną różnicę: token przepływa do portfela dawcy nie z portfela biorcy lecz z puli inflacyjnej tokenu. Tak więc portfel biorcy pozostaje nienaruszony, jego token się nie zużywa. Tym samym koszty operacyjne funkcjonowania systemu są finansowane bezpośrednio z funduszu inflacyjnego tokenu.
+
+To trzecie podejście jest naszym zdaniem najbardziej adekwatne do wymogów sytuacji i ono własnie jest przedmiotem dalszego opisu.
+
+## 4. Inspiracja
 
 Pomysł na model ekonomiczny Sygnetowego tokenu inspirowany jest modelem systemu [Steem](https://steem.io/).
 
-#### 3.1 Jak działa Steem?
+#### 4.1 Jak działa Steem?
 
 W największym skrócie model Steema polega na tym, że blockchain generuje pulę inflacyjną (w rytmie co 24h, w sumie około 9% rocznie), z której przyznawane są nagrody za posty. Dystrybucja nagród następuje w sposób proporcjonalny do uzyskanego poparcia poprzez tzw. *upvote*, a każdy głos jest ważony wielkością udziałów danej osoby w całkowitej populacji tokenów Steem. Czyli jeśli osoba X ma 1% wszystkich tokenów Steem, a osoba Y ma 0.5%, to głos osoby X ma dwa razy większą moc niż osoby Y i tym samym X ma dwa razy większy wpływ na sposób dystrybucji nagród danego dnia.
 
@@ -37,11 +57,11 @@ Zauważmy, że w powyższym układzie nagrody pochodzą z puli inflacyjnej, a ni
 
 Zauważymy też, że w systemie Steem liczba tokenów do rozdania każdego dnia jest taka sama, tj. wszystkie tokeny muszą być rozdane. Więc decyzje głosujących wpływają jedynie na do kogo te nowo wygenerowane tokeny trafią, a nie na to, ile ich zostanie danego dnia rozdane.
 
-#### 3.2 Krytyka modelu Steema
+#### 4.2 Krytyka modelu Steema
 
 Najczęstszym zarzutem jest porównanie Steema do piramidy finansowej. Krytycy twierdzą, że nagrody pochodzące z inflacji biorą się "z powietrza" i tym samym jest tylko kwestią czasu, kiedy cały ten system się zawali.
 
-#### 3.3 Uzasadnienie modelu Steema
+#### 4.3 Uzasadnienie modelu Steema
 
 Istniejące od kilku lat kryptowaluty (Bitcoin, Ethereum i wiele innych) udowodniły, że społecznościowy system ekonomiczny może finansować się z inflacji.
 
@@ -53,9 +73,9 @@ Muszą jednak być spełnione następujące trzy warunki:
 
 Dyskusyjne jest czy warunek (3) jest konieczny - być może nie jest.
 
-## 4. Istota proponowanego modelu
+## 5. Istota proponowanego modelu
 
-#### 4.1 Mechanizm działania
+#### 5.1 Mechanizm działania
 
 Dla systemu Sygnet proponujemy rozwiązanie analogiczne do modelu Steema.
 
@@ -72,7 +92,7 @@ Wtedy możemy zaproponować następujący schemat działania:
 - Podobnie jak w Steemie każde nowe konto zasilane jest minimalną liczbą Sygnetowych tokenów, tak żeby jego właściciel był w stanie w podstawowym zakresie korzystać z systemu jako biorca informacji. Tego początkowego zasilenia dokonujemy my, tj. beneficjenci ICO, i jest to jeden z naszych kosztów.
 - Podobnie jak w Steemie rozliczenie puli inflacyjnej działa w cyklu dobowym.
 
-#### 4.2 Przykład
+#### 5.2 Przykład
 
 Załóżmy, że w danym momencie Sygnet ma kapitalizację 10 mln USD, wyemitowano do tej pory 100 mln tokenów, a inflacja jest na poziomie 4% rocznie, co oznacza, że codziennie jest do rozdania około 10k tokenów z puli inflacyjnej (przy tej kapitalizacji jest to równowartość około 1k USD).
 
@@ -85,11 +105,11 @@ Wówczas w rozliczeniu puli inflacyjnej (ale tylko w zakresie tej części tej p
 
 Oczywiście powyższe rozliczenie to jest tylko fragment większej całości, bo w tym samym cyklu rozliczeniowym z tytułu obsługi klientów innych biorców informacji dawcy A i B będą nagrodzeni dodatkowymi tokenami w analogiczny sposób.
 
-#### 4.3 Dodatkowe zwiększenie atrakcyjności systemu nagród
+#### 5.3 Dodatkowe zwiększenie atrakcyjności systemu nagród
 
 Wydaje się możliwe wprowadzenie podziału dawców informacji na klika kategorii (np. trzy) zależnie od ich wiarygodności (banki, duże sieci handlowe i pozostali) i wprowadzenie wymogu posiadania na swoim koncie przez biorców informacji większej liczby tokenów w przypadku chęci skorzystania z dawcy o wyższej kategorii. Tym samym dawcy informacji z wyższej kategorii będą nagradzani lepiej (bo większe saldo Sygnetowych tokenów na koncie biorcy oznacza większy głos w podziale puli inflacyjnej).
 
-#### 4.4 Czy jest możliwość nadużycia?
+#### 5.4 Czy jest możliwość nadużywania systemu?
 
 Oczywiście jeden uczestnik systemu Sygnet może udawać, że jest jednocześnie dawcą i biorcą informacji, co jest analogiczne do upvote'u własnego postu na Steemie.
 
@@ -97,7 +117,7 @@ Jednak z doświadczenia Steema wynika, że tego rodzaju nadużycia nie są powsz
 
 Czynnikiem który demotywuje do tego rodzaju działania, jest fakt istnienia korzystnego dla nas sprzężenia: im większa jest liczba posiadanych przez danego uczestnika tokenów, tym większa rodzi się motywacja po jego stronie do nienadużywania systemu, bo ma to wpływ na cenę tokenu.
 
-#### 4.5 Co uzyskujemy?
+#### 5.5 Co uzyskujemy?
 
 Korzyści są na wielu frontach jednocześnie:
 
@@ -109,9 +129,9 @@ Korzyści są na wielu frontach jednocześnie:
 
 Wygląda to na win-win dla każdego, a jedyną stroną, która ponosi negatywne konsekwencje jest inwestor (bo inflacja, z której to wszystko jest finansowane, stopniowo rozwadnia jego udziały). Jednak to co skłania inwestora do ponoszenia tych konsekwencji, to perspektywa aprecjacji tokenu wynikająca z radykalnego wzrostu jego popularności.
 
-## 5. Uzasadnienie wyboru modelu
+## 6. Uzasadnienie wyboru modelu
 
-#### 5.1 Różnica wobec modelu "tradycyjnego"
+#### 6.1 Różnica wobec modelu "tradycyjnego"
 
 W zakresie tokenów emitowanych poprzez ICO powszechnie obowiązujące podejście jest następujące: stwarzamy jakąś smart-kontraktową usługę, a związany z tą usługą token istnieje tylko po to żeby biorca tej usługi mógł nim zapłacić dawcy. Czyli token przepływa z portfela biorcy do portfela dawcy.
 
@@ -121,15 +141,17 @@ Natomiast proponowany przez nas model ekonomiczny jest zupełnie inny: token prz
 
 Żeby to osiągnąć w pełni wykorzystujemy atuty technologii blockchain i uzyskujemy właściwości ekonomiczne, których nie można zrealizować w żaden inny sposób: proponowany przez nas model inflacyjny jest realizowalny tylko za pomocą smart-kontraktu, bo w przeciwnym przypadku nikt by temu mechanizmowi nie zaufał. Tylko niemodyfikowalny smart-kontrakt jest w stanie zagwarantować nienaruszalność inflacji i tym samym niezmienność reguł gry z punktu widzenia inwestora.
 
-#### 5.2 Masowa adopcja jest priorytetem
+#### 6.2 Punkt widzenia inwestora
 
 Nasza konkluzja jest następująca: stosowane do tej pory modele ekonomiczne tokenów emitowanych w formie ICO **niepotrzebnie** próbują obciążyć użytkownika kosztami w postaci opłat za oferowane usługi. Powoduje to istotny problem z adopcją, a niewiele to zmienia z punktu widzenia inwestora.
 
 **W naszym podejściu wychodzimy z założenia, że dla inwestora ważniejsze jest istotne zwiększenie szans na masową adopcję (co spowoduje istotną aprecjację tokenu) niż kilkuprocentowe rozwodnienie kapitału spowodowane inflacją.**
 
-Łatwo zauważyć racjonalność tego podejścia. Bazuje ono na założeniu, które jak najbardziej ma rację bytu: że roczne tempo wzrostu popularności systemu (manifestujące się poprzez wzrost popytu na token) będzie większe niż 5-10% na rok, czyli poziom jego inflacji.
+Łatwo dostrzec racjonalność tego podejścia. Bazuje ono na założeniu, które jak najbardziej ma rację bytu: że roczne tempo wzrostu popularności systemu (manifestujące się poprzez wzrost popytu na token) będzie większe niż 5-10% na rok, czyli poziom jego inflacji.
 
-#### 5.3 Limit liczby tokenów
+Warto też zauważyć, że kryptowaluty rządzą się innymi prawami niż akcje przedsiębiorstw. Ostatecznym powodem, dla którego warto posiadać akcje, jest potencjał otrzymywania dywidendy. Natomiast w przypadku kryptowalut ostatecznym powodem jest możliwość korzystania z danej usługi. Tak więc w przypadku tradycyjnych, nieblockchainowych biznesów próba finansowania się poprzez ciągłą emisję własnych akcji prawdopodobnie skończyłaby się samobójstwem finansowym. Natomiast w przypadku kryptowalut, nie jest to oczywiste, bo spekulacja jest w tym zakresie: jaki będzie popyt na dany token ze strony nie tyle inwestora ale przede wszystkim użytkownika.
+
+#### 6.3 Limit liczby tokenów
 
 To co można dodatkowo zrobić (i to ma teraz Steem, ale na początku nie miał) to ustanowić w kodzie Sygnetowego smart-kontraktu górny limit liczby tokenów, który zostanie osiągnięty w jakimś w miarę odległym czasie np. 5-10 lat.
 
@@ -137,7 +159,7 @@ I wtedy Sygnetowa inflacja zmierzałaby asymptotycznie do zera w wybranej przez 
 
 Cap inflacyjny niewątpliwie daje uspokojenie posiadaczom tokenów: inflacji postrzeganej jako czynnik psujący wycenę jest z upływem czasu coraz mniej. Doświadczenie z ICO EOSa dowodzi, że inwestor jest w stanie znieść dość dużą inflację (nawet 100% rocznie), o ile ma ona wyraźny cel i limit czasowy.
 
-#### 5.4 Model sprawdzony empirycznie
+#### 6.4 Model sprawdzony empirycznie
 
 Według naszej wiedzy Sygnet ma szansę być pierwszym tokenem emitowanym na blockchainie (tj. nie posiadającym własnego natywnego blockchaina), który stosuje model ekonomiczny typowy dla blockchaina, tj. ekspansję poprzez inflację.
 
@@ -149,6 +171,32 @@ Poniżej przedstawione jest porównanie wychwytujące analogie pomiędzy różny
 - Steem: mining poprzez dostarczanie wartości intelektualnej i artystycznej (t.j. contentu internetowego)
 - EOS: mining poprzez dostarczanie mocy obliczeniowej do procesowania transakcji
 - Sygnet: mining poprzez dostarczanie informacji służącej do weryfikacji tożsamości
+
+#### 6.5 Porównanie z innymi podejściami
+
+Poniżej porównanie wad i zalet tych trzech alternatywnych metod. Wynika z niego, że proponowany przez nas token inflacyjny (ostatnia kolumna) jest relatywnie najlepszym wyborem, szczególnie w sytuacji, w której głównym czynnikem decydującym o sukcesie jest uzyskanie efektu sieciowego.
+
+```eval_rst
+   +----------------------------------------------+--------------------+----------------------+------------------+
+   | Funkcjonalność                               | Token Dywidendowy  | Token Bezinflacyjny  | Token Inflacyjny |
+   +==============================================+====================+======================+==================+
+   | Brak konieczności zaufania do emitenta       | ---                | Tak                  | Tak              |
+   +----------------------------------------------+--------------------+----------------------+------------------+
+   | Brak bariery wejścia dla biorcy informacji   | ---                | ---                  | Tak              |
+   +----------------------------------------------+--------------------+----------------------+------------------+
+   | Stabilność kosztu dla biorcy informacji      | Tak                | ---                  | Tak              |
+   +----------------------------------------------+--------------------+----------------------+------------------+
+   | Stabilność przychodu dla dawcy informacji    | Tak                | ---                  | ---              |
+   +----------------------------------------------+--------------------+----------------------+------------------+
+   | Usługa postrzegana jako darmowa              | ---                | ---                  | Tak              |
+   +----------------------------------------------+--------------------+----------------------+------------------+
+   | Brak zagrożenia konkurencją cenową           | ---                | ---                  | Tak              |
+   +----------------------------------------------+--------------------+----------------------+------------------+
+   | Stabilna liczba wyemitownaych tokenów        | Tak                | Tak                  | ---              |
+   +----------------------------------------------+--------------------+----------------------+------------------+
+   | Potencjał dynamicznej ekspansji systemu      | ---                | ---                  | Tak              |
+   +----------------------------------------------+--------------------+----------------------+------------------+
+```
 
 ## Q&A
 

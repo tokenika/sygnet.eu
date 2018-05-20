@@ -18,7 +18,6 @@ Documentation
     Sygnet_EconomicModel
     Sygnet_LegalAspects
     Sygnet_CompetitionAnalysis
-    test
 
 
 Metadata
