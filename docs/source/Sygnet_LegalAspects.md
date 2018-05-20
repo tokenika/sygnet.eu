@@ -1,4 +1,4 @@
-# Sygnet - kwestie prawne
+# Sygnet - aspekty prawne
 
 W pierwszej kolejności potrzebujemy uzyskać perspektywę ograniczoną do polskiego prawa, a dopiero w dalszej kolejności UE - szczególnie jeśli odpowiedzi dotyczące Polski będą podważać nasz model biznesowy.
 

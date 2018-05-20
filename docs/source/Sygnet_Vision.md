@@ -236,5 +236,26 @@ W zakresie wyboru modelu ekonomicznego dla systemu Sygnet widzimy trzy możliwe 
 
    Bardziej szczegółowy opis tego rozwiązania jest zawarty w [tym dokumencie](Sygnet_EconomicModel.html).
 
+Poniżej porównanie wad i zalet tych trzech metod:
+
+```eval_rst
++----------------------------------------------+--------------------+----------------------+------------------+
+| Funkcjonalność                               | Fiat + token       | Bezinflacyjny token  | Inflacyjny token |
++==============================================+====================+======================+==================+
+| Brak konieczności zaufania do emitenta       | Nie                | Tak                  | Tak              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Brak bariery wejścia dla biorcy informacji   | Tak                | Nie                  | Tak              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Brak ryzyka cenowego dla biorcy informacji   | Tak                | Nie                  | Tak              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Brak ryzyka cenowego dla dawcy informacji    | Tak                | Nie                  | Nie              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Usługa postrzegana jako darmowa              | Nie                | Nie                  | Tak              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Mniejsze ryzyko biznesowe dla inwestora      | Nie                | Nie                  | Tak              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Mniejsze ryzyko finansowe dla inwestora      | Tak                | Tak                  | Nie              |
++----------------------------------------------+--------------------+----------------------+------------------+
+```
 
 

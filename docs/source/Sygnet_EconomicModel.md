@@ -27,7 +27,7 @@ Z punktu widzenia biznesowego chcemy spełnić następujące kryteria:
 
 ## 3. Inspiracja
 
-Pomysł na model ekonomiczny tokenu w systemie Sygnet inspirowany jest mechanizmem ekonomicznym systemu [Steem](https://steem.io/).
+Pomysł na model ekonomiczny Sygnetowego tokenu inspirowany jest modelem systemu [Steem](https://steem.io/).
 
 #### 3.1 Jak działa Steem?
 
@@ -53,7 +53,7 @@ Muszą jednak być spełnione następujące trzy warunki:
 
 Dyskusyjne jest czy warunek (3) jest konieczny - być może nie jest.
 
-## 4. Istota proponowanego modelu ekonomicznego
+## 4. Istota proponowanego modelu
 
 #### 4.1 Mechanizm działania
 
@@ -109,7 +109,7 @@ Korzyści są na wielu frontach jednocześnie:
 
 Wygląda to na win-win dla każdego, a jedyną stroną, która ponosi negatywne konsekwencje jest inwestor (bo inflacja, z której to wszystko jest finansowane, stopniowo rozwadnia jego udziały). Jednak to co skłania inwestora do ponoszenia tych konsekwencji, to perspektywa aprecjacji tokenu wynikająca z radykalnego wzrostu jego popularności.
 
-## 5. Uzsadnienie wyboru modelu
+## 5. Uzasadnienie wyboru modelu
 
 #### 5.1 Różnica wobec modelu "tradycyjnego"
 
@@ -154,7 +154,7 @@ Poniżej przedstawione jest porównanie wychwytujące analogie pomiędzy różny
 
 ###### Prawdopodobnie będzie trudno wytłumaczyć to rozwiązanie innym podmiotom.
 
-To jest podobna trudność jaką ma Steem. Relatywnie niewiele osób rzeczywiście rozumie mechanizm ekonomiczny Steema, chociaż mnóstwo osób go używa i tym samym przyjmuje, że ma on sens. Okazuje się, że użytkownicy nie muszą dokładnie rozumieć mechanizmów ekonomicznych żeby móc w nich aktywnie uczestniczyć.
+To jest podobna trudność jaką ma Steem. Relatywnie niewiele osób rzeczywiście rozumie model ekonomiczny Steema, chociaż mnóstwo osób go używa i tym samym przyjmuje, że ma on sens. Okazuje się, że użytkownicy nie muszą dokładnie rozumieć mechanizmów ekonomicznych żeby móc w nich aktywnie uczestniczyć.
 
 To co jest ważne, to to żeby system był łatwo wytłumaczalny w zakresie sposobu korzystania z niego (w przeciwieństwie do sposobu w jaki jest on skonstruowany).
 

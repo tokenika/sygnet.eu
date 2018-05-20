@@ -6,7 +6,7 @@
 Welcome to Sygnet's documentation!
 ==================================
 
-`Sygnet <sygnet.eu>`_ is a smart cryptographic tool created by `Tokenika <https://tokenika.io/>`_. It will enable you to use your banking account as a means to bootstrap your digital identity. We aim to make the process of proving who you are on the Internet as simple as authorizing a bank transfer.
+`Sygnet <http://sygnet.eu/>`_ is a smart cryptographic tool created by `Tokenika <https://tokenika.io/>`_. It will enable you to use your banking account as a means to bootstrap your digital identity. We aim to make the process of proving who you are on the Internet as simple as authorizing a bank transfer.
 
 Documentation
 -------------
@@ -16,9 +16,9 @@ Documentation
 
     Sygnet_Vision
     Sygnet_EconomicModel
-    Sygnet_LegalIssues
-    Sygnet_MarketAnalysis
+    Sygnet_LegalAspects
     Sygnet_CompetitionAnalysis
+    test
 
 
 Metadata
