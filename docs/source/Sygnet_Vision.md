@@ -190,7 +190,7 @@ System Sygnet występuje więc w roli pośrednika pomiędzy:
 - biorcą informacji, czyli firmą F która potrzebuje zweryfikować nowego klienta pod kątem KYC,
 - dawcą informacji, czyli bankiem B który uprzednio dokonał weryfikacji KYC dla danego klienta.
 
-Czy ta rola pośrednika jest w naszym przypadku dobrze uzasadniona? Wydaje się że tak, bo dzięki systemowi Sygnet biorca informacji (tj. firma F) unika dwóch relatywnie trudno wykonalnych kwesti:
+Czy ta rola pośrednika jest w naszym przypadku dobrze uzasadniona? Wydaje się że tak, bo dzięki systemowi Sygnet biorca informacji (tj. firma F) unika dwóch relatywnie trudno wykonalnych kwestii:
 
 - nie musi posiadać statusu TPP (Third Party Provider) w PSD2,
 - nie musi integrować się z wieloma bankami.
