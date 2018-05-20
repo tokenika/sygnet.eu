@@ -35,7 +35,7 @@ Najbardziej oczywistą metodą jest pobieranie prowizji w tradycyjny sposób, tj
 
 Wówczas uzyskujemy model, w którym wszystkie rozliczenia są w fiat, a tokeny służą jedynie jako system ewidencyjny do dystrybucji korzyści z ich posiadania (np. rabaty albo dywidendy z naszych zysków).
 
-#### 3.2 Token bezinflacyjny
+#### 3.2 Token płatniczy
 
 Drugą opcją jest zastosowanie modelu, który jest obecnie dominującym rozwiązaniem. Na blockchainie tworzymy smart-kontrakt, który organizuje wyżej opisany proces przesyłu informacji między jej dawcą i biorcą, a związany z tą usługą token istnieje po to, żeby biorca tej usługi mógł nim zapłacić dawcy. Czyli token przepływa z portfela biorcy do portfela dawcy.
 
@@ -183,7 +183,7 @@ Poniżej porównanie wad i zalet tych trzech alternatywnych metod. Wynika z nieg
 
 ```eval_rst
    +----------------------------------------------+--------------------+----------------------+------------------+
-   | Funkcjonalność                               | Token Dywidendowy  | Token Bezinflacyjny  | Token Inflacyjny |
+   | Funkcjonalność                               | Token Dywidendowy  | Token Płatniczy      | Token Inflacyjny |
    +==============================================+====================+======================+==================+
    | Brak konieczności zaufania do emitenta       | ---                | Tak                  | Tak              |
    +----------------------------------------------+--------------------+----------------------+------------------+
