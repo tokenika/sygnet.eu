@@ -240,7 +240,7 @@ Można też spojrzeć na to w ten sposób: owszem można stosować tradycyjny (t
 
 ###### 5. Założenie, że popyt użytkowników na token będzie rósł w tempie większym niż 5-10% na rok, może być bardzo trudne w przyjęciu, bo co jeśli jednak system nie będzie rósł tak szybko, niby nic, ale jak do tak śmiałego założenia podejdą gracze typu Allegro?
 
-Sygnet to start-up, więc jeśli w okresie początkowym nie będzie rósł w tempie większym niż 10% rocznie, to znaczy, że coś jest w nim fundamentalnie źle pomyślane. Allegro ryzykuje "tylko" to, że nie otrzyma zysków w skali, która rekompensuje mu włożony wysiłek w integrację z naszym systemem. Główne ryzyko ponoszą inwestorzy ICO.
+Sygnet to start-up, więc jeśli w okresie początkowym nie będzie rósł w tempie większym niż 10% rocznie, to znaczy, że coś jest w nim fundamentalnie źle pomyślane. Allegro ryzykuje "tylko" to, że nie otrzyma zysków w skali, która zrekompensuje mu włożony wysiłek w integrację z naszym systemem. Główne ryzyko ponoszą inwestorzy ICO.
 
 ###### 6. Temat zmniejszania inflacji do zera musimy mieć zaadresowany od razu, bo inaczej to brzmi a'la: "na razie żyjemy na kredyt, a potem się zobaczy".
 
