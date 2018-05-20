@@ -238,11 +238,11 @@ Blockchain powoduje, że biznes może mieć własną walutę i ten pozornie drob
 
 Można też spojrzeć na to w ten sposób: owszem można stosować tradycyjny (tj. nieinflacyjny) model biznesowy na blockchainie, ale tego rodzaju podejście nie ma szans w konfrontacji z podejściem inflacyjnym. W branżach, w których lojalność użytkownika jest niska (a w takiej branży my działamy) biznes który może żyć z inflacji a tego nie robi, prawdopodobnie przegra z biznesem, który bierze inflację i obraca ją na swoją korzyść.
 
-###### 5. To może być bardzo trudne w przyjęciu, bo co jeśli jednak system nie będzie rósł tak szybko, niby nic, ale jak do tak śmiałego założenia podejdą gracze typu Allegro?
+###### 5. Założenie, że popyt użytkowników na token będzie rósł w tempie większym niż 5-10% na rok, może być bardzo trudne w przyjęciu, bo co jeśli jednak system nie będzie rósł tak szybko, niby nic, ale jak do tak śmiałego założenia podejdą gracze typu Allegro?
 
 Sygnet to start-up, więc jeśli w okresie początkowym nie będzie rósł w tempie większym niż 10% rocznie, to znaczy, że coś jest w nim fundamentalnie źle pomyślane. Allegro ryzykuje "tylko" to, że nie otrzyma zysków w skali, która rekompensuje mu włożony wysiłek w integrację z naszym systemem. Główne ryzyko ponoszą inwestorzy ICO.
 
-###### 6. Ten temat [tj. zmniejszanie inflacji do zera] musimy mieć zaadresowany od razu, bo inaczej to brzmi a'la : "na razie żyjemy na kredyt, a potem się zobaczy".
+###### 6. Temat zmniejszania inflacji do zera musimy mieć zaadresowany od razu, bo inaczej to brzmi a'la: "na razie żyjemy na kredyt, a potem się zobaczy".
 
 Wszystkie kryptowaluty żyją "na kredyt" - mają malejącą z czasem inflację i brak rozwiązania kwestii finansowania w momencie, gdy inflacja dojdzie do zera. Wygląda na to, że rynkowi to nie przeszkadza. Niemniej możemy to zrobić. Monetyzacja w jakimkolwiek kierunku (np. reputacji) jest dość łatwa, jeśli jest już uzyskana masa krytyczna.
 
@@ -252,6 +252,6 @@ To jest problem, który będą miały wszystkie tego typu projekty. W ostateczno
 
 ###### 8. Dystrybucja tokenów. Skrajny przypadek: Jeśli mam w całym systemie 100 mln tokenów, które są w 100% zajęte przed podmioty, które wykorzystują je do KYC i pojawia się 100 nowych podmiotów, to skąd wezmą tokeny, żeby dołączyć do systemu? (zakładam, że inflacja jest mała i nie obsłuży nagłego popytu). I co jeśli mała płynność spowoduje taki ruch cenowy, który spowoduje, że dla nowych graczy wejście do systemu będzie nieopłacalne, bo krańcowa użyteczność z posiadania kolejnego tokenu będzie drastycznie spadać?
 
-Chyba najlepiej będzie skorzystać z doświadczeń Steema albo podpatrzeć jak to się rozwiąże w EOSie. W Steemie głównym fundatorem nowy kont jest największy udziałowiec, tj. Steemit. My, jako beneficjent ICO, moglibyśmy zarezerwować jakąś pulę tokenów (np. 10%) na ten cel - wtedy smart-kontrakt będzie gwarantował, że tokeny z tej puli mogą być użyte tylko inicjacji nowych kont.
+Chyba najlepiej będzie skorzystać z doświadczeń Steema albo podpatrzeć jak to się rozwiąże w EOSie. W Steemie głównym fundatorem nowych kont jest największy udziałowiec, tj. Steemit. My, jako beneficjent ICO, moglibyśmy zarezerwować jakąś pulę tokenów (np. 10%) na ten cel - wtedy smart-kontrakt będzie gwarantował, że tokeny z tej puli mogą być użyte tylko do inicjacji nowych kont.
 
 Warto też wiedzieć, że w Steemie (i pewnie też w EOSie) tokeny inicjujące nowe konto nie przyczyniają się do zwiększenia inflacji, bo są one tylko wydelegowane do nowego konta (a nie mu przekazane), więc nie mogą być sprzedane na rynku.
