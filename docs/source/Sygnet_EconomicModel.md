@@ -149,7 +149,12 @@ Nasza konkluzja jest następująca: stosowane do tej pory modele ekonomiczne tok
 
 Łatwo dostrzec racjonalność tego podejścia. Bazuje ono na założeniu, które jak najbardziej ma rację bytu: że roczne tempo wzrostu popularności systemu (manifestujące się poprzez wzrost popytu na token) będzie większe niż 5-10% na rok, czyli poziom jego inflacji.
 
-Warto też zauważyć, że kryptowaluty rządzą się innymi prawami niż akcje przedsiębiorstw. Ostatecznym powodem, dla którego warto posiadać akcje, jest potencjał otrzymywania dywidendy. Natomiast w przypadku kryptowalut ostatecznym powodem jest możliwość korzystania z danej usługi. Tak więc w przypadku tradycyjnych, nieblockchainowych biznesów próba finansowania się poprzez ciągłą emisję własnych akcji prawdopodobnie skończyłaby się samobójstwem finansowym. Natomiast w przypadku kryptowalut, nie jest to oczywiste, bo spekulacja jest w tym zakresie: jaki będzie popyt na dany token ze strony nie tyle inwestora ale przede wszystkim użytkownika.
+Warto też zauważyć, że kryptowaluty rządzą się innymi prawami niż akcje przedsiębiorstw. Ostatecznym powodem, dla którego warto posiadać akcje, jest potencjał otrzymywania dywidendy. Natomiast w przypadku kryptowalut ostatecznym powodem jest możliwość korzystania z danej usługi.
+
+Tak więc w przypadku tradycyjnych, nieblockchainowych biznesów próba finansowania się poprzez ciągłą emisję własnych akcji prawdopodobnie skończyłaby się samobójstwem finansowym. W przypadku kryptowalut nie jest to takie oczywiste, bo mamy istotną różnicę:
+
+* Spekulacja inwestorów na rynku akcji jest w następującym zakresie: *jaki będzie popyt na daną akcję ze strony przyszłych inwestorów?* 
+* Natomiast w przypadku kryptowalut spekulacja inwestorów jest w innym zakresie: *jaki będzie popyt na dany token ze strony przyszłego użytkownika?*
 
 #### 6.3 Limit liczby tokenów
 
