@@ -145,11 +145,11 @@ Nasza hipoteza jest następująca: stosowane do tej pory w ICO modele tokenów p
 
 **W naszym podejściu wychodzimy z założenia, że dla inwestora ważniejsze jest istotne zwiększenie szans na masową adopcję (co z kolei spowoduje istotną aprecjację tokenu) niż kilkuprocentowe rozwodnienie kapitału spowodowane inflacją.**
 
-Łatwo dostrzec racjonalność tego podejścia. Bazuje ono na założeniu, które jak najbardziej ma rację bytu: że roczne tempo wzrostu popularności systemu (manifestujące się poprzez wzrost popytu na token) będzie większe niż 5-10% na rok, czyli poziom jego inflacji.
+Łatwo dostrzec racjonalność tego podejścia. Bazuje ono na dość realnym założeniu, że roczne tempo wzrostu popularności systemu (manifestujące się poprzez wzrost popytu na token) będzie większe niż 5-10% na rok, czyli poziom jego inflacji.
 
 Warto też zauważyć, że kryptowaluty rządzą się innymi prawami niż akcje przedsiębiorstw. Ostatecznym powodem, dla którego warto posiadać akcje, jest potencjał otrzymywania dywidendy. Natomiast w przypadku kryptowalut ostatecznym powodem jest możliwość korzystania z danej usługi.
 
-Tak więc w przypadku tradycyjnych, nieblockchainowych biznesów próba finansowania się poprzez ciągłą emisję własnych akcji prawdopodobnie skończyłaby się samobójstwem finansowym. Natomiast w przypadku kryptowalut nie jest to takie oczywiste, bo mamy istotną różnicę w aspekcie finansowym:
+Tak więc w przypadku tradycyjnych, nieblockchainowych biznesów próba finansowania się poprzez ciągłą emisję własnych akcji prawdopodobnie skończyłaby się samobójstwem finansowym. Natomiast w przypadku kryptowalut nie jest to takie oczywiste, bo mamy istotną różnicę w postrzeganym celu, który jest do osiągnięcia:
 
 * Spekulacja inwestorów na rynku akcji jest w następującym zakresie: *jaki będzie popyt na daną akcję ze strony przyszłych **inwestorów**?* Liczy się zdolność do generowania zysków (i tym samym wysokość przewidywanej w przyszłości dywidendy).
 * Natomiast w przypadku kryptowalut spekulacja inwestorów jest w innym zakresie: *jaki będzie popyt na dany token ze strony przyszłych **użytkowników**?* Liczy się zdolność do masowej adopcji, niezależnie od istnienia zysków (bo i tak nie ma dywidendy).
@@ -160,7 +160,7 @@ To co można dodatkowo zrobić (i to ma teraz Steem, ale na początku nie miał)
 
 I wtedy Sygnetowa inflacja zmierzałaby asymptotycznie do zera w wybranej przez nas perspektywie czasowej, co oznacza że Sygnet ma tyle czasu żeby wypracować inny niż inflacyjny mechanizm ekonomiczny, np. monetyzacja reputacji.
 
-Cap inflacyjny niewątpliwie daje uspokojenie posiadaczom tokenów: inflacji postrzeganej jako czynnik psujący wycenę jest z upływem czasu coraz mniej. Doświadczenie z ICO EOSa dowodzi, że inwestor jest w stanie znieść dość dużą inflację (nawet 100% rocznie), o ile ma ona wyraźny cel i limit czasowy.
+Limit inflacyjny niewątpliwie daje uspokojenie posiadaczom tokenów: inflacji postrzeganej jako czynnik psujący wycenę jest z upływem czasu coraz mniej. Doświadczenie z ICO EOSa dowodzi, że inwestor jest w stanie znieść dość dużą inflację (nawet 100% rocznie), o ile ma ona wyraźny cel i limit czasowy.
 
 #### 6.4 Model sprawdzony empirycznie
 
@@ -180,25 +180,27 @@ Poniżej przedstawione jest porównanie wychwytujące analogie pomiędzy różny
 Poniżej prezentujemy porównanie wad i zalet trzech alternatywnych metod konstrukcji tokenu: dywidendowy, płatniczy i inflacyjny. Wynika z niego, że proponowany przez nas token inflacyjny (ostatnia kolumna) jest relatywnie najlepszym wyborem, szczególnie w sytuacji, w której głównym czynnikiem decydującym o sukcesie jest uzyskanie efektu sieciowego.
 
 ```eval_rst
-   +----------------------------------------------+--------------------+----------------------+------------------+
-   | Funkcjonalność                               | Token Dywidendowy  | Token Płatniczy      | Token Inflacyjny |
-   +==============================================+====================+======================+==================+
-   | Brak konieczności zaufania do emitenta       | ---                | Tak                  | Tak              |
-   +----------------------------------------------+--------------------+----------------------+------------------+
-   | Brak bariery wejścia dla użytkownika         | ---                | ---                  | Tak              |
-   +----------------------------------------------+--------------------+----------------------+------------------+
-   | Stabilność kosztu dla biorcy informacji      | Tak                | ---                  | Tak              |
-   +----------------------------------------------+--------------------+----------------------+------------------+
-   | Stabilność przychodu dla dawcy informacji    | Tak                | ---                  | ---              |
-   +----------------------------------------------+--------------------+----------------------+------------------+
-   | Usługa postrzegana jako darmowa              | ---                | ---                  | Tak              |
-   +----------------------------------------------+--------------------+----------------------+------------------+
-   | Brak zagrożenia konkurencją cenową           | ---                | ---                  | Tak              |
-   +----------------------------------------------+--------------------+----------------------+------------------+
-   | Stabilna liczba wyemitowanych tokenów        | Tak                | Tak                  | ---              |
-   +----------------------------------------------+--------------------+----------------------+------------------+
-   | Potencjał dynamicznej ekspansji systemu      | ---                | ---                  | Tak              |
-   +----------------------------------------------+--------------------+----------------------+------------------+
++----------------------------------------------+--------------------+----------------------+------------------+
+| Funkcjonalność                               | Token Dywidendowy  | Token Płatniczy      | Token Inflacyjny |
++==============================================+====================+======================+==================+
+| Brak konieczności zaufania do emitenta       | ---                | Tak                  | Tak              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Brak bariery wejścia dla użytkownika         | ---                | ---                  | Tak              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Stabilność kosztu dla biorcy informacji      | Tak                | ---                  | Tak              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Stabilność przychodu dla dawcy informacji    | Tak                | ---                  | ---              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Usługa postrzegana jako darmowa              | ---                | ---                  | Tak              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Brak zagrożenia konkurencją cenową           | ---                | ---                  | Tak              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Stabilna liczba wyemitowanych tokenów        | Tak                | Tak                  | ---              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Potencjał dynamicznej ekspansji systemu      | ---                | ---                  | Tak              |
++----------------------------------------------+--------------------+----------------------+------------------+
+| Innowacyjność rozwiązania                    | ---                | ---                  | Tak              |
++----------------------------------------------+--------------------+----------------------+------------------+
 ```
 
 ## Q&A
