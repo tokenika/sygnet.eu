@@ -56,7 +56,7 @@
             
   <div class="section" id="sygnet-skalowanie-procesu-kyc-poprzez-bankowe-poswiadczenie-tozsamosci-klienta">
 <span id="sygnet-skalowanie-procesu-kyc-poprzez-bankowe-poswiadczenie-tozsamosci-klienta"></span><h1>Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta<a class="headerlink" href="#sygnet-skalowanie-procesu-kyc-poprzez-bankowe-poswiadczenie-tozsamosci-klienta" title="Permalink to this headline">¶</a></h1>
-<p>Wersja 5.0 (19/05/2018)</p>
+<p>Wersja 5.1 (22/05/2018)</p>
 <p><em>Proponujemy rozwiązanie w zakresie KYC, które bazując na legislacji PSD2 umożliwia wykorzystanie, będącej w posiadaniu banku, informacji o tożsamości klienta. Skalowanie procesu KYC uzyskujemy poprzez, uzyskane od banku, kryptograficzne poświadczenie tożsamości klienta. Dzięki temu bank, oprócz świadczenia usług finansowych, jest w stanie radykalnie ułatwić swoim klientom proces weryfikacji KYC w sytuacji, gdy chcą oni skorzystać z usług innych podmiotów w branży FinTech (zarówno bankowych jak i niebankowych), a w dalszej konsekwencji, staje się dla nich generatorem ich cyfrowej tożsamości w Internecie.</em></p>
 <p>DISCLAIMER: Niniejszy dokument jest tylko wstępnym zarysem pomysłu i na tym etapie należy go traktować jako jedynie tekst wizjonerski. W swojej obecnej formie nie wyczerpuje on wszystkich tematów, które będą wymagać analizy, zanim ostatecznie uznamy, że opisane rozwiązanie jest warte wdrożenia.</p>
 <div class="section" id="wprowadzenie">
@@ -204,14 +204,41 @@
 <p>Wydaje się oczywiste, że system Sygnet mógłby być przydatny w tym zakresie i prawdopodobnie znacznie bardziej skuteczny niż tradycyjna metoda polegająca na weryfikacji dostępu do konta mailowego lub numeru telefonicznego. Unikalna tożsamość poświadczona przez bank ma niewątpliwie większą wiarygodność niż jakakolwiek inna metoda.</p>
 </div>
 </div>
-<div class="section" id="czym-sygnet-rozni-sie-od-profilu-zaufanego">
-<span id="czym-sygnet-rozni-sie-od-profilu-zaufanego"></span><h2>4. Czym Sygnet różni się od profilu zaufanego?<a class="headerlink" href="#czym-sygnet-rozni-sie-od-profilu-zaufanego" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="istniejace-alternatywne-rozwiazania">
+<span id="istniejace-alternatywne-rozwiazania"></span><h2>4. Istniejące alternatywne rozwiązania<a class="headerlink" href="#istniejace-alternatywne-rozwiazania" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="profil-zaufany-epuap">
+<span id="profil-zaufany-epuap"></span><h3>4.1 Profil zaufany (ePUAP)<a class="headerlink" href="#profil-zaufany-epuap" title="Permalink to this headline">¶</a></h3>
 <p>Wedle <a class="reference external" href="https://www.gov.pl/cyfryzacja/profil-zaufany-ego-">dokumentacji</a> Ministerstwa Cyfryzacji profil zaufany to bezpłatna metoda potwierdzania tożsamości obywatela w systemach elektronicznej administracji.</p>
 <blockquote>
 <div>Profil zaufany działa jak odręczny podpis. Możesz dzięki niemu wysyłać przez Internet dokumenty i wnioski do różnych urzędów (np. wnieść podanie, odwołanie, skargę). Profil zaufany potwierdza tożsamość obywatela. Podpis potwierdzony profilem zaufanym, podobnie jak kwalifikowany podpis elektroniczny, skutecznie zastępuje w kontaktach z podmiotami publicznymi podpis własnoręczny.</div></blockquote>
 <p>Na pierwszy rzut oka profil zaufany wygląda na rozwiązanie bardzo podobne do naszego. Co więcej, podobnie jak w naszym podejściu jednym z podmiotów zdolnych do wygenerowania takiego profilu dla użytkownika jest serwis bankowy. Kilka banków w Polsce oferuje taką usługę.</p>
 <p>Jest jednak istotna różnica: zastosowanie profilu zaufanego jest ograniczone do serwisów państwowych. Ograniczenie to wynika ze sposobu działania tego systemu: polega on na tym, że po założeniu profilu zaufanego użytkownik uzyskuje dostęp do wspólnego dla systemów państwowych mechanizmu logowania, lecz nie jest to równoważne z uzyskaniem uniwersalnej cyfrowej tożsamości. Tak więc profil zaufany z założenia nie może być rozszerzony na sferę niepaństwową i tym samym nie rozwiązuje problemu KYC dla firm.</p>
+<p>Opnię tę potwierdza <a class="reference external" href="https://www.piit.org.pl/__data/assets/pdf_file/0018/7236/Opinia_ekspertow_PIIT_identyfikacja_elektroniczna_31102017.pdf">poniższa intepretacja</a> Polskiej Izby Informatyki i Telekomunikacji:</p>
+<blockquote>
+<div>Administracja publiczna nie umożliwia korzystania z Profilu Zaufanego przez podmioty komercyjne i nie daje żadnych gwarancji dotyczących jego wiarygodności w zakresie usług komercyjnych.</div></blockquote>
 <p>Niemniej porównanie naszego rozwiązania do profilu zaufanego wydaje się jak najbardziej uzasadnione. Można nawet powiedzieć, że nasz system oferuje biznesom rozwiązanie w zakresie KYC analogiczne do tego, jakie profil zaufany oferuje urzędom państwowym w zakresie mechanizmu weryfikacji tożsamości obywatela w warunkach online.</p>
+</div>
+<div class="section" id="krajowy-wezel-identyfikacji-elektronicznej-kwie">
+<span id="krajowy-wezel-identyfikacji-elektronicznej-kwie"></span><h3>4.2 Krajowy Węzeł Identyfikacji Elektronicznej (KWIE)<a class="headerlink" href="#krajowy-wezel-identyfikacji-elektronicznej-kwie" title="Permalink to this headline">¶</a></h3>
+<p>Wedle <a class="reference external" href="http://www.sejm.gov.pl/Sejm8.nsf/druk.xsp?nr=2502">dostępnej dokumentacji</a> Krajowy Węzeł Identyfikacji Elektronicznej (KWIE) to planowany system identyfikacji elektronicznej integrujący środki identyfikacji wystawiane przez podmioty komercyjne (np. banki) dla potrzeb podmiotów świadczących online’owe usługi publiczne i niepubliczne.</p>
+<blockquote>
+<div>KWIE umożliwiał będzie uwierzytelnienie użytkowników systemów teleinformatycznych korzystających z usług online podmiotów publicznych, z wykorzystaniem środka identyfikacji elektronicznej wydanego w krajowym systemie identyfikacji elektronicznej przyłączonym do tego węzła.</div></blockquote>
+<blockquote>
+<div>KWIE został przewidziany jako rozwiązanie organizacyjno-techniczne, łączące z jednej strony platformy, na których udostępniane są usługi publiczne i niepubliczne, a z drugiej systemy identyfikacji elektronicznej, w ramach których wydawane będą środki identyfikacji elektronicznej oraz węzeł transgraniczny.</div></blockquote>
+<p>Wygląda na to, że KWIE jest rozwiązaniem typu <em>permissioned system</em>, bo podmioty uczestniczące po obu stronach platformy (tj. dawcy i biorcy informacji) muszą spełnić dość ostre kryteria opisane w ustawie. Powody wysokich wymagań dla dawców są dość jasne: trzeba mieć pewność, że dostarczana przez nich identyfikacja tożsamości jest wiarygodna. Jednak wymogi po stronie biorców są równie wysokie, jednak ich zasadność jest dużo mniej oczywista:</p>
+<blockquote>
+<div>System, w którym udostępniane są publiczne lub niepubliczne usługi online będzie mógł być przyłączony do węzła krajowego po zapewnieniu przez podmiot odpowiedzialny za ten system opracowania i ustanawiania, wdrażania i eksploatowania, monitorowania i przeglądania oraz utrzymywania i doskonalenia systemu zarządzania bezpieczeństwem informacji zgodnie z wymogami określonymi w przepisach wydanych na podstawie art. 18 ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizujących zadania publiczne, po przeprowadzeniu testów integracyjnych zakończonych wynikiem pozytywnym, potwierdzających interoperacyjność tych systemów z węzłem krajowym, oraz po złożeniu przez podmiot wnioskujący oświadczenia, że będzie on działał zgodnie z przepisami o ochronie danych osobowych. Minister właściwy do spraw informatyzacji przed wydaniem decyzji o przyłączeniu tych systemów może sprawdzać spełnianie wyżej wspomnianych wymagań. W przypadku niespełniania wyżej wspomnianych wymagań wydaje decyzję o odmowie przyłączenia do węzła krajowego systemu, w którym udostępniane są usługi online, nie zostanie udzielona.</div></blockquote>
+<p>Niejasny jest też model ekonomiczny systemu. Z jednej strony system jest prezentowany jako całkowicie bezpłatny:</p>
+<blockquote>
+<div>Wszystkie podmioty świadczące usługę identyfikacji będą ją udostępniały na rzecz administracji publicznej bezpłatnie i nie będą pobierały opłaty za korzystanie z identyfikacji przez obywateli w usługach publicznych.</div></blockquote>
+<p>Ale nie jest jasne, jaka jest przewidywana motywacja dla dawcy tożsamości do uczestniczenia w systemie (i tym samym poddania się rygorowi ostrych kryteriów) oraz jaki jest planowany mechanizm rozliczeń między komercyjnymi biorcami i dawcami, mimo deklaracji, że takie przepływy finansowe będą miały miejsce:</p>
+<blockquote>
+<div>Opłaty za usługi komercyjnej identyfikacji będą ponosiły podmioty komercyjne wykorzystujące ją w swoich usługach.</div></blockquote>
+<p>Podsumowując, KWIE <a class="reference external" href="https://www.piit.org.pl/__data/assets/pdf_file/0018/7236/Opinia_ekspertow_PIIT_identyfikacja_elektroniczna_31102017.pdf">jest prezentowany</a> jako dość jednostronne zaspokojenie potrzeb administracji publicznej, bez klarownie zdefiniowanych korzyści dla sektora komercyjnego:</p>
+<blockquote>
+<div>W ramach funkcjonowania krajowego systemu identyfikacji elektronicznej dostawcy tożsamości nie uzyskują danych z systemów administracji publicznej, tylko administracja publiczna korzysta z danych będących w posiadaniu komercyjnych dostawców tożsamości.</div></blockquote>
+<p>W tym świetle szansą Sygnetu jest dostarczenie systemu, który specjalizuje się w zaspokojeniu potrzeb komercyjnych (w odróżnieniu od potrzeb administracji publicznej) i jest znacznie bardziej zrównoważony w zakresie zapewnieniu obopólnych korzyści dla zarówno dawców jak i biorców informacji.</p>
+</div>
 </div>
 <div class="section" id="uzasadnienie-przydatnosci-systemu">
 <span id="uzasadnienie-przydatnosci-systemu"></span><h2>5. Uzasadnienie przydatności systemu<a class="headerlink" href="#uzasadnienie-przydatnosci-systemu" title="Permalink to this headline">¶</a></h2>
