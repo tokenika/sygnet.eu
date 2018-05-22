@@ -1,3 +1,5 @@
+# Sygnet - model ekonomiczny Q&A
+
 ## 1. Trudność wytłumaczenia modelu
 
 > Prawdopodobnie będzie trudno wytłumaczyć to rozwiązanie innym podmiotom.
@@ -67,7 +69,7 @@ Chyba najlepiej będzie skorzystać z doświadczeń Steema albo podpatrzeć jak 
 
 Warto też wiedzieć, że w Steemie (i pewnie też w EOSie) tokeny inicjujące nowe konto nie przyczyniają się do zwiększenia inflacji, bo są one tylko wydelegowane do nowego konta (a nie mu przekazane), więc nie mogą być sprzedane na rynku.
 
-## 9. Darmowość usługi 
+## 9. Darmowość usługi
 
 > Wielokrotnie powtarzane w dokumencie twierdzenie, że w modelu inflacyjnym korzystanie z usługi jest za darmo, nie wydaje mi się prawdziwe, nawet przy założeniu, że na starcie sprawdzający tożsamość (weryfikujący, kupujący, "biorca") dostaje pewną (jak to określono) "minimalną" liczbę tokenów. W sytuacji (a zakładam, że będzie ona powszechna), w której ta liczba nie wystarczy na obsłużenie potrzeb trzeba tokeny dokupić i wtedy wchodzi typowa kalkulacja:
 >
@@ -88,10 +90,10 @@ Jednak nawet w przypadku użycia wersji "pro" koszt takiej inwestycji musi być 
 
 Podsumowując, wszystkie powyższe wątpliwości są zasadne, ale są one nieusuwalne, niezależenie od wyboru modelu ekonomicznego, bo zawsze zdajemy się na grę popytu i podaży. To co daje model inflacyjny to przynajmniej gwarancja, że w swym podstawowym zakresie usługa jest zawsze darmowa.
 
-## 10. Trudność kalkulacji ekonomicznej 
+## 10. Trudność kalkulacji ekonomicznej
 
 > Inwestując w tokeny, które się nie zużywają wiążę się z Sygnetem na długi czas - taki jaki rynek przyjmuje za rozsądny czas trwania systemu, bo to wpływa na cenę tokenu i tym samym czas po jakim odzyskam inwestycję. Co jeżeli jutro pojawi się konkurencja dla Sygnetu? Co jeżeli proces weryfikacji przejmie państwo? Albo ten problem zniknie zupełnie, bo ludzie zostaną wpięci do Internetu bezpośrednio? Już samo wprowadzenie tokenu jako środka płatniczego zwiększa ryzyko wejścia w system (związane ze spekulacją na nim i jego kursem), a co dopiero wprowadzenie mechanizmu inflacyjnego.
->
+
 > Zestawmy, to z tradycyjnym system, w którym za każdą weryfikację muszę zapłacić cenę ustaloną w momencie transakcji. Jeżeli ta cena jest atrakcyjna (czyli inne sposoby są droższe, lub mniej wiarygodne, lub trwają dłużej), to się decyduję. Oceniam to lokalnie, tj. na dzisiaj. Jutro moja ocena może być inna.
 
 Moim zdaniem te zarzuty są nietrafne. Z punktu widzenia użytkownika (tj. biorcy informacji) model inflacyjny jest z definicji zawsze dla niego korzystniejszy niż jakikolwiek inne rozwiązanie, bo część kosztów operacyjnych systemu jest przerzucona na inwestorów - czyli tych posiadaczy tokenów, którzy trzymają je dla celów spekulacyjnych, a nie dlatego, że rzeczywiście chcą korzystać z systemu jako biorcy informacji.
@@ -101,16 +103,16 @@ Ponadto ocena atrakcyjności ceny w jednym momencie czasowym nic nie daje. Dużo
 ## 11. Sztuczna unifikacja rynku
 
 > Słabym punktem jest też wrzucanie wszystkich poświadczających do jednego worka. Wyobraźmy sobie, że jest wiele firm, które sprzedają usługę weryfikacji o niskiej wiarygodności i kilka firm, które sprzedają usługę o bardzo dużej jakości. Ci pierwsi mają małe koszty, ci drudzy ogromne. Ci pierwsi mogą weryfikować całą masę konsumentów, ci drudzy dysponują danymi mniejszej części populacji. W tradycyjnym systemie to klient decyduje, z której z usług chce skorzystać. Większość skorzysta z tych tanich weryfikacji, bo nie potrzebują nie wiadomo jakich gwarancji. Ci którzy potrzebują czegoś ekstra muszą za to ekstra zapłacić i pokryć koszty funkcjonowania droższych poświadczających. Rynek ustala, która usługa przetrwa, a która nie.
->
+
 > W proponowanym systemie inflacyjnym promowani są ci potwierdzający, którzy mają większą liczbę konsumentów w swoich bazach. Siłą rzeczy wykonują więcej weryfikacji, więc przydzielana jest więcej tokenów pochodzących z inflacji. Nawet proponowane wprowadzenie podziału dawców na kategorie i wymóg posiadania większej ilości tokenów, aby móc korzystać z usług tych "lepszych" nie rozwiązuje problemu. Mogę mieć dużo tokenów i wykonać jedną weryfikacje u "mocnego dawcy" i jedną u "słabego". Który z nich będzie w lepszej sytuacji po rozdzielaniu mojej części puli inflacyjnej (ten który miał większe koszty, czy mniejsze)? W mojej opinii taki system będzie prowadził do ujednolicenia usługi w Sygnecie.
 
 Można zrobić tak: każdy dawca sam deklaruje na ile się ceni i wtedy z puli inflacyjnej idzie tyle, ile ten dawca sobie zażądał. Jeśli biorca nie ma takiego udziału w puli, żeby było go na to stać, to albo musi skorzystać z tańszego dostawcy albo zwiększyć swój udział w puli poprzez dokupienie tokenów.
 
 ## 12. Eliminacja konsumentów z gry rynkowej
 
-> Kolejnym, w mojej opinii błędnym, założeniem jest, że osoba której tożsamość jest weryfikowana jest przedmiotem a nie podmiotem w grze rynkowej. Proponowany model nie dopuszcza sytuacji (a przynajmniej utrudnia, komplikując model ekonomiczny biznesów poświadczającego i sprawdzającego), by Kowalski stał się podmiotem i np. wybrał sobie, u którego poświadczającego chce zdeponować swoje dane. Jego zaufanie wydaje się być tak samo ważne, jak zaufanie biorców. Zachęta ekonomiczna dla konsumentów może mieć duże znaczenie dla powodzenia Sygnetu. To ona może spowodować, że powstaną nowe firmy wyspecjalizowane w weryfikacji tożsamości. Ale do tego będą potrzebowały zachęcić konsumentów, do powierzenia im swoich tożsamości. Bez tego faworyzowane będą firmy, które już mają dane konsumentów, ale których główny biznes jest gdzie indziej (Alegro to przecież aukcje, banki to lokaty i kredyty, a nie weryfikacja). Zakładanie, że na nich można oprzeć Sygnet jest słabe.
+> Kolejnym, w mojej opinii błędnym, założeniem jest, że osoba której tożsamość jest weryfikowana jest przedmiotem a nie podmiotem w grze rynkowej. Proponowany model nie dopuszcza sytuacji (a przynajmniej utrudnia, komplikując model ekonomiczny biznesów poświadczającego i sprawdzającego), by Kowalski stał się podmiotem i np. wybrał sobie, u którego poświadczającego chce zdeponować swoje dane. Jego zaufanie wydaje się być tak samo ważne, jak zaufanie biorców. Zachęta ekonomiczna dla konsumentów może mieć duże znaczenie dla powodzenia Sygnetu. To ona może spowodować, że powstaną nowe firmy wyspecjalizowane w weryfikacji tożsamości. Ale do tego będą potrzebowały zachęcić konsumentów, do powierzenia im swoich tożsamości. Bez tego faworyzowane będą firmy, które już mają dane konsumentów, ale których główny biznes jest gdzie indziej (Allegro to przecież aukcje, banki to lokaty i kredyty, a nie weryfikacja). Zakładanie, że na nich można oprzeć Sygnet jest słabe.
 
-Rozwiązaniem jest pozwolenie aby dawcy dzieli się swoim przychodem z Kowalskim, czyli przedmiotem wersyfikacji tożsamości. Jednak to nie może byc obowiązkowe, bo głównym naszym założeniem jest to żeby Kowalski mógł załatwić sprawę swojej weryfikacji mimimalnym wysiłkiem, więc jeśli wpięcie go w model ekonomiczny oznacza zmuszenie go do założenia sobie konta w Sygnecie, to nie możemy tego zrobić. Ale jeśli dawca informacji przekona go do tego, to niech się tak dzieje.
+Rozwiązaniem jest pozwolenie aby dawcy dzieli się swoim przychodem z Kowalskim, czyli przedmiotem wersyfikacji tożsamości. Jednak to nie może być obowiązkowe, bo głównym naszym założeniem jest to żeby Kowalski mógł załatwić sprawę swojej weryfikacji minimalnym wysiłkiem, więc jeśli wpięcie go w model ekonomiczny oznacza zmuszenie go do założenia sobie konta w Sygnecie, to nie możemy tego zrobić. Ale jeśli dawca informacji przekona go do tego, to niech się tak dzieje.
 
 ## 13. Centralne sterowanie
 
@@ -120,10 +122,8 @@ Rozwiązaniem jest pozwolenie aby dawcy dzieli się swoim przychodem z Kowalskim
 
 > Osobiście widziałem Sygnet jako coś zupełnie innego. Jako rynek właśnie. Targowisko lub giełdę, gdzie wszyscy się spotykają i zaczynają handlować weryfikacjami. Niech sami sobie ustalą kto komu może zaufać, czy opłaca im się abonament, czy tylko jednorazowe płatności. Może nawet wymyślą jakieś instrumenty pochodne? My mamy tylko dać możliwość handlu i wziąć za to prowizję.
 
-Rozwiązaniem problemu, kto będzie ustalał hierachię dawców informacji, jest modyfikacja opisana powyżej, tj. pozwolenie żeby dawcy sami deklarowali na ile się cenią poprzez wyznaczenie ceny jednostkowej swoich usług.
+Rozwiązaniem problemu, kto będzie ustalał hierarchię dawców informacji, jest modyfikacja opisana powyżej, tj. pozwolenie żeby dawcy sami deklarowali na ile się cenią poprzez wyznaczenie ceny jednostkowej swoich usług.
 
-Głównym celem modelu inflacyjnego jest wsparcie finansowe dla biorców informacji kosztem inwestorów spekulacych. Zamiast płacić z własnej kieszeni, płacą z kieszeni puli inflacyjnej, a żeby mieć większy niż minimalny dostęp do tej puli muszą kupić sobie dodatkowe tokeny.
+Głównym celem modelu inflacyjnego jest wsparcie finansowe dla biorców informacji kosztem inwestorów spekulacyjnych. Biorcy zamiast płacić z własnej kieszeni, płacą z kieszeni puli inflacyjnej, a żeby mieć większy niż minimalny dostęp do tej puli muszą kupić sobie dodatkowe tokeny.
 
-Moim zdaniem to w ogóle nie przeczy idei targowiska. Też jest wolny rynek, na którym każdy sobie działa wedle własnego uznania, z tą tylko róznicą że zamiast dwóch typów uczestników (popyt na daną usługę i jej podaż) są trzy (popyt, podaż i inwestorzy spekulacyjni). Mamy trochę większą komplikację, ale za to mamy gignatyczną zaletę w postaci wyeliminowania bariery wejścia dla nowych użytkowników. I także wydaje się słuszne żeby koszty eliminacji tej bariery wejścia przerzucić na inwestrów spekulachjunych, bo to oni staną się głównymi beneficjenatmi w momemncie gdy system będzie się stawał coraz bardzije popularny.
-
- 
+Moim zdaniem to w ogóle nie przeczy idei targowiska. Też jest wolny rynek, na którym każdy sobie działa wedle własnego uznania, z tą tylko różnicą że zamiast dwóch typów uczestników (popyt na daną usługę i jej podaż) są trzy (popyt, podaż i inwestorzy spekulacyjni). Mamy trochę większą komplikację, ale za to mamy gigantyczną zaletę w postaci wyeliminowania bariery wejścia dla nowych użytkowników. I także wydaje się słuszne żeby koszty eliminacji tej bariery wejścia przerzucić na inwestorów spekulacyjnych, bo to oni staną się głównymi beneficjentami w momencie gdy system będzie się stawał coraz bardziej popularny.
