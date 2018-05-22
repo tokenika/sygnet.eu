@@ -177,7 +177,7 @@ Na pierwszy rzut oka profil zaufany wygląda na rozwiązanie bardzo podobne do n
 
 Jest jednak istotna różnica: zastosowanie profilu zaufanego jest ograniczone do serwisów państwowych. Ograniczenie to wynika ze sposobu działania tego systemu: polega on na tym, że po założeniu profilu zaufanego użytkownik uzyskuje dostęp do wspólnego dla systemów państwowych mechanizmu logowania, lecz nie jest to równoważne z uzyskaniem uniwersalnej cyfrowej tożsamości. Tak więc profil zaufany z założenia nie może być rozszerzony na sferę niepaństwową i tym samym nie rozwiązuje problemu KYC dla firm. 
 
-Opnię tę potwierdza [poniższa intepretacja](https://www.piit.org.pl/__data/assets/pdf_file/0018/7236/Opinia_ekspertow_PIIT_identyfikacja_elektroniczna_31102017.pdf) Polskiej Izby Informatyki i Telekomunikacji:
+Opinię tę potwierdza [poniższa interpretacja](https://www.piit.org.pl/__data/assets/pdf_file/0018/7236/Opinia_ekspertow_PIIT_identyfikacja_elektroniczna_31102017.pdf) Polskiej Izby Informatyki i Telekomunikacji:
 
 > Administracja publiczna nie umożliwia korzystania z Profilu Zaufanego przez podmioty komercyjne i nie daje żadnych gwarancji dotyczących jego wiarygodności w zakresie usług komercyjnych.
 
