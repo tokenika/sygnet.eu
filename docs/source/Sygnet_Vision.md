@@ -193,23 +193,26 @@ Podobnie jak w systemie Sygnet, głównym celem KWIE jest stworzenie pomostu mi�
 
 > KWIE został przewidziany jako rozwiązanie organizacyjno-techniczne, łączące z jednej strony platformy, na których udostępniane są usługi publiczne i niepubliczne, a z drugiej systemy identyfikacji elektronicznej, w ramach których wydawane będą środki identyfikacji elektronicznej oraz węzeł transgraniczny.
 
-Wygląda na to, że KWIE jest rozwiązaniem typu *permissioned system*, bo podmioty uczestniczące po obu stronach platformy (tj. dawcy i biorcy informacji) muszą spełnić dość ostre kryteria opisane w ustawie. Powody wysokich wymagań dla dawców są dość jasne: trzeba mieć pewność, że dostarczana przez nich identyfikacja tożsamości jest wiarygodna. Jednak wymogi po stronie biorców są równie wysokie, jednak ich zasadność jest dużo mniej oczywista:
+Wygląda na to, że KWIE jest rozwiązaniem typu *permissioned system*, bo podmioty uczestniczące po obu stronach (czyli dawcy i biorcy informacji) muszą spełnić dość ostre kryteria opisane w ustawie. Powody wysokich wymagań dla dawców są dość jasne: trzeba mieć pewność, że dostarczana przez nich identyfikacja tożsamości jest wiarygodna. Jednak wymogi po stronie biorców są równie wysokie, jednak ich zasadność jest dużo mniej oczywista:
 
 > System, w którym udostępniane są publiczne lub niepubliczne usługi online będzie mógł być przyłączony do węzła krajowego po zapewnieniu przez podmiot odpowiedzialny za ten system opracowania i ustanawiania, wdrażania i eksploatowania, monitorowania i przeglądania oraz utrzymywania i doskonalenia systemu zarządzania bezpieczeństwem informacji zgodnie z wymogami określonymi w przepisach wydanych na podstawie art. 18 ustawy z dnia 17 lutego 2005 r. o informatyzacji działalności podmiotów realizujących zadania publiczne, po przeprowadzeniu testów integracyjnych zakończonych wynikiem pozytywnym, potwierdzających interoperacyjność tych systemów z węzłem krajowym, oraz po złożeniu przez podmiot wnioskujący oświadczenia, że będzie on działał zgodnie z przepisami o ochronie danych osobowych. Minister właściwy do spraw informatyzacji przed wydaniem decyzji o przyłączeniu tych systemów może sprawdzać spełnianie wyżej wspomnianych wymagań. W przypadku niespełniania wyżej wspomnianych wymagań wydaje decyzję o odmowie przyłączenia do węzła krajowego systemu, w którym udostępniane są usługi online, nie zostanie udzielona.
 
-Niejasny jest też model ekonomiczny systemu. Z jednej strony system jest prezentowany jako całkowicie bezpłatny:
+Niejasny jest też model ekonomiczny systemu. Z jednej strony system [jest prezentowany](https://www.piit.org.pl/__data/assets/pdf_file/0018/7236/Opinia_ekspertow_PIIT_identyfikacja_elektroniczna_31102017.pdf) jako całkowicie bezpłatny:
 
 > Wszystkie podmioty świadczące usługę identyfikacji będą ją udostępniały na rzecz administracji publicznej bezpłatnie i nie będą pobierały opłaty za korzystanie z identyfikacji przez obywateli w usługach publicznych.
 
-Ale nie jest jasne, jaka jest przewidywana motywacja dla dawcy tożsamości do uczestniczenia w systemie (i tym samym poddania się rygorowi ostrych kryteriów) oraz jaki jest planowany mechanizm rozliczeń między komercyjnymi biorcami i dawcami, mimo deklaracji, że takie przepływy finansowe będą miały miejsce:
+Jednak z drugiej strony nie jest jasne, jaka jest przewidywana motywacja dla dawcy tożsamości do uczestniczenia w systemie (i tym samym poddania się rygorowi ostrych kryteriów) oraz jaki jest planowany mechanizm rozliczeń między komercyjnymi biorcami i dawcami, mimo [przewidywań](https://www.piit.org.pl/__data/assets/pdf_file/0018/7236/Opinia_ekspertow_PIIT_identyfikacja_elektroniczna_31102017.pdf), że takie przepływy finansowe będą miały miejsce:
 
 > Opłaty za usługi komercyjnej identyfikacji będą ponosiły podmioty komercyjne wykorzystujące ją w swoich usługach.
 
-Podsumowując, KWIE [jest prezentowany](https://www.piit.org.pl/__data/assets/pdf_file/0018/7236/Opinia_ekspertow_PIIT_identyfikacja_elektroniczna_31102017.pdf) jako dość jednostronne zaspokojenie potrzeb administracji publicznej, bez klarownie zdefiniowanych korzyści dla sektora komercyjnego:
+Podsumowując, KWIE [jest prezentowany](https://www.piit.org.pl/__data/assets/pdf_file/0018/7236/Opinia_ekspertow_PIIT_identyfikacja_elektroniczna_31102017.pdf) jako dość jednostronne zaspokojenie potrzeb administracji publicznej bez klarownie zdefiniowanych korzyści dla sektora komercyjnego:
 
 > W ramach funkcjonowania krajowego systemu identyfikacji elektronicznej dostawcy tożsamości nie uzyskują danych z systemów administracji publicznej, tylko administracja publiczna korzysta z danych będących w posiadaniu komercyjnych dostawców tożsamości.
 
-W tym świetle szansą Sygnetu jest dostarczenie systemu, który specjalizuje się w zaspokojeniu potrzeb komercyjnych (w odróżnieniu od potrzeb administracji publicznej) i jest znacznie bardziej zrównoważony w zakresie zapewnieniu obopólnych korzyści dla zarówno dawców jak i biorców informacji.
+W tym świetle szansą Sygnetu jest dostarczenie systemu, który:
+
+* specjalizuje się w zaspokojeniu potrzeb podmiotów komercyjnych (w odróżnieniu od potrzeb administracji publicznej) oraz
+* jest znacznie bardziej zrównoważony w zakresie zapewnieniu obopólnych korzyści dla zarówno dawców jak i biorców informacji.
 
 ## 5. Uzasadnienie przydatności systemu
 
