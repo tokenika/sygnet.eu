@@ -212,7 +212,7 @@ Podsumowując, KWIE [jest prezentowany](https://www.piit.org.pl/__data/assets/pd
 W tym świetle szansą Sygnetu jest dostarczenie systemu, który:
 
 * specjalizuje się w zaspokojeniu potrzeb podmiotów komercyjnych (w odróżnieniu od potrzeb administracji publicznej, do czego będzie zapewne grawitował KWIE),
-* jest znacznie bardziej zrównoważony w zakresie zapewnieniu obopólnych korzyści dla zarówno dawców jak i biorców informacji.
+* jest znacznie bardziej zrównoważony w zakresie zapewnienia obopólnych korzyści zarówno dla dawców jak i biorców informacji.
 
 ## 5. Uzasadnienie przydatności systemu
 
