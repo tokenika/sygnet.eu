@@ -16,6 +16,7 @@ Documentation
 
     Sygnet_Vision
     Sygnet_EconomicModel
+    Sygnet_EconomicModel_QA
     Sygnet_LegalAspects
     Sygnet_CompetitionAnalysis
 
