@@ -8,6 +8,7 @@
     <title>Sygnet - skalowanie procesu KYC poprzez bankowe poświadczenie tożsamości klienta &#8212; Sygnet 1.0 documentation</title>
     <link rel="stylesheet" href="_static/readable.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
@@ -204,8 +205,8 @@
 <p>Wydaje się oczywiste, że system Sygnet mógłby być przydatny w tym zakresie i prawdopodobnie znacznie bardziej skuteczny niż tradycyjna metoda polegająca na weryfikacji dostępu do konta mailowego lub numeru telefonicznego. Unikalna tożsamość poświadczona przez bank ma niewątpliwie większą wiarygodność niż jakakolwiek inna metoda.</p>
 </div>
 </div>
-<div class="section" id="istniejace-alternatywne-rozwiazania">
-<span id="istniejace-alternatywne-rozwiazania"></span><h2>4. Istniejące alternatywne rozwiązania<a class="headerlink" href="#istniejace-alternatywne-rozwiazania" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="alternatywne-rozwiazania">
+<span id="alternatywne-rozwiazania"></span><h2>4. Alternatywne rozwiązania<a class="headerlink" href="#alternatywne-rozwiazania" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="profil-zaufany-epuap">
 <span id="profil-zaufany-epuap"></span><h3>4.1 Profil zaufany (ePUAP)<a class="headerlink" href="#profil-zaufany-epuap" title="Permalink to this headline">¶</a></h3>
 <p>Wedle <a class="reference external" href="https://www.gov.pl/cyfryzacja/profil-zaufany-ego-">dokumentacji</a> Ministerstwa Cyfryzacji profil zaufany to bezpłatna metoda potwierdzania tożsamości obywatela w systemach elektronicznej administracji.</p>
@@ -223,6 +224,7 @@
 <p>Wedle <a class="reference external" href="http://www.sejm.gov.pl/Sejm8.nsf/druk.xsp?nr=2502">dostępnej dokumentacji</a> Krajowy Węzeł Identyfikacji Elektronicznej (KWIE) to planowany system identyfikacji elektronicznej integrujący środki identyfikacji wystawiane przez podmioty komercyjne (np. banki) dla potrzeb podmiotów świadczących online’owe usługi publiczne i niepubliczne.</p>
 <blockquote>
 <div>KWIE umożliwiał będzie uwierzytelnienie użytkowników systemów teleinformatycznych korzystających z usług online podmiotów publicznych, z wykorzystaniem środka identyfikacji elektronicznej wydanego w krajowym systemie identyfikacji elektronicznej przyłączonym do tego węzła.</div></blockquote>
+<p>Podobnie jak w systemie Sygnet, głównym celem KWIE jest stworzenie pomostu między dawcami i biorcami informacji służącej do weryfikacji tożsamości:</p>
 <blockquote>
 <div>KWIE został przewidziany jako rozwiązanie organizacyjno-techniczne, łączące z jednej strony platformy, na których udostępniane są usługi publiczne i niepubliczne, a z drugiej systemy identyfikacji elektronicznej, w ramach których wydawane będą środki identyfikacji elektronicznej oraz węzeł transgraniczny.</div></blockquote>
 <p>Wygląda na to, że KWIE jest rozwiązaniem typu <em>permissioned system</em>, bo podmioty uczestniczące po obu stronach platformy (tj. dawcy i biorcy informacji) muszą spełnić dość ostre kryteria opisane w ustawie. Powody wysokich wymagań dla dawców są dość jasne: trzeba mieć pewność, że dostarczana przez nich identyfikacja tożsamości jest wiarygodna. Jednak wymogi po stronie biorców są równie wysokie, jednak ich zasadność jest dużo mniej oczywista:</p>

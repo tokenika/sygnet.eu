@@ -165,7 +165,7 @@ Istnieje mnóstwo biznesów (np. sieci społecznościowe), które nie podlegają
 
 Wydaje się oczywiste, że system Sygnet mógłby być przydatny w tym zakresie i prawdopodobnie znacznie bardziej skuteczny niż tradycyjna metoda polegająca na weryfikacji dostępu do konta mailowego lub numeru telefonicznego. Unikalna tożsamość poświadczona przez bank ma niewątpliwie większą wiarygodność niż jakakolwiek inna metoda.
 
-## 4. Istniejące alternatywne rozwiązania
+## 4. Alternatywne rozwiązania
 
 #### 4.1 Profil zaufany (ePUAP)
 
@@ -188,6 +188,8 @@ Niemniej porównanie naszego rozwiązania do profilu zaufanego wydaje się jak n
 Wedle [dostępnej dokumentacji](http://www.sejm.gov.pl/Sejm8.nsf/druk.xsp?nr=2502) Krajowy Węzeł Identyfikacji Elektronicznej (KWIE) to planowany system identyfikacji elektronicznej integrujący środki identyfikacji wystawiane przez podmioty komercyjne (np. banki) dla potrzeb podmiotów świadczących online'owe usługi publiczne i niepubliczne.
 
 > KWIE umożliwiał będzie uwierzytelnienie użytkowników systemów teleinformatycznych korzystających z usług online podmiotów publicznych, z wykorzystaniem środka identyfikacji elektronicznej wydanego w krajowym systemie identyfikacji elektronicznej przyłączonym do tego węzła.
+
+Podobnie jak w systemie Sygnet, głównym celem KWIE jest stworzenie pomostu między dawcami i biorcami informacji służącej do weryfikacji tożsamości: 
 
 > KWIE został przewidziany jako rozwiązanie organizacyjno-techniczne, łączące z jednej strony platformy, na których udostępniane są usługi publiczne i niepubliczne, a z drugiej systemy identyfikacji elektronicznej, w ramach których wydawane będą środki identyfikacji elektronicznej oraz węzeł transgraniczny.
 
