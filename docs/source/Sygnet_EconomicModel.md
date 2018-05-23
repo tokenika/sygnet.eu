@@ -12,11 +12,13 @@ W systemie Sygnet mamy trzy rodzaje uczestników:
 - Biorca informacji (który potrzebuje zweryfikować osobę K),
 - Osoba K, której dotyczy informacja i która jest przedmiotem weryfikacji.
 
-Zakładamy, że model ekonomiczny powinien dotyczyć tylko pierwszych dwóch typów uczestników, tj. dawcy i biorcy informacji, natomiast trzeci uczestnik, tj. osoba K, nie powinna brać udziału w tym modelu, ponieważ jest ona tylko przedmiotem transakcji (a nie podmiotem), a jej główną motywacją jest tylko to, żeby proces weryfikacji jej tożsamości był szybki i wygodny.
+Przyjmujemy, że model ekonomiczny powinien dotyczyć przede wszystkim dwóch pierwszych typów uczestników, tj. dawcy i biorcy informacji, bo to między tymi podmiotami następuje przepływ usługi. Jest oczywiste, że skoro kierunek przepływu korzyści jest od dawcy informacji do biorcy, to przepływ tokenu będzie w kierunku odwrotnym.
+
+Natomiast rola trzeciego uczestnika, tj. osoby K, jest mniej oczywista. Początkowo przyjęliśmy, że osoba K jest tylko przedmiotem transakcji (a nie podmiotem), a jej główną motywacją jest tylko to, żeby proces weryfikacji jej tożsamości był szybki i wygodny, co wskazywałoby na to, że można wykluczyć osobę K z rozliczeń.
+
+Jednak po przemyśleniu uznaliśmy, że zachęta ekonomiczna dla konsumentów może mieć duże znaczenie dla powodzenia Sygnetu. To ona może spowodować, że powstaną nowe firmy wyspecjalizowane w weryfikacji tożsamości - ale do tego będą one potrzebowały zachęcić konsumentów, do powierzenia im swoich tożsamości. Dlatego też przyjęliśmy, że jeśli jest chęć po stronie dawcy informacji żeby włączyć osobę K do rozliczeń, to powinna ona też być uwzględniona w modelu (zakładając że dysponuje ona kontem w systemie).
 
 ## 2. Cel modelu
-
-Jest oczywiste, że skoro kierunek przepływu korzyści w systemie Sygnet jest od dawcy informacji do biorcy informacji, to głównym celem funkcjonowania tokenu jest motywowanie dawców informacji do aktywnej partycypacji w systemie.
 
 Z punktu widzenia biznesowego chcemy spełnić następujące kryteria:
 
@@ -24,6 +26,7 @@ Z punktu widzenia biznesowego chcemy spełnić następujące kryteria:
 2. Sposób działania tokenu powinien wspierać masową adopcję systemu. Idealnie by było żeby użytkownik mógł zacząć używać systemu bez konieczności wcześniejszego zakupu tokenu.
 3. Używanie tokenu powinno być uwolnione od ryzyka cenowego. Większość użytkowników chce używać tokenu w celu uzyskania usługi, a nie spekulować na jego wartości.
 4. Token powinien w większym stopniu nagradzać tych dawców informacji, którzy mają większą wiarygodność i tym samym informacja dostarczona przez nich jest cenniejsza niż informacja z innych źródeł.
+5. Powinna być możliwość automatycznego przekierowania do osoby K części zapłaty uzyskanej przez dawcę  (zakładając że osoba K dysponuje kontem w systemie).
 
 ## 3. Alternatywne podejścia do konstrukcji tokenu
 
