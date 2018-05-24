@@ -149,7 +149,7 @@ Gdybyśmy jednak chcieli usunąć powyższy *trade-off*, system Sygnet w wersji 
 
 Posiadając taki bankowy certyfikat, klient K w ramach systemu Sygnet mógłby posługiwać się swoim kluczem prywatnym w analogiczny sposób do posługiwania się certyfikowanym podpisem elektronicznym - oczywiście przy założeniu, że uznamy podmiot bankowy za wiarygodne źródło certyfikacji tego podpisu.
 
-Założenie to oczywiście nie spełnia wymogów ustawy o kwalifikowanym podpisie elektronicznym, ale w praktyce biznesowej niewątpliwie jest to bardziej wiarygodne podejście niż np. metoda oferowana przez [DocuSign](https://www.docusign.com/).
+Założenie to oczywiście nie spełnia wymogów ustawy o kwalifikowanym podpisie elektronicznym, ale w praktyce biznesowej niewątpliwie jest to bardziej wiarygodne podejście niż np. metoda oferowana przez [DocuSign](https://www.docusign.com/) lub [Autenti](https://autenti.com/), bo nie jest ono uzależnione od istnienia (i uczciwości) scentralizowanego pośrednika.
 
 #### 3.3 Autoryzacja w PSD2
 
