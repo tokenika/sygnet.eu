@@ -94,11 +94,11 @@ Są też jednak istotne różnice:
 
 Biorąc pod uwagę powyższe podobieństwa i różnice, proponujemy następujący schemat działania:
 
-- Każdy dawca informacji sam decyduje na ile ceni swoją wiarygodność poprzez zadeklarowanie ceny za pojedynczą porcję informacji (służącej do weryfikacji jednej osoby). Zmiany w "cenniku" moga być dokonywane przez dawcę z dowolną częstotliwością.
+- Każdy dawca informacji sam decyduje na ile ceni swoją wiarygodność poprzez zadeklarowanie ceny za pojedynczą porcję informacji (służącej do weryfikacji jednej osoby). Zmiany w "cenniku" mogą być dokonywane przez dawcę z dowolną częstotliwością.
 
 - Dzienną pulę inflacyjną dystrybuujemy wśród biorców informacji proporcjonalnie do udziału posiadanych przez nich Sygnetowych tokenów w całkowitej populacji tych tokenów. Te przyznane im środki mogą oni wydać danego dnia na konsumpcję informacji dostarczanych przez dawców, z zastrzeżeniem że środki te nie mogą być wydane na nic innego niż zapłata dla dawców.
 - Niewydane przez biorców danego dnia środki przepadają (są spalane). Wydatki biorców ponad przyznaną im część puli inflacyjnej tymczasowo idą z portfela biorcy, z tym że może on liczyć na ich częściowy albo całkowity zwrot, jeśli okaże się, że danego dnia inni biorcy informacji nie wykorzystali w pełni swojego przydziału.
-- Opcjonalnie część sródków otrzymanych przez dawcę może być przekierowana na osobę K, której dotyczy weryfikacja tożsamości. Zakładamy tu, że osoba K ma założone konto w systemie - przekonanie klienta K, że warto to zrobić, pozostawiamy dawcy.
+- Opcjonalnie część środków otrzymanych przez dawcę może być przekierowana na osobę K, której dotyczy weryfikacja tożsamości. Zakładamy tu, że osoba K ma założone konto w systemie - przekonanie klienta K, że warto to zrobić, pozostawiamy dawcy.
 - Podobnie jak w Steemie każde nowe konto zasilane jest minimalną liczbą Sygnetowych tokenów, tak żeby jego właściciel był w stanie w podstawowym zakresie korzystać z systemu jako biorca informacji. Tego początkowego zasilenia dokonujemy my, tj. beneficjenci ICO, i jest to jeden z naszych kosztów.
 - Podobnie jak w Steemie rozliczenie puli inflacyjnej działa w cyklu dobowym.
 - Wszystkie przepływy finansowe są wyrażone w walucie fiat (np. USD lub EUR). Zakładamy tu, że system będzie zasilany z zewnątrz bieżącą ceną tokenu w stosunku do fiat i będzie automatycznie dokonywał stosownych konwersji.
@@ -141,9 +141,9 @@ Wygląda to na win-win dla każdego, a jedyną stroną, która ponosi negatywne 
 
 #### 6.1 Różnica wobec tokenu płatniczego
 
-W przypadku tokenu płatniczego (tj. takiego ktory przepływa z portfela biorcy do portfela dawcy) mamy jedną istotną wadę: potrzebujemy skłonić potencjalnego biorcę usługi do nabycia tokenu **zanim** ma on szansę z niej skorzystać. Jest to istotna przeszkoda w adopcji.
+W przypadku tokenu płatniczego (tj. takiego który przepływa z portfela biorcy do portfela dawcy) mamy jedną istotną wadę: potrzebujemy skłonić potencjalnego biorcę usługi do nabycia tokenu **zanim** ma on szansę z niej skorzystać. Jest to istotna przeszkoda w adopcji.
 
-Natomiast proponowany przez nas token inflacyjny ma zupełnie inną charakterystkę: przepływa on do portfela dawcy z puli inflacyjnej, a portfel biorcy pozostaje w większości przypadków nienaruszony. Oznacza to, że usługa w swojej podstawowej wersji jest oferowana **za darmo**, co w oczywisty sposób niweluje barierę wejścia dla nowych użytkowników.
+Natomiast proponowany przez nas token inflacyjny ma zupełnie inną charakterystykę: przepływa on do portfela dawcy z puli inflacyjnej, a portfel biorcy pozostaje w większości przypadków nienaruszony. Oznacza to, że usługa w swojej podstawowej wersji jest oferowana **za darmo**, co w oczywisty sposób niweluje barierę wejścia dla nowych użytkowników.
 
 Żeby to osiągnąć w pełni wykorzystujemy atuty technologii blockchain i uzyskujemy właściwości ekonomiczne, których nie można zrealizować w żaden inny sposób: proponowany przez nas model inflacyjny jest realizowalny tylko za pomocą smart-kontraktu, bo w przeciwnym przypadku nikt by temu mechanizmowi nie mógł w pełni zaufać. Tylko niemodyfikowalny smart-kontrakt jest w stanie zagwarantować nienaruszalność inflacji i tym samym niezmienność reguł gry.
 
