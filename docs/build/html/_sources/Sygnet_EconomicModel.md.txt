@@ -1,6 +1,6 @@
 # Sygnet - propozycja modelu ekonomicznego
 
-Wersja 1.2 (20/05/2018)
+Wersja 2.0 (24/05/2018)
 
 *W zakresie tokenów emitowanych poprzez ICO powszechnie obowiązujące podejście jest następujące: token przepływa z portfela beneficjenta usługi do portfela dawcy usługi. To podejście ma fundamentalną wadę, która radykalnie utrudnia adopcję: potrzebujemy skłonić potencjalnego biorcę usługi do nabycia tokenu zanim ma on szansę z niej skorzystać. Proponowany przez nas model ekonomiczny jest zupełnie inny: token przepływa do portfela dawcy z puli inflacyjnej, a portfel biorcy pozostaje nienaruszony. Oznacza to, że usługa w swojej podstawowej wersji jest oferowana za darmo, co w oczywisty sposób niweluje barierę wejścia dla nowych użytkowników.*
 
@@ -12,11 +12,13 @@ W systemie Sygnet mamy trzy rodzaje uczestników:
 - Biorca informacji (który potrzebuje zweryfikować osobę K),
 - Osoba K, której dotyczy informacja i która jest przedmiotem weryfikacji.
 
-Zakładamy, że model ekonomiczny powinien dotyczyć tylko pierwszych dwóch typów uczestników, tj. dawcy i biorcy informacji, natomiast trzeci uczestnik, tj. osoba K, nie powinna brać udziału w tym modelu, ponieważ jest ona tylko przedmiotem transakcji (a nie podmiotem), a jej główną motywacją jest tylko to, żeby proces weryfikacji jej tożsamości był szybki i wygodny.
+Przyjmujemy, że model ekonomiczny powinien dotyczyć przede wszystkim dwóch pierwszych typów uczestników, tj. dawcy i biorcy informacji, bo to między tymi podmiotami następuje przepływ usługi.
+
+Natomiast rola trzeciego uczestnika, tj. osoby K, jest mniej oczywista. Początkowo przyjęliśmy, że osoba K jest tylko przedmiotem transakcji (a nie podmiotem), a jej główną motywacją jest tylko to, żeby proces weryfikacji jej tożsamości był szybki i wygodny, co wskazywałoby na to, że można wykluczyć osobę K z rozliczeń.
+
+Jednak po przemyśleniu uznaliśmy, że zachęta ekonomiczna dla konsumentów może mieć duże znaczenie dla popularyzacji systemu. Może ona spowodować, że powstaną nowe firmy wyspecjalizowane w weryfikacji tożsamości - ale do tego będą one potrzebowały zachęcić konsumentów do powierzenia im swoich tożsamości. Dlatego też przyjęliśmy, że jeśli jest chęć po stronie dawcy informacji żeby włączyć osobę K do rozliczeń, to powinna ona też być uwzględniona w modelu (zakładając że dysponuje ona kontem w systemie).
 
 ## 2. Cel modelu
-
-Jest oczywiste, że skoro kierunek przepływu korzyści w systemie Sygnet jest od dawcy informacji do biorcy informacji, to głównym celem funkcjonowania tokenu jest motywowanie dawców informacji do aktywnej partycypacji w systemie.
 
 Z punktu widzenia biznesowego chcemy spełnić następujące kryteria:
 
@@ -24,6 +26,7 @@ Z punktu widzenia biznesowego chcemy spełnić następujące kryteria:
 2. Sposób działania tokenu powinien wspierać masową adopcję systemu. Idealnie by było żeby użytkownik mógł zacząć używać systemu bez konieczności wcześniejszego zakupu tokenu.
 3. Używanie tokenu powinno być uwolnione od ryzyka cenowego. Większość użytkowników chce używać tokenu w celu uzyskania usługi, a nie spekulować na jego wartości.
 4. Token powinien w większym stopniu nagradzać tych dawców informacji, którzy mają większą wiarygodność i tym samym informacja dostarczona przez nich jest cenniejsza niż informacja z innych źródeł.
+5. Powinna być możliwość automatycznego przekierowania do osoby K części zapłaty uzyskanej przez dawcę  (zakładając że osoba K dysponuje kontem w systemie).
 
 ## 3. Alternatywne podejścia do konstrukcji tokenu
 
@@ -77,39 +80,43 @@ Dyskusyjne jest czy warunek (3) jest konieczny - być może nie jest.
 
 #### 5.1 Mechanizm działania
 
-Dla systemu Sygnet proponujemy rozwiązanie analogiczne do modelu Steema.
+Dla systemu Sygnet proponujemy rozwiązanie podobne do modelu Steema.
 
 Zauważmy że:
 
 - Odpowiednikiem twórcy postów w Steemie jest w Sygnecie dawca informacji (służącej do weryfikacji tożsamości osoby K).
 - Odpowiednikiem kuratora postów w Steemie jest w Sygnecie biorca informacji. Co prawda konsumuje on informację nie bezpośrednio lecz za pośrednictwem osoby K, bo to de facto ona dokonuje interakcji z dawcą informacji (i także ona decyduje z usług którego konkretnie dawcy informacji skorzystać), ale to nie zmienia faktu, że biorca informacji jest beneficjentem analogicznym do kuratora w Steemie.
 
-Wtedy możemy zaproponować następujący schemat działania:
+Są też jednak istotne różnice:
 
-- Podobnie jak w Steemie dzienną pulę inflacyjną dystrybuujemy wśród dawców informacji (służącej do weryfikacji tożsamości). Każda konsumpcja tej informacji to oddanie głosu na danego dawcę informacji.
-- Podobnie jak w Steemie siła głosu jest proporcjonalna do liczby Sygnetowych tokenów będących w posiadaniu biorcy informacji (a dokładniej: do wielkości udziału tokenów biorcy informacji w całkowitej populacji Sygnetowych tokenów).
-- Podobnie jak w Steemie trzeba mieć jakąś minimalną liczbę Sygnetowych tokenów żeby móc korzystać z systemu. Posiadanie tej minimalnej liczby tokenów powoduje, że z systemu możesz korzystać relatywnie rzadko (np. raz na minutę), a to ograniczenie szybko maleje wraz ze wzrostem liczby posiadanych tokenów.
+- Steem jest zdecydowanie systemem B2C (business-to-consumer), podczas gdy Sygnet jest bardziej B2B (business-to-business).
+- W Steemie posty są dobrem powszechnego użytku, podczas gdy w Sygnecie beneficjentem usługi jest tylko jeden podmiot.
+
+Biorąc pod uwagę powyższe podobieństwa i różnice, proponujemy następujący schemat działania:
+
+- Każdy dawca informacji sam decyduje na ile ceni swoją wiarygodność poprzez zadeklarowanie ceny za pojedynczą porcję informacji (służącej do weryfikacji jednej osoby). Zmiany w "cenniku" moga być dokonywane przez dawcę z dowolną częstotliwością.
+
+- Dzienną pulę inflacyjną dystrybuujemy wśród biorców informacji proporcjonalnie do udziału posiadanych przez nich Sygnetowych tokenów w całkowitej populacji tych tokenów. Te przyznane im środki mogą oni wydać danego dnia na konsumpcję informacji dostarczanych przez dawców, z zastrzeżeniem że środki te nie mogą być wydane na nic innego niż zapłata dla dawców.
+- Niewydane przez biorców danego dnia środki przepadają (są spalane). Wydatki biorców ponad przyznaną im część puli inflacyjnej tymczasowo idą z portfela biorcy, z tym że może on liczyć na ich częściowy albo całkowity zwrot, jeśli okaże się, że danego dnia inni biorcy informacji nie wykorzystali w pełni swojego przydziału.
+- Opcjonalnie część sródków otrzymanych przez dawcę może być przekierowana na osobę K, której dotyczy weryfikacja tożsamości. Zakładamy tu, że osoba K ma założone konto w systemie - przekonanie klienta K, że warto to zrobić, pozostawiamy dawcy.
 - Podobnie jak w Steemie każde nowe konto zasilane jest minimalną liczbą Sygnetowych tokenów, tak żeby jego właściciel był w stanie w podstawowym zakresie korzystać z systemu jako biorca informacji. Tego początkowego zasilenia dokonujemy my, tj. beneficjenci ICO, i jest to jeden z naszych kosztów.
 - Podobnie jak w Steemie rozliczenie puli inflacyjnej działa w cyklu dobowym.
+- Wszystkie przepływy finansowe są wyrażone w walucie fiat (np. USD lub EUR). Zakładamy tu, że system będzie zasilany z zewnątrz bieżącą ceną tokenu w stosunku do fiat i będzie automatycznie dokonywał stosownych konwersji.
 
 #### 5.2 Przykład
 
 Załóżmy, że w danym momencie Sygnet ma kapitalizację 10 mln USD, wyemitowano do tej pory 100 mln tokenów, a inflacja jest na poziomie 4% rocznie, co oznacza, że codziennie jest do rozdania około 10k tokenów z puli inflacyjnej (przy tej kapitalizacji jest to równowartość około 1k USD).
 
-Załóżmy, że stan posiadania danego biorcy informacji to 1 mln tokenów, czyli ma on 1% udziału w całkowitej populacji 100 mln Sygnetowych tokenów. Oznacza to, że dysponuje on liczbą 100 tokenów z puli inflacyjnej (1% z 10k tokenów które są w puli). Załóżmy dalej, że w danym dniu skorzystał on (a w zasadzie skorzystali jego klienci, będący przedmiotem weryfikacji tożsamości) z usługi dwóch dawców informacji, z następującym rozkładem:
+Załóżmy, że stan posiadania danego biorcy informacji to 1 mln tokenów, czyli ma on 1% udziału w całkowitej populacji 100 mln Sygnetowych tokenów. Oznacza to, że dysponuje on liczbą 100 tokenów z puli inflacyjnej (1% z 10k tokenów które są w puli), czyli ma do wydania równowartość 10 USD. Załóżmy dalej, że w danym dniu skorzystał on (a w zasadzie skorzystali jego klienci, będący przedmiotem weryfikacji tożsamości) z usługi dwóch dawców informacji, z następującym rozkładem:
 
-- 80% zapytań było skierowanych do dawcy A,
-- 20% do dawcy B.
+- było 18 zapytań do dawcy A, który wycenia się na 0.3 USD za jedno zapytanie
+- były 12 zapytań do dawcy B, który wycenia się na 0.5 USD za jedno zapytanie
 
-Wówczas w rozliczeniu puli inflacyjnej (ale tylko w zakresie tej części tej puli, którą dysponuje w/w biorca) dawca A dostaje z tytułu powyższej sytuacji 80 tokenów, a dawca B dostaje 20 tokenów.
+Wówczas całkowite wydatki biorcy to 11.4 USD (= 18 * 0.3 + 12 * 0.5). Z tego 10 USD pochodzi z puli inflacyjnej a 1.4 USD musiał on dołożyć z własnego portfela.
 
-Oczywiście powyższe rozliczenie to jest tylko fragment większej całości, bo w tym samym cyklu rozliczeniowym z tytułu obsługi klientów innych biorców informacji dawcy A i B będą nagrodzeni dodatkowymi tokenami w analogiczny sposób.
+Załóżmy dodatkowo, że pula inflacyjna tego dnia nie została w pełni wykorzystana i nasz biorca informacji dostał dodatkowe 0.8 USD z tej puli na pokrycie nadwyżki, którą wydał z własnego portfela. Wówczas całkowity jego koszt poniesiony tego dnia redukuje się do 0.6 USD (= 11.4 - 10 - 0.8)
 
-#### 5.3 Dodatkowe zwiększenie atrakcyjności systemu nagród
-
-Wydaje się możliwe wprowadzenie podziału dawców informacji na klika kategorii, zależnie od ich wiarygodności (np. banki, duże sieci handlowe i pozostali) i wprowadzenie wymogu posiadania na swoim koncie przez biorców informacji większej liczby tokenów w przypadku chęci skorzystania z dawcy z wyższej kategorii. Tym samym dawcy informacji z wyższej kategorii będą nagradzani lepiej (bo większe saldo Sygnetowych tokenów na koncie biorcy oznacza większy głos w podziale puli inflacyjnej).
-
-#### 5.4 Czy jest możliwość nadużywania systemu?
+#### 5.3 Czy jest możliwość nadużywania systemu?
 
 Oczywiście jeden uczestnik systemu Sygnet może "wykradać" tokeny z puli inflacyjnej poprzez udawanie, że jest jednocześnie dawcą i biorcą informacji, co jest analogiczne do upvote'u własnego postu na Steemie.
 
@@ -117,15 +124,16 @@ Jednak z doświadczenia Steema wynika, że tego rodzaju nadużycia nie są powsz
 
 Czynnikiem który demotywuje do tego rodzaju działania, jest fakt istnienia korzystnego dla nas sprzężenia: im większa jest liczba posiadanych przez danego uczestnika tokenów, tym większa rodzi się motywacja po jego stronie do nienadużywania systemu, bo ma to wpływ na cenę tokenu.
 
-#### 5.5 Co uzyskujemy?
+#### 5.4 Co uzyskujemy?
 
 Korzyści są na wielu frontach jednocześnie:
 
 - Uzyskujemy system który jest **postrzegany** jako darmowy (chociaż w istocie nie jest, bo żywi się własną inflacją).
-- Nie trzeba kupować tokenów żeby móc zacząć używać systemu Sygnet, bo minimalną wymaganą dawkę tokenów dostajesz gratis przy założeniu Sygnetowego konta i te tokeny się nie zużywają.
-- Im więcej tokenów ma biorca, tym cenniejszy jest jego głos w dystrybucji puli inflacyjnej (więc dostawcy informacji mają silną motywację żeby spełnić wszystkie jego potrzeby), z tym większą częstotliwością może on korzystać z systemu i tym większy ma dostęp do dawców o wyższej wiarygodności.
-- Im większa wiarygodność dawcy, tym wyższe otrzymuje on nagrody.
-- Biorca informacji ma dostęp do systemu na poziomie intensywności, który jest niezależny od fluktuacji cenowych tokenu. (Natomiast dochód dawcy, wyrażony w fiat, jest zależny od bieżącej ceny tokenu, ale przyjmujemy, że każda istotnie niezerowa wartość jest dla niego satysfakcjonująca.)
+- Nie trzeba kupować tokenów żeby móc zacząć używać systemu Sygnet, bo minimalną wymaganą dawkę tokenów dostajesz gratis przy założeniu Sygnetowego konta i te tokeny się nie zużywają - oczywiście jeśli korzystasz z systemu zgodnie z przyznanym limitem.
+- Im większym udziałowcem jest biorca, tym większy ma on dostęp do środków pochodzących z puli inflacyjnej, i tym samym z tym większą intensywnością może on korzystać z systemu.
+- Im większa jest postrzegana wiarygodność dawcy, tym wyższe ceny może on dyktować za swoje usługi i tym samym może on wybrać sobie strategię cenową wedle własnego uznania.
+- Zarówno koszty biorcy jak i przychody dawcy są uniezależnione od fluktuacji cenowych tokenu.
+- Dawca informacji ma możliwość dzielenia się swoim przychodem z osobą K, której informacje są przedmiotem usługi. Tym samym ma narzędzie finansowe pozwalające zachęcić konsumentów do powierzenia im swoich tożsamości.
 
 Wygląda to na win-win dla każdego, a jedyną stroną, która ponosi negatywne konsekwencje jest inwestor (bo inflacja, z której to wszystko jest finansowane, stopniowo rozwadnia jego udziały). Jednak to co skłania inwestora do ponoszenia tych konsekwencji, to perspektywa aprecjacji tokenu wynikająca z radykalnego wzrostu jego popularności.
 
@@ -135,7 +143,7 @@ Wygląda to na win-win dla każdego, a jedyną stroną, która ponosi negatywne 
 
 W przypadku tokenu płatniczego (tj. takiego ktory przepływa z portfela biorcy do portfela dawcy) mamy jedną istotną wadę: potrzebujemy skłonić potencjalnego biorcę usługi do nabycia tokenu **zanim** ma on szansę z niej skorzystać. Jest to istotna przeszkoda w adopcji.
 
-Natomiast proponowany przez nas token inflacyjny ma zupełnie inną charakterystkę: przepływa on do portfela dawcy z puli inflacyjnej, a portfel biorcy pozostaje nienaruszony. Oznacza to, że usługa w swojej podstawowej wersji jest oferowana **za darmo**, co w oczywisty sposób niweluje barierę wejścia dla nowych użytkowników.
+Natomiast proponowany przez nas token inflacyjny ma zupełnie inną charakterystkę: przepływa on do portfela dawcy z puli inflacyjnej, a portfel biorcy pozostaje w większości przypadków nienaruszony. Oznacza to, że usługa w swojej podstawowej wersji jest oferowana **za darmo**, co w oczywisty sposób niweluje barierę wejścia dla nowych użytkowników.
 
 Żeby to osiągnąć w pełni wykorzystujemy atuty technologii blockchain i uzyskujemy właściwości ekonomiczne, których nie można zrealizować w żaden inny sposób: proponowany przez nas model inflacyjny jest realizowalny tylko za pomocą smart-kontraktu, bo w przeciwnym przypadku nikt by temu mechanizmowi nie mógł w pełni zaufać. Tylko niemodyfikowalny smart-kontrakt jest w stanie zagwarantować nienaruszalność inflacji i tym samym niezmienność reguł gry.
 
@@ -169,8 +177,6 @@ Według naszej wiedzy Sygnet ma szansę być pierwszym tokenem emitowanym na blo
 Poniżej przedstawione jest porównanie wychwytujące analogie pomiędzy różnymi podejściami w świecie kryptowalut. Widać w nim wyraźnie, że to co proponujemy dla Sygnetu to model ekonomiczny, który jest innowacyjny ale też jednocześnie analogiczny do tych, które sprawdziły się empirycznie:
 
 - Bitcoin/Ethereum: mining poprzez spalanie prądu.
-- Maidsafe/Sia: mining poprzez dostarczanie przestrzeni dyskowej.
-- Golem: mining poprzez dostarczanie mocy obliczeniowej do machine learing / rendering.
 - Steem: mining poprzez dostarczanie wartości intelektualnej i artystycznej (tj. contentu internetowego).
 - EOS: mining poprzez dostarczanie mocy obliczeniowej do procesowania transakcji.
 - Sygnet: mining poprzez dostarczanie informacji służącej do weryfikacji tożsamości.
@@ -183,13 +189,13 @@ Poniżej prezentujemy porównanie wad i zalet trzech alternatywnych metod konstr
 +----------------------------------------------+--------------------+----------------------+------------------+
 | Funkcjonalność                               | Token Dywidendowy  | Token Płatniczy      | Token Inflacyjny |
 +==============================================+====================+======================+==================+
-| Brak konieczności zaufania do emitenta       | ---                | Tak                  | Tak              |
+| Brak konieczności zaufania do emitenta tokenu| ---                | Tak                  | Tak              |
 +----------------------------------------------+--------------------+----------------------+------------------+
 | Brak bariery wejścia dla użytkownika         | ---                | ---                  | Tak              |
 +----------------------------------------------+--------------------+----------------------+------------------+
 | Stabilność kosztu dla biorcy informacji      | Tak                | ---                  | Tak              |
 +----------------------------------------------+--------------------+----------------------+------------------+
-| Stabilność przychodu dla dawcy informacji    | Tak                | ---                  | ---              |
+| Stabilność przychodu dla dawcy informacji    | Tak                | ---                  | Tak              |
 +----------------------------------------------+--------------------+----------------------+------------------+
 | Usługa postrzegana jako darmowa              | ---                | ---                  | Tak              |
 +----------------------------------------------+--------------------+----------------------+------------------+
