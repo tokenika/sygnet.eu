@@ -110,7 +110,7 @@ Załóżmy, że w danym momencie Sygnet ma kapitalizację 10 mln USD, wyemitowan
 Załóżmy, że stan posiadania danego biorcy informacji to 1 mln tokenów, czyli ma on 1% udziału w całkowitej populacji 100 mln Sygnetowych tokenów. Oznacza to, że dysponuje on liczbą 100 tokenów z puli inflacyjnej (1% z 10k tokenów które są w puli), czyli ma do wydania równowartość 10 USD. Załóżmy dalej, że w danym dniu skorzystał on (a w zasadzie skorzystali jego klienci, będący przedmiotem weryfikacji tożsamości) z usługi dwóch dawców informacji, z następującym rozkładem:
 
 - było 18 zapytań do dawcy A, który wycenia się na 0.3 USD za jedno zapytanie
-- były 12 zapytań do dawcy B, który wycenia się na 0.5 USD za jedno zapytanie
+- było 12 zapytań do dawcy B, który wycenia się na 0.5 USD za jedno zapytanie
 
 Wówczas całkowite wydatki biorcy to 11.4 USD (= 18 * 0.3 + 12 * 0.5). Z tego 10 USD pochodzi z puli inflacyjnej a 1.4 USD musiał on dołożyć z własnego portfela.
 
