@@ -1,885 +1,394 @@
 <!DOCTYPE html>
-<html lang="pl">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sygnet</title>
-    <link rel="stylesheet" href="style/style.min.css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sygnet</title>
+	<meta name="description" content="" />
+  <link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/fav/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/fav/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+  <link rel="manifest" href="img/fav/manifest.json">
+  <meta name="msapplication-TileColor" content="#8042ff">
+  <meta name="msapplication-TileImage" content="img/fav/ms-icon-144x144.png">
+  <meta name="theme-color" content="#8042ff">
+	<link href="css/bootstrap-grid.min.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
 </head>
+  <body>
 
-<body>
-    <div id="main">
-        <div class="main-section" data-section-name="start" id="start">
-            <div class="wrapper">
-                <a href="#">
-                    <img src="img/logo.svg" alt="Sygnet" id="logo">
-                </a>
+    <header class="bg-blue">
+      <div class="container-fluid d-flex justify-content-between">
+        <div id="logotype">
+          <a href="index.html" title="Sygnet" class="d-flex">
+            <img class="img-fluid" src="img/logo.svg" alt="Sygnet">
+            <span><img class="img-fluid" src="img/sygnet.svg" alt="Sygnet"></span>
+          </a>
+        </div>
+        <div id="toggler">
+          <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div id="menu">
+          <div class="d-flex flex-column flex-lg-row align-items-center">
+            <a href="e-receipts.html" title="e-Receipts">e-Receipts</a>
+            <a href="ssi.html" title="Self-Sovereign Identity">Self-Sovereign Identity</a>
+            <a href="" class="disabled" title="Road Map">Road Map</a>
+            <a href="" class="disabled" title="News">News</a>
+            <a href="" class="disabled" title="About Us">About Us</a>
+            <a href="team.html" title="Team">Team</a>
+            <a href="" class="disabled" title="Jobs">Jobs</a>
+            <a href="" class="disabled" title="Contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-                <h1>Own Your Digital Self.</h1>
+    <section id="home" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 d-flex">
+            <div class="text-inner">
+              <h1 class="c-blue">Own Your<br>Digital Self</h1>
+              <p>Sygnet is a next-generation identity management tool for truly secure handling of user’s sensitive, personal data.</p>
+              <a href="#mission" class="btn c-white">Learn more</a>
             </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+              <img id="paralax1" class="img-fluid" src="img/sygnet1.jpg" alt="sygnet">
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="main-section" data-section-name="sygnet" id="sygnet">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>What is Sygnet?</h2>
-                </div>
-                <div class="section-content">
-                    <p>Sygnet is an <span class="accent">digital identity management</span> tool.</p>
-                    <p>Sygnet allows users to have <span class="accent">full control</span> over their <span class="accent">digital
-                            identity</span> by radically changing the way identity works in the <span class="accent">online
-                            world</span>.</p>
-                </div>
+    <section id="mission" class="bg-darker d-flex align-items-center" data-aos="change-bg" data-aos-anchor="#after">
+      <div class="container">
+        <div id="before"></div>
+        <div class="text-inner">
+          <div class="pre-title c-grey" data-aos="fade-up" data-aos-anchor="#before">Our mission</div>
+          <p class="bigger c-white" data-aos="fade-up">Sygnet allows users to have full control over thier digital identity by radically changing the way identity works in the online world.</p>
+          <a href="#ssi" class="btn btn-white c-blue" data-aos="fade-up">Learn how</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="after"></div>
+
+    <section id="ssi">
+      <div class="first-section bg-darker" data-aos="change-bg" data-aos-anchor="#after">
+        <div class="container">
+          <div class="pre-title text-center" data-aos="fade-up">Digital Identity re-invented</div>
+          <h2 class="text-center c-white" data-aos="fade-up">Self-Sovereign Identity (SSI)</h2>
+          <img class="img-fluid" src="img/sygnet2.jpg" alt="sygnet">
+        </div>
+      </div>
+      <div class="second-section">
+        <div class="container-fluid px-0">
+          <div class="container">
+            <div class="d-flex">
+              <div class="text-inner text-center">
+                <h3 class="c-blue" data-aos="fade-up">Identity breaches and hacks</h3>
+                <p data-aos="fade-up">The current internet identity model, with its massive honeypots of corporate-stored personal data, is slowly running its course. Vast numbers of data breaches and hacks are proving this over and over again - we should not entrust sensitive personal data to third parties, regardless of their intent, scale or technical capabilities.</p>
+                <a href="#solution" class="btn c-white" data-aos="fade-up">Find out more about SSI</a>
+              </div>
             </div>
+          </div>
         </div>
-
-        <div class="main-section" data-section-name="digital-identity" id="digital-identity">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>What is digital identity?</h2>
+        <div class="space"></div>
+        <div id="solution" class="container-fluid px-0">
+          <div class="container">
+            <div class="row flex-row-reverse">
+              <div class="col-md-12 col-lg-6 d-flex">
+                <div class="text-inner right">
+                  <h3 class="c-blue" data-aos="fade-up">Our solution is SSI</h3>
+                  <p data-aos="fade-up">Enter SSI, the closest digital sibling to the kind of identity we used to have before our lives migrated online. Manifesting only in distinct user’s interactions, SSI effects only you and the person or entity you interact with - no intermediaries ever hold or administrate your data.</p>
+                  <a href="#details" class="btn c-blue empty" data-aos="fade-up"><img class="img-fluid" src="img/arrow.svg" alt="">More about SSI</a>
                 </div>
-                <div class="section-content">
-                    <div style="overflow-x:auto;">
-                        <table>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>For individuals</td>
-                                <td>For legal entities</td>
-                                <td>For assets</td>
-                            </tr>
-                            <tr>
-                                <td>Inherent Attributes</td>
-                                <td>
-                                    <ul>
-                                        <li>Age</li>
-                                        <li>Height</li>
-                                        <li>Date of birth</li>
-                                        <li>Fingerprints</li>
-                                    </ul>
-                                </td>
-
-                                <td>
-                                    <ul>
-                                        <li>Industry</li>
-                                        <li>Business status</li>
-                                    </ul>
-                                </td>
-
-                                <td>
-                                    <ul>
-                                        <li>Nature of the asset</li>
-                                        <li>Asset issuer</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Accumulated Attributes
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>Health records</li>
-                                        <li>Preferences & behaviors (e.g. phone metadata)</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>Business record</li>
-                                        <li>Legal record</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>Ownership history</li>
-                                        <li>Transaction history</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Assigned Attributes</td>
-                                <td>
-                                    <ul>
-                                        <li>National identifier number</li>
-                                        <li>Telephone number</li>
-                                        <li>Email address</li>
-                                        <li>Web domain</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>Identifying numbers</li>
-                                        <li>Legal jurisdiction</li>
-                                        <li>Directors</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>Identifying numbers</li>
-                                        <li>Custadianship</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <img id="paralax3" class="img-fluid abs abs2" src="img/sygnet3.jpg" alt="sygnet">
         </div>
+      </div>
+    </section>
 
+    <section id="details" class="bg-dark d-flex align-items-center">
+      <div class="container">
+        <h2 class="text-center c-white" data-aos="fade-up">SSI in details</h2>
+        <div class="space"></div>
+        <div class="row" data-aos="fade-up">
+          <div class="col-sm-12 col-md-4">
+            <h5 class="c-white">The missing layer <br>of the Internet</h5>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <p class="c-grey">It is quite baffling how we have managed to get to this stage without a transparent, functional internet identity layer. The trade-off to that is a patchwork of centralized silos holding millions of identity records, managed behind closed doors with very little accountability. This data is regularly traded and monetized without our consent.</p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <p class="c-grey">What is worse, however, is the sheer amount of data theft and leakage this model provokes. Each and every silo (apps, SM accounts etc) has to be guarded separately which, given the numbers at hand, proves impossible.</p>
+          </div>
+        </div>
+        <div class="space"></div>
+        <div class="row" data-aos="fade-up">
+          <div class="col-sm-12 col-md-4">
+            <h5 class="c-white">SSI flips this model <br>upside down</h5>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <p class="c-grey">The user becomes the custodian and sole administrator of his/hers identity and can reveal parts of it when needed, much like using paper documents we would carry around in the non-digital domain.</p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <p class="c-grey">Thus, SSI allows you to claim something to be true and then prove it with the signature of a trusted third-party.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="features" class="bg-darker text-center d-flex align-items-center">
+      <div class="container">
+        <h2 class="c-white" data-aos="fade-up">Features of digital<br>identity with SSL</h2>
+        <div class="space"></div>
+        <div class="row">
+          <div class="col-sm-12 col-md-4" data-aos="fade-up">
+            <img class="img-fluid icon" src="img/icon1.svg" alt="privacy">
+            <h5 class="c-white">Protecting your privacy</h5>
+            <p class="c-grey">Uou reveal only what is needed, and do it P2P.</p>
+          </div>
+          <div class="col-sm-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <img class="img-fluid icon" src="img/icon2.svg" alt="safe">
+            <h5 class="c-white">It's safe</h5>
+            <p class="c-grey">You're no longer affected by mass-scale data leaks</p>
+          </div>
+          <div class="col-sm-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <img class="img-fluid icon" src="img/icon3.svg" alt="truly yours">
+            <h5 class="c-white">Truly yours</h5>
+            <p class="c-grey">Nobody can take it away from you</p>
+          </div>
+        </div>
+        <div class="space"></div>
+        <a href="#cases" class="btn c-white empty centered" data-aos="fade-up"><img class="img-fluid" src="img/arrow-white.svg" alt="">See possible use cases</a>
+      </div>
+    </section>
 
-
-        <div class="main-section" data-section-name="current-trends" id="current-trends">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Why is digital identity a hot topic?<br />
-                        <span class="accent">Current trends</span></h2>
-                </div>
-                <div class="section-content">
-
-                    <div class="element">
-                        <img src="img/13.svg" alt="" class="">
-                        <p>Growing awareness that personal data is valuable, thus requiring <span class="accent">special
-                                protection</span> (e.g. GDPR, eIDAS).</p>
-                    </div>
-
-                    <div class="element">
-                        <img src="img/13.svg" alt="" class="">
-                        <p>Growing need to deal with <span class="accent">real-life identity</span> while offering an
-                            online service.</p>
-                    </div>
-
-                    <div class="element">
-                        <img src="img/13.svg" alt="" class="">
-                        <p>Growing need for <span class="accent">cryptographic digital signature</span> to be
-                            widespread, as documents & certificates become digitalized.</p>
-                    </div>
-                </div>
+    <section id="cases">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <h2 class="c-blue" data-aos="fade-up">Possible SSI <br>use cases</h2>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="case d-flex align-items-center" data-aos="fade-up">
+              <div class="image">
+                <img class="img-fluid icon" src="img/icon4.svg" alt="">
+              </div>
+              <div class="desc">
+                <h5 class="c-blue">Digital receipts</h5>
+                <p>Documents issued by shops and transferred directly to the consumers.</p>
+              </div>
             </div>
-        </div>
-
-
-        <div class="main-section" data-section-name="important-trends" id="important-trends">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Why is digital identity a hot topic?<br />
-                        <span class="accent">Important trends</span></h2>
-                </div>
-                <div class="section-content">
-
-                    <div class="element">
-                        <img src="img/13.svg" alt="" class="">
-                        <p>How to <span class="accent">bridge real-life identity</span> with online identity?</p>
-                    </div>
-
-                    <div class="element">
-                        <img src="img/13.svg" alt="" class="">
-                        <p>How to make personal data trustworthy? The problem of <span class="accent">Says who?</span></p>
-                    </div>
-
-                    <div class="element">
-                        <img src="img/13.svg" alt="" class="">
-                        <p>How to allow the user to assert control over third-parties using his data?<br />The problem
-                            of <span class="accent">Who knows what?</span></p>
-                    </div>
-                </div>
+            <div class="case d-flex align-items-center" data-aos="fade-up">
+              <div class="image">
+                <img class="img-fluid icon" src="img/icon5.svg" alt="">
+              </div>
+              <div class="desc">
+                <h5 class="c-blue">Efficient KYC</h5>
+                <p>While purchasing tickets to prevent frauds and price speculations.</p>
+              </div>
             </div>
-        </div>
-
-
-
-
-        <div class="main-section" data-section-name="current-paradigm" id="current-paradigm">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>The current paradigm:<br />
-                        <span class="accent">Identity controlled by a third-party</span></h2>
-                </div>
-                <div class="section-content">
-
-                    <div class="flex">
-                        <img src="img/3.svg" alt="" class="">
-                        <div class="img-rel">
-                            <p>
-                                <strong>Prone to mass hacking</strong>
-                                As large amounts of sensitive data is accumulated in single points of failure, hacking
-                                attempts are very likely.
-                            </p>
-
-                            <p>
-                                <strong>Hard to transfer</strong>
-                                Each online business needs to verify information that has been already verified by
-                                another company.
-                            </p>
-
-                            <p>
-                                <strong>Hard to control</strong>
-                                There is no efficient way to control who knows what about you and manage permissions
-                                for processing of your data by a third-party.
-                            </p>
-
-                            <p>
-                                <strong>Hard to monetize</strong>
-                                There is no efficient way to reward users willing to share their personal data with
-                                third-parties.
-                            </p>
-                        </div>
-                    </div>
-
-
-                </div>
+            <div class="case d-flex align-items-center" data-aos="fade-up">
+              <div class="image">
+                <img class="img-fluid icon" src="img/icon6.svg" alt="">
+              </div>
+              <div class="desc">
+                <h5 class="c-blue">Instant user identification</h5>
+                <p>Unforgeable user identification while contacting a service (e.g. a bank) via telephone.</p>
+              </div>
             </div>
-        </div>
-
-
-        <div class="main-section" data-section-name="current-paradigm-2" id="current-paradigm-2">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>The current paradigm:<br />
-                        <span class="accent">Identity controlled by a third-party</span></h2>
-                </div>
-                <div class="section-content">
-                    <div class="center">
-                        <img src="img/ss.png" alt="">
-                    </div>
-
-                </div>
+            <div class="case d-flex align-items-center" data-aos="fade-up">
+              <div class="image">
+                <img class="img-fluid icon" src="img/icon7.svg" alt="">
+              </div>
+              <div class="desc">
+                <h5 class="c-blue">Data processing consent</h5>
+                <p>Managing your consent to personal data processing, as required by GDPR.</p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-
-
-        <div class="main-section" data-section-name="future-paradigm" id="future-paradigm">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>The future paradigm:<br />
-                        <span class="accent">Identity controlled by you</span></h2>
-                </div>
-                <div class="section-content">
-
-
-                    <div class="flex">
-                        <img src="img/schema-new.svg" alt="" class="">
-                        <div class="img-rel">
-                            <p>
-                                <strong>Resistant against mass hacking</strong>
-                                As sensitive data is spread across multiple user devices, hacking attempts are
-                                unlikely.
-                            </p>
-
-                            <p>
-                                <strong>Easy to transfer</strong>
-                                Personal information is verified only once, and then can be transferred (with your
-                                consent) to any online business who needs it.
-                            </p>
-
-                            <p>
-                                <strong>Easy to control</strong>
-                                No user profiling is possible without the user being aware of it and giving their
-                                explicit consent.
-                            </p>
-
-                            <p>
-                                <strong>Easy to monetize</strong>
-                                Users can be financially incentivized to share their personal data with a third-party.
-                            </p>
-                        </div>
-                    </div>
-
-
-                </div>
+    <section id="digital">
+      <div class="first-section bg-blue">
+        <div class="container">
+          <div class="pre-title text-center" data-aos="fade-up">Glimpse into the future</div>
+          <h2 class="text-center c-white" data-aos="fade-up">Digital Receipts</h2>
+          <img class="img-fluid" src="img/sygnet2.jpg" alt="sygnet">
+        </div>
+      </div>
+      <div class="second-section">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="d-flex">
+              <div class="text-inner text-center">
+                <h3 class="c-blue" data-aos="fade-up">Within a couple of years receipts will be digitalized</h3>
+                <p data-aos="fade-up">The question is: how will it happen? Our shopping history contains very precious data. Will this data be stored in a third party database or will it be under your control?</p>
+                <a href="#benefits" class="btn c-white" data-aos="fade-up">Learn about e-receipts</a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="main-section" data-section-name="ssi" id="ssi">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Self-Sovereign Identity (SSI)<br />
-                        <span class="accent">The concept</span></h2>
-                </div>
-                <div class="section-content">
-                    <p>Identity is associated with a secret held by the user.</p>
-                    <p>Personal data becomes useless without knowing the secret.</p>
-                    <p>The veracity of the data is guaranteed by external third-parties.</p>
-                    <p>SSI makes everyone using it an <span class="accent">autonomous</span> entity.</p>
+    <section id="benefits" class="bg-darker d-flex align-items-center text-center">
+      <div class="container">
+        <h2 class="c-white" data-aos="fade-up">Benefits of e-receipts</h2>
+        <div class="intro c-grey" data-aos="fade-up">
+          We use the SSI paradigm to digitalize receipts in a way that utilizes the data contained in them but without compromising the consumer's privacy.
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <img class="img-fluid icon" src="img/icon1.svg" alt="">
+            <h5 class="c-white">Consumers</h5>
+            <p class="c-grey">Consumers are happy because their receipts are secure and handy.</p>
+          </div>
+          <div class="col-sm-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
+            <img class="img-fluid icon" src="img/icon2.svg" alt="">
+            <h5 class="c-white">Shops</h5>
+            <p class="c-grey">Shops are happy because their loyalty programs become easy.</p>
+          </div>
+          <div class="col-sm-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <img class="img-fluid icon" src="img/icon3.svg" alt="">
+            <h5 class="c-white">The State</h5>
+            <p class="c-grey">The State is happy because more receipts mean less tax frauds.</p>
+          </div>
+        </div>
+        <div class="space"></div>
+        <!--a href="#involved" class="btn c-white centered" data-aos="fade-up">Get involved</a-->
+      </div>
+    </section>
 
-                </div>
+    <section id="growth" class="bg-blue text-center">
+      <div class="container">
+        <div class="pre-title" data-aos="fade-up">Where it all leads us</div>
+        <h2 class="text-center c-white" data-aos="fade-up">Growth potential</h2>
+        <div class="intro bigger c-white" data-aos="fade-up">
+          Digital receipts, when done in the SSI paradigm, are just a first step in the process of building a much bigger system.
+        </div>
+        <a href="#more" class="btn empty c-white centered" data-aos="fade-up"><img class="img-fluid" src="img/arrow-white.svg" alt="">Tell me how</a>
+        <div class="image">
+          <img class="img-fluid" src="img/sygnet4.jpg" alt="sygnet">
+        </div>
+        <div id="more" class="row" data-aos="fade-up">
+          <div class="col-sm-12 col-md-4">
+            <h5 class="c-white">Monetize Yourself</h5>
+            <p class="c-white">The current trade-off between privacy and convenience is no longer needed. You can have both - and you can sell your data on your terms.</p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <h5 class="c-white">SSI Agent</h5>
+            <p class="c-white">Artificial Intelligence that works strictly on behalf and in the interest of the user. AI is meant to serve you and if it fails, you can easily replace it.</p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <h5 class="c-white">Intentions Matching</h5>
+            <p class="c-white">Evolution into a comprehensive system of digital identity that also includes expressing and matching people's intentions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="involved" class="min">
+      <div class="container text-center">
+        <h2 class="c-white" data-aos="fade-up">Get Involved</h2>
+        <p data-aos="fade-up">If you share our vision and want to partner <br>with us - get in touch.</p>
+        <form class="" action="" method="post" data-aos="fade-up">
+          <div class="input-group">
+            <input type="text" name="email" value="" placeholder="E-mail address">
+          </div>
+          <button type="submit" name="button" class="btn btn-white c-blue">Get in touch</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <img class="img-fluid foot-logo" src="img/sygnet-logo.svg" alt="sygnet">
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="row">
+              <div class="col-sm-4">
+                <h5 class="c-white">Technology</h5>
+                <ul class="foot-menu">
+                  <li><a href="ssi.html" title="SSI">SSI</a></li>
+                  <li><a href="e-receipts.html" title="E-receipts">E-receipts</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4">
+                <h5 class="c-white">Company</h5>
+                <ul class="foot-menu">
+                  <li><a href="" class="disabled" title="Road map">Road map</a></li>
+                  <li><a href="" class="disabled" title="News">News</a></li>
+                  <li><a href="" class="disabled" title="Team">Team</a></li>
+                  <li><a href="" class="disabled" title="Jobs">Jobs</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4">
+                <h5 class="c-white">Contact</h5>
+                <ul class="foot-menu">
+                  <li><a href="mailto:hello@sygnet.pl" title="Send mail">hello@sygnet.pl</a></li>
+                  <li><a href="" class="disabled" title="Blog">Blog</a></li>
+                  <li><a href="" title="Twitter" target="_blank">Twitter</a></li>
+                  <li><a href="" title="Facebook" target="_blank">Facebook</a></li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-
-
-        <div class="main-section" data-section-name="ssi-evo" id="ssi-evo">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Self-Sovereign Identity (SSI)<br />
-                        <span class="accent">The evolution</span></h2>
-                </div>
-                <div class="section-content">
-                    <div class="img-rel">
-                        <div class="element">
-                            <p>1995</p>
-                            <p class="abs">Phase One<br /><span class="accent">Centralized Identity</span></p>
-                        </div>
-                        <div class="element">
-                            <p>2006</p>
-                            <p class="abs">Phase Two<br /><span class="accent">Federated Identity</span></p>
-                        </div>
-                        <div class="element">
-                            <p>Now</p>
-                            <p class="abs">Phase Three<br /><span class="accent">User-Centric Identity</span></p>
-                        </div>
-                        <div class="element">
-                            <p>Future</p>
-                            <p class="abs">Phase Four<br /><span class="accent">Self-Sovereign Identity</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="copy">
+          <div class="c-grey">Copyrights &copy; 2019 Sygnet</div>
         </div>
+      </div>
+    </footer>
 
+    <script>
+      var paralax1 = document.querySelector("#paralax1");
+      var paralax3 = document.querySelector("#paralax3");
 
-        <div class="main-section" data-section-name="ssi-benefits" id="ssi-benefits">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Self-Sovereign Identity (SSI)<br />
-                        <span class="accent">The benefits</span></h2>
-                </div>
-                <div class="section-content">
-                    <ul>
-                        <li>
-                            <strong>Unforgeable</strong>
-                            <span>Nobody, including your service provider, is able to impersonate you.</span>
-                        </li>
-                        <li>
-                            <strong>Untraceable</strong>
-                            <span>Nobody can track you without your explicit consent.</span>
-                        </li>
-                        <li>
-                            <strong>Portable</strong>
-                            <span>It's not locked to any particular service.</span>
-                        </li>
-                        <li>
-                            <strong>Verifiable</strong>
-                            <span>Others can safely trust what you say about yourself.</span>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <strong>Manageable</strong>
-                            <span>You are fully aware who knows what about you.</span>
-                        </li>
-                        <li>
-                            <strong>Monetizable</strong>
-                            <span>You are the primary beneficiary when your personal data is being traded.</span>
-                        </li>
-                        <li>
-                            <strong>Unhackable</strong>
-                            <span>To hack the system you’d have to hack every single user device.</span>
-                        </li>
-                        <li>
-                            <strong>Irrevocable</strong>
-                            <span>It’s lifetime, nobody can take it away from you.</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+      function setTranslate(xPos, yPos, el) {
+        el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+      }
 
+      window.addEventListener("DOMContentLoaded", scrollLoop, false);
 
-        <div class="main-section" data-section-name="ssi-trade-off" id="ssi-trade-off">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Self-Sovereign Identity (SSI)<br />
-                        <span class="accent">The trade-off</span></h2>
-                </div>
-                <div class="section-content">
-                    <p>The end-user needs to <span class="accent">take responsibility</span> for the private key.</p>
-                    <p>However, there are several ways to alleviate the problem, including private key management &
-                        <span class="accent">private key recovery</span>.</p>
-                </div>
-            </div>
-        </div>
+      var xScrollPosition;
+      var yScrollPosition;
 
+      function scrollLoop() {
+        xScrollPosition = window.scrollX;
+        yScrollPosition = window.scrollY;
 
+        setTranslate(0, yScrollPosition * 0.12, paralax1);
+        setTranslate(0, yScrollPosition * 0.071, paralax3);
 
-
-        <div class="main-section" data-section-name="ssi-key-concepts" id="ssi-key-concepts">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Self-Sovereign Identity (SSI)<br />
-                        <span class="accent">Key concepts</span></h2>
-                </div>
-                <div class="section-content">
-
-                    <div class="img-rel">
-                        <img src="img/7.svg" alt="" class="">
-                        <div class="abs">
-                            <strong><span class="accent">Decentralised Identifier</span></strong>
-                            <img src="img/6.svg" alt="" class="">
-                            <p>It's a unique identifier registered on a decentralized public ledger.</p>
-
-                        </div>
-
-                        <div class="abs">
-                            <strong><span class="accent">Verifiable Claim</span></strong>
-                            <img src="img/6.svg" alt="" class="">
-                            <p>The personal data associated with a Decentralised
-                                Identifier.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="main-section" data-section-name="ssi-key-actors" id="ssi-key-actors">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Self-Sovereign Identity (SSI)<br />
-                        <span class="accent">Key actors</span></h2>
-                </div>
-                <div class="section-content">
-
-                    <div class="img-rel">
-                        <img src="img/8.svg" alt="" class="">
-                        <img src="img/m3.svg" alt="" class="mobile-only">
-
-                        <p class="abs center">
-                            <strong><span class="accent">Identity Subject</span></strong><br />
-                            An entity about whom a Verifiable Claim can be made.<br />
-                            It can be a physical person, a legal person, or a thing.
-                        </p>
-
-                        <p class="abs center">
-                            <strong><span class="accent">Identity Provider</span></strong><br />
-                            An entity that signs a Verifiable Claim and thus vets the correctness
-                            of information contained in it.
-                        </p>
-
-
-                        <p class="abs center">
-                            <strong><span class="accent">Identity Consumer</span></strong><br />
-                            An entity that needs to “consume”
-                            a Verifiable Claim as part
-                            of their business model.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="main-section" data-section-name="use-cases" id="use-cases">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Use cases</h2>
-                </div>
-                <div class="section-content">
-
-                    <div class="part-of-3">
-                        <img src="img/10-1.svg" alt="" class="">
-                        <p>
-                            <strong>Quick & efﬁcient identification</strong>
-                            An online business, whe
-                            dealing with a new user, sends
-                            a request to the user's mobile
-                            app regarding the information
-                            it needs, immediately receives
-                            this information
-                            (provided the user gives his consent),
-                            and then is able to trust it,
-                            as this information has
-                            already been verified
-                            by a reputable third-party.
-                        </p>
-                    </div>
-
-
-                    <div class="part-of-3">
-                        <img src="img/10-2.svg" alt="" class="">
-                        <p>
-                            <strong>Sign up with real-life identity</strong>
-                            Users are encouraged to create
-                            platform-independent identity profiles
-                            and then build their reputation
-                            around those profiles.
-                            Once you have that,
-                            you can import such
-                            identity to any online service.
-                            It's similar to the Single Sign
-                            On utility (e.g. "Sign up with Facebook"),
-                            but it's much more powerful
-                            - you sign up with your
-                            real-life verifiable identity
-                            and bring along the
-                            entire reputation associated
-                            with it.
-                        </p>
-                    </div>
-
-
-                    <div class="part-of-3">
-                        <img src="img/10-3.svg" alt="" class="">
-                        <p>
-                            <strong>Control your personal data</strong>
-                            Personal data, when packaged in
-                            the form of Verifiable Claims,
-                            is split into hierarchical,
-                            machine-readable chunks and a
-                            third-party's ability to access
-                            any given chunk of this data
-                            can be made contingent on
-                            your explicit consent expressed
-                            in the form of another
-                            Verifiable Claim.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-        <div class="main-section" data-section-name="biggest-challenge" id="biggest-challenge">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>What’s the biggest challenge?</h2>
-                </div>
-                <div class="section-content">
-
-                    <div class="part-of-3">
-                        <img src="img/11-1.svg" alt="" class="">
-                        <p>
-                            <strong>User Experience</strong>
-                            Can we make the system actually
-                            usable for non-technical users?
-                            The concept of self-sovereign
-                            digital identity is heavily based on
-                            the premise that users are able to
-                            handle private keys on their own.
-                        </p>
-                    </div>
-
-
-                    <div class="part-of-3">
-                        <img src="img/11-2.svg" alt="" class="">
-                        <p>
-                            <strong>Bootstrapping</strong>
-                            Can we come up with an efficient
-                            way of bootstrapping the system
-                            without being able to offer
-                            significant benefits on day one?
-                            Self-sovereign digital identity
-                            has clear advantages,
-                            yet they only become clear
-                            when the userbase is large enough.
-                        </p>
-                    </div>
-
-
-                    <div class="part-of-3">
-                        <img src="img/11-3.svg" alt="" class="">
-                        <p>
-                            <strong>Finance</strong>
-                            How to build a profitable business
-                            in this new paradigm? The most
-                            obvious way is to tap into
-                            the economic flow between Identity Providers Identity Consumers. But will it not
-                            compromise the user's
-                            autonomy, as this way Identity Provider can trace his every move?
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="main-section" data-section-name="ux" id="ux">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Our approach to <span class="accent">UX & bootstrapping</span></h2>
-                </div>
-                <div class="section-content">
-                    <div class="element">
-                        <strong><span class="accent">User Experience:</span> Delegate your identity management to a
-                            third-party</strong>
-                        <p>With clever use of cryptographic tools, the downsides of having to protect the private key
-                            can be largely alleviated without compromising the very concept
-                            of self-sovereignty. Additionally, Verifiable Claims can be
-                            deposited with a third-party (called Credential Repository), as
-                            long as we make sure that the
-                            ultimate control always lies with the user, not the custodian.</p>
-                    </div>
-
-                    <div class="element">
-                        <strong><span class="accent">Bootstrapping:</span> Earn tokens by contributing to the system</strong>
-                        <p>We utilize time-delayed distribution of tokens. For B2C entities, we offer a financial
-                            incentive for their contribution to the process of creating and accepting
-                            user-centric data. For end-users, we create a viral game encouraging them to participate in
-                            exchange for token rewards.</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <div class="main-section" data-section-name="finance" id="finance">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Our approach to <span class="accent">finance</span></h2>
-                </div>
-                <div class="section-content">
-                    <div class="element">
-                        <strong><span class="accent">Settlement:</span> Don’t be tracked by your Identity Provider</strong>
-                        <p>Some systems allow the tracking to facilitate the flow of value between Service Provider and
-                            Identity Provider. Other remove the link completely but prevent Identity Provider from
-                            being rewarded. We aim at achieving the best of both worlds: allow payments but make them
-                            anonymous.</p>
-                    </div>
-
-                    <div class="element">
-                        <strong><span class="accent">Monetization:</span> Manage & sell your own personal data</strong>
-                        <p>Our approach is to arrange an efficient way for the users to manage & monetize their
-                            personal data. We leverage the post-GDPR environment with the use of smart-contracts by
-                            treating blockchain as a legally binding way to communicate to a third-party the user's
-                            consent (or lack of it) to store & process the data contained in Verifiable Claims.</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="main-section" data-section-name="what-we-need" id="what-we-need">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>What we need?</h2>
-                </div>
-                <div class="section-content">
-                    <div class="flex">
-                        <div class="part-of-2">
-                            <img src="img/12.svg" alt="" class="">
-                        </div>
-
-                        <div class="part-of-2">
-                            <p>
-                                We are building a large-scale <span class="accent">Self-Sovereign Identity</span> platform, called <span class="accent">SYGNET</span>. We plan to start in
-                                Poland, and then expand into the EU.
-                            </p>
-
-                            <p>
-                                    We're looking for synergy with an established B2C company, willing to take on the role of an <span class="accent">Identity Provider</span> or <span class="accent">Service Provider</span> while using our system as an <span class="accent">access management</span> service (e.g. 2ndFA).
-                            </p>
-
-                            <p>
-                                What are the benefits?
-                            </p>
-
-                            <ul>
-                                <li>Ability to offer a completely new kind of service for your customers.</li>
-                                <li>Great way to monetize your trustworthiness, i.e. the ability to vet your
-                                    customers’ identity.</li>
-                                <li>Early access to the emerging economy around digital identity.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="main-section" data-section-name="our-partner" id="our-partner">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Why should you be our partner?</h2>
-                </div>
-                <div class="section-content">
-                    <div class="element">
-                        <img src="img/13.svg" alt="" class="">
-                        <p>Expertise in EOS, arguably the most advanced & fastest growing
-                            <span class="accent">smart-contract platform</span>, second biggest in terms of market
-                            capitalization.</p>
-                    </div>
-                    <div class="element">
-                        <img src="img/13.svg" alt="" class="">
-                        <p>Inﬂuential participant of the <span class="accent">EOS ecosystem</span>,
-                            cooperating with similar companies across the world.</p>
-                    </div>
-                    <div class="element">
-                        <img src="img/13.svg" alt="" class="">
-                        <p>Active participant of a working committee for digital identity at
-                            <span class="accent">Polish Financial Supervision Authority</span>.</p>
-                    </div>
-                    <div class="element">
-                        <img src="img/13.svg" alt="" class="">
-                        <p>Entirely <span class="accent">self-funded</span> and with proven track record in business
-                            management.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="main-section" data-section-name="achievements" id="achievements">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Our achievements so far</h2>
-                </div>
-                <div class="section-content">
-
-                    <div class="part-of-3">
-                        <div class="img-rel">
-                            <img src="img/14.svg" alt="" class="">
-                            <p class="abs">
-                                Have managed
-                                to reach financial
-                                stability over a 6-month period,
-                                with stable income generated
-                                by supplying <span class="accent">
-                                    EOS block
-                                    producing infrastructure</span>.
-                            </p>
-                        </div>
-                    </div>
-
-
-
-                    <div class="part-of-3">
-                        <div class="img-rel">
-                            <img src="img/14.svg" alt="" class="">
-                            <p class="abs">
-                                Have delivered a recognized
-                                smart-contract testing suite,
-                                called <span class="accent">EOS Factory</span>,
-                                and several other utilities
-                                for the EOS community.
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="part-of-3">
-                        <div class="img-rel">
-                            <img src="img/14.svg" alt="" class="">
-                            <p class="abs">
-                                Have significant impact on the
-                                process of shaping up of <span class="accent">EOS
-                                governance</span>, including free-market
-                                approach to arbitration.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="main-section" data-section-name="team" id="team">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Our team</h2>
-                </div>
-                <div class="section-content">
-
-                    <div class="part-of-3">
-                        <div class="img-rel">
-                            <img src="img/t1.png" alt="" class="">
-                            <strong>Jakub Zarembiński</strong>
-                            <span>CEO & CO-FOUNDER</span>
-                            <p>Entrepreneur, DLT consultant & researcher. Capable programmer specializing in Java and R. Over 12 years of experience, including 7 years with the banking sector. Expert in IT and business, especially in the domain of blockchain development and machine learning. Long-time supporter of BitShares, MaidSafe, Steem and now EOS.</p>
-                        </div>
-                    </div>
-
-                    <div class="part-of-3">
-                        <div class="img-rel">
-                            <img src="img/t2.png" alt="" class="">
-                            <strong>Tomasz Michalski</strong>
-                            <span>COO & CO-FOUNDER</span>
-                            <p>Visionary, experienced manager & entrepreneur. Active in commerce and manufacturing industry. Built a prosperous door factory from the ground up, without prior experience in the industry. Strong business connections with China since 2006. Early adopter and miner of major crypto-currencies, including BTC, LTC, ETH. Currently an investor and big supporter of EOS.</p>
-                        </div>
-                    </div>
-
-                    <div class="part-of-3">
-                        <div class="img-rel">
-                            <img src="img/t3.png" alt="" class="">
-                            <strong>Dominik Walaszek</strong>
-                            <span>CFO & CO-FOUNDER</span>
-                            <p>Entrepreneur and investor. CEO and co-owner of a manufacturing enterprise employing over 700 people. Early adopter of Industry 4.0 concept. Inspired by convergence of decentralized technologies. Educational background in corporate finance. Started with Ethereum, now a strong believer in EOS.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <div class="main-section" data-section-name="team-2" id="team-2">
-            <div class="wrapper">
-                <div class="header">
-                    <h2>Our team</h2>
-                </div>
-                <div class="section-content">
-
-                    <div class="part-of-3">
-                        <div class="img-rel">
-                            <img src="img/t4.png" alt="" class="">
-                            <strong>Radosław Kintzi</strong>
-                            <span>CTO & CO-FOUNDER</span>
-                            <p>Over 18 years of professional experience in software development backed by a passion since early childhood. Worked on various programming platforms (from embedded devices and mobile, through highly scalable services in a cloud, to a web browser) and in many technical roles (developer, tech lead, architect, project manager). Focused on building dev teams, a culture of continuous self-perfecting and robust software.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="part-of-3">
-                        <div class="img-rel">
-                            <img src="img/t5.png" alt="" class="">
-                            <strong>Marcin Ziętek</strong>
-                            <span>CCO & CO-FOUNDER</span>
-                            <p>Blockchain and cryptocurrency expert, on the crypto-scene since 2012. Experienced in smart contracts platforms (Ethereum, EOS), with a deep understanding of blockchain and DLT, their potential and shortcomings. PR and communication experience with good understanding of modern IT and blockchain tech. Renewable power, electric transport and AI systems expertise. IT consultant, formerly an SQL database designer with coding background.</p>
-                        </div>
-                    </div>
-
-                    <div class="part-of-3">
-                        <div class="img-rel">
-                            <img src="img/t6.png" alt="" class="">
-                            <strong>Jacek Kusiak</strong>
-                            <span>CBDO & CO-FOUNDER</span>
-                            <p>For more than 20 years active investor on the stock exchange (S&P500, DAX, CAC40, WIG) and real estate markets. President of the biggest Real Estate Association "Mieszkanicznik", with 20 offices around the world and 8k active investors. Currently involved in Ethereum, EOS, Bitcoin, Tezos projects and other upcoming ICOs.</p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <p>Copyright © 2018 Sygnet. All rights reserved.</p>
-        </div>
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="js/jquery.scrollify.js"></script>
+        requestAnimationFrame(scrollLoop);
+      }
+    </script>
+    <script src="js/scripts.js"></script>
     <script src="js/main.js"></script>
-</body>
 
+  </body>
 </html>

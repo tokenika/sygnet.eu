@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="160px" height="160px" viewBox="0 0 160 160" enable-background="new 0 0 160 160" xml:space="preserve">
+<g>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M129.149,77.206v32.929c0,3.131-2.665,5.669-5.954,5.669H50
+		c-3.289,0-5.955-2.538-5.955-5.669V58.764c0-3.131,2.666-5.669,5.955-5.669h57.085"/>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M129.149,77.206V58.764c0-3.131-2.665-5.669-5.954-5.669h-16.11"/>
+	<g>
+		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M118.117,98.81c0,3.118-2.551,5.669-5.669,5.669H60.747
+			c-3.118,0-5.669-2.551-5.669-5.669v-28.72c0-3.118,2.551-5.669,5.669-5.669h51.702c3.118,0,5.669,2.551,5.669,5.669V98.81z"/>
+	</g>
+	<polygon fill="#FFFFFF" points="129.149,77.545 140.406,70.055 129.126,69.337 	"/>
+	
+		<rect x="109.75" y="39.388" fill="#8042FF" stroke="#FFFFFF" stroke-linecap="square" stroke-miterlimit="10" width="30.167" height="30.167"/>
+	<path fill="#8042FF" stroke="#FFFFFF" stroke-linecap="square" stroke-miterlimit="10" d="M124.834,45.712
+		c1.53,2.19,6.921,1.809,6.921,1.809v8.659c-0.8,4.869-6.921,7.27-6.921,7.27s-6.121-2.4-6.921-7.27v-8.659
+		C117.913,47.521,123.304,47.902,124.834,45.712z"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="121.251,54.105 124.192,57.047 129.126,52.113 	"/>
+	<polygon fill="#8042FF" stroke="#FFFFFF" stroke-linecap="square" stroke-miterlimit="10" points="59.711,120.47 54.045,120.47 
+		52.045,115.804 59.711,115.804 	"/>
+	<polygon fill="#8042FF" stroke="#FFFFFF" stroke-linecap="square" stroke-miterlimit="10" points="113.483,120.47 119.149,120.47 
+		121.149,115.804 113.483,115.804 	"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-linecap="square" stroke-miterlimit="10" x1="61.376" y1="71.401" x2="61.376" y2="97.497"/>
+	<g>
+		<circle fill="#8042FF" stroke="#FFFFFF" stroke-linecap="square" stroke-miterlimit="10" cx="86.597" cy="83.051" r="3.776"/>
+		
+			<ellipse fill="#8042FF" stroke="#FFFFFF" stroke-linecap="square" stroke-miterlimit="10" cx="86.597" cy="89.12" rx="0" ry="2.503"/>
+	</g>
+	<ellipse fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="25.506" cy="77.764" rx="1.813" ry="2.313"/>
+	<ellipse fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="35.808" cy="78.014" rx="1.813" ry="2.313"/>
+	<ellipse fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="30.251" cy="86.499" rx="1.813" ry="2.313"/>
+	<ellipse fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="21.406" cy="86.499" rx="1.813" ry="2.313"/>
+	<ellipse fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="21.406" cy="95.076" rx="1.813" ry="2.313"/>
+	<ellipse fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="30.251" cy="95.076" rx="1.813" ry="2.313"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="24.839,84.187 26.172,84.187 26.172,89.312 	"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="29.585,75.451 30.918,75.451 30.918,80.576 	"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="34.164,60.378 35.497,60.378 35.497,65.503 	"/>
+	<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="38.764" cy="48.346" r="2.313"/>
+</g>
+</svg>
