@@ -43,5 +43,42 @@ $(document).ready(function() {
 	$('.tooltip-name').on('mouseleave', function(){
 		$(this).next('.tooltip-desc').slideToggle(200);
 	});
+	
+	function setCookie(key, value) {
+		var expires = new Date();
+		expires.setTime(expires.getTime() + (30 * 24 * 60 * 60 * 1000));
+		document.cookie = key + '=' + value +';path=/'+ ';expires=' + expires.toUTCString();
+	}
+	
+	(function($) {
+	$.fn.cookiepolicy = function(options) {
+		new jQuery.cookiepolicy($(this), options);
+		return this;
+	};
+	
+	$.cookiepolicy = function(options) {
+			options = $.extend({
+				cookie: 'cookiepolicyinfo',
+				info: 'This site uses cookies to provide you with great user experience. By using Sygnet, you accept our use of cookies.',
+				close: 'X'
+			}, options || {});
+		
+		if($.cookie(options.cookie) != 'true') {
+			var wrapper = $('<div/>').addClass('cookiepolicy d-flex justify-content-center').appendTo('body');
+			$('<span/>').html(options.info).appendTo(wrapper);
+			$('body').addClass('cookie');
+			$('<a/>').addClass('cookie-btn').html(options.close).appendTo(wrapper)
+				.on('click', function(e) {
+					e.preventDefault();
+					setCookie(options.cookie, true);
+					$(this).parents('.cookiepolicy').slideUp(300);
+					$('.cookiepolicy').removeClass('d-flex');
+					$('body').removeClass('cookie');
+				});
+		}
+	};
+	})(jQuery);
+	
+	$.cookiepolicy();
 
 });
