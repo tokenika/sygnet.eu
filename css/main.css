@@ -62,7 +62,7 @@ ul li:last-child {margin: 0;}
 .text-inner p {font-size: 16px;line-height: 28px;}
 .pre-title {font-size: 22px;font-weight: 500;margin-bottom: 30px;color: #dac3ff;}
 .space {height: 50px;}
-.icon {max-width: 160px;}
+.icon {width: 100%;max-width: 200px;}
 .intro {font-size: 18px;line-height: 28px;max-width: 500px;margin: 0 auto 50px;}
 .intro.bigger {font-size: 32px;line-height: 44px;max-width: 620px;}
 .input-group {margin-bottom: 20px;}
@@ -81,7 +81,7 @@ body.cookie header {top: 35px;}
 header .container-fluid {max-width: 1340px;}
 section {min-height: calc(100vh - 80px);padding: 50px 0;}
 section#home {min-height: calc(100vh - 106px);overflow: hidden;}
-body.cookie section {min-height: calc(100vh - 115px);}
+body.cookie section:not(.min) {min-height: calc(100vh - 115px);}
 body.cookie section#home {min-height: calc(100vh - 141px);}
 section.min {min-height: 100px;}
 #logotype a span {margin: auto 0 auto 20px;opacity: 1;-ms-transform: translate(0,0);-webkit-transform: translate(0,0);transform: translate(0,0);-moz-transition: all .3s ease;-o-transition: all .3s ease;-webkit-transition: all .3s ease;transition: all .3s ease;}
@@ -118,17 +118,18 @@ header.mini #logotype a span {opacity: 0;-ms-transform: translate(0,-25px);-webk
 .second-section .text-inner.left {margin-left: 0;}
 .second-section .text-inner.right {margin-right: 0;}
 .second-section .abs {position: absolute;right:0;max-width: 50%;max-height: 405px;top: -200px;}
-.second-section .abs.abs2 {left:0;right:auto;}
-.second-section .abs.abs3 {top:auto;right:auto;left:0;bottom: 0;}
+.second-section .abs.abs2 {left: 15%;right:auto;top: auto;bottom: -50px;}
+.second-section .abs.abs3 {top:auto;right:auto;left: 18%;bottom: -50px;}
 .second-section .d-flex:not(.btn) {min-height: 455px;}
 #cases {padding: 80px 0;}
 #cases h2 {padding: 55px 0 0;}
 #cases .case {padding: 30px 0;border-bottom: 1px solid #ddd;}
-#cases .case .desc {padding-left: 50px;}
+#cases .case .image {padding: 25px;}
+#cases .case .desc {padding-left: 20px;}
 #cases .case .desc p {max-width: 395px;margin-left: auto;margin-right: auto;}
 #cases .case:last-child {border-bottom: 0px solid #ddd;}
 #digital {padding-top: 0;}
-#features .icon, #benefits .icon {margin-bottom: 30px;margin-top: 15px;}
+#features .icon, #benefits .icon {margin-bottom: 15px;margin-top: 15px;}
 #features p, #benefits p {max-width: 210px;margin-left: auto;margin-right: auto;}
 #growth {padding: 100px 0;}
 #growth .image {padding: 25px 0 0;}
@@ -155,12 +156,14 @@ footer .copy {padding: 45px 0 0;font-size: 12px;}
 #erecipe, #self-sovereign {padding-top: 0;}
 #erecipe .relat {position: relative;top: -50px;right: -80px;}
 #erecipe .second-section .d-flex:not(.btn) {min-height: 520px;}
+#erecipe .icon {width: 100%;max-width: 410px;}
 #paradigm .bigger {font-size: 32px;font-weight: bold;margin-bottom: 50px;line-height: 48px;}
 #paradigm .pre-title {color: #adadad;}
 #consequences, #future {padding: 100px 0;}
 #consequences .border {margin: 60px 0;}
 #future .text-inner {max-width: 760px;margin-bottom: 75px;}
 #future .bigger, #infrastructure .bigger {font-size: 22px;margin-bottom: 50px;line-height: 34px;}
+#future .icon {max-width: 125px;margin: 30px auto 5px;}
 .icon-box {position: relative;}
 .icon-box img {margin: 15px auto;}
 .icon-box .title {font-weight: bold;margin: 0 0 20px;}
@@ -173,7 +176,7 @@ footer .copy {padding: 45px 0 0;font-size: 12px;}
 .icon-box:nth-child(2)::before, .icon-box:nth-child(3)::before, .icon-box:nth-child(4)::before {top: 0;bottom: auto;left: -3px;}
 .icon-box:nth-child(5)::before, .icon-box:nth-child(6)::before, .icon-box:nth-child(7)::before {left: auto;right: -3px;}
 .icon-box:nth-child(8)::before {left: auto;right: -3px;bottom: auto;top: -3px;}
-#types img {margin: 15px auto 30px;height: 100px;}
+#types img {margin: 15px auto;height: 190px;}
 #types p {max-width: 254px;margin: 0 auto 35px;}
 #preteam, #team {padding: 100px 0;}
 #preteam .bigger {font-size: 32px;font-weight: bold;margin-bottom: 50px;line-height: 48px;}
@@ -208,9 +211,11 @@ footer .copy {padding: 45px 0 0;font-size: 12px;}
 }
 @media (max-width: 1200px) {
   #sovereign-identity {padding: 0 10px;}
-  .container {max-width: 100%;}
+  .container {max-width: 1040px;}
   .first-section {margin-bottom: 30%;}
   .second-section .abs {top: -18%;}
+  .second-section .abs.abs2 {left: 10%;}
+  .second-section .abs.abs3 {left: 10%;}
 }
 @media (max-width: 991px) {
   #menu {display: none;position: fixed;top: 106px;left: 0;width: 100%;background: #8042ff;height: calc(100vh - 106px);-moz-transition: top .3s ease;-o-transition: top .3s ease;-webkit-transition: top .3s ease;transition: top .3s ease;}
@@ -235,6 +240,8 @@ footer .copy {padding: 45px 0 0;font-size: 12px;}
   #erecipe .relat {margin: auto;}
   footer {text-align: center;}
   .cookiepolicy .cookie-btn {margin-left: 20px;}
+  .second-section .abs.abs2 {left: auto;margin: 0 auto;}
+  .second-section .abs.abs3 {left: auto;margin: 0 auto;}
 }
 @media (max-width: 830px) {
   .cookiepolicy {font-size: 13px;}
@@ -247,6 +254,8 @@ footer .copy {padding: 45px 0 0;font-size: 12px;}
   #details br {display: none;}
   #growth h5 {margin-top: 30px;}
   .second-section .abs {max-width: 500px;width: 100%;}
+  .second-section .abs.abs2 {width: auto;}
+  .second-section .abs.abs3 {width: auto;}
   .foot-menu {margin-bottom: 40px;}
   #paradigm .bigger {font-size: 24px;line-height: 38px;}
   #future .bigger, #infrastructure .bigger {font-size: 18px;line-height: 28px;}
@@ -282,10 +291,14 @@ footer .copy {padding: 45px 0 0;font-size: 12px;}
   h2 {font-size: 32px;}
   h3 {font-size: 24px;}
   .intro.bigger {font-size: 24px;line-height: 36px;}
-  .icon {max-width: 135px;}
+  .icon {max-width: 180px;}
   #cases .case {text-align: center;-ms-flex-direction: column!important;flex-direction: column!important;}
   #toggler {margin: 8px 0;}
   #mission .text-inner {padding: 0 0px;}
   #mission .bigger {font-size: 24px;line-height: 36px;}
   #involved br {display: none;}
+  .second-section .abs.abs2 {max-width: 100%;}
+  .second-section .abs.abs3 {max-width: 100%;}
+  #cases .case .image {width: 150px;}
+  #cases .case .desc {padding-left: 0px;}
 }
