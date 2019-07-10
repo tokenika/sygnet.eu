@@ -43,26 +43,48 @@ $(document).ready(function() {
 	$('.tooltip-name').on('mouseleave', function(){
 		$(this).next('.tooltip-desc').slideToggle(200);
 	});
-	
+
+	$('#product').on('click', function(){
+		if($(window).width() < 480){
+			if($('.roadmap').hasClass('project')){
+				$('.roadmap').removeClass('project');
+				$('.roadmap').addClass('product');
+			} else {
+				$('.roadmap').addClass('product');
+			}
+		}
+	});
+
+	$('#project').on('click', function(){
+		if($(window).width() < 480){
+			if($('.roadmap').hasClass('product')){
+				$('.roadmap').removeClass('product');
+				$('.roadmap').addClass('project');
+			} else {
+				$('.roadmap').addClass('project');
+			}
+		}
+	});
+
 	function setCookie(key, value) {
 		var expires = new Date();
 		expires.setTime(expires.getTime() + (30 * 24 * 60 * 60 * 1000));
 		document.cookie = key + '=' + value +';path=/'+ ';expires=' + expires.toUTCString();
 	}
-	
+
 	(function($) {
 	$.fn.cookiepolicy = function(options) {
 		new jQuery.cookiepolicy($(this), options);
 		return this;
 	};
-	
+
 	$.cookiepolicy = function(options) {
 			options = $.extend({
 				cookie: 'cookiepolicyinfo',
 				info: 'This site uses cookies to provide you with great user experience. By using Sygnet, you accept our use of cookies.',
 				close: 'X'
 			}, options || {});
-		
+
 		if($.cookie(options.cookie) != 'true') {
 			var wrapper = $('<div/>').addClass('cookiepolicy d-flex justify-content-center').appendTo('body');
 			$('<span/>').html(options.info).appendTo(wrapper);
@@ -78,7 +100,7 @@ $(document).ready(function() {
 		}
 	};
 	})(jQuery);
-	
+
 	$.cookiepolicy();
 
 });
