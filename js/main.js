@@ -37,11 +37,11 @@ $(document).ready(function() {
 	});
 
 	$('.tooltip-name').on('mouseenter', function(){
-		$(this).next('.tooltip-desc').slideToggle(200);
+		$(this).next('.tooltip-desc').stop().slideToggle(200);
 	});
 
 	$('.tooltip-name').on('mouseleave', function(){
-		$(this).next('.tooltip-desc').slideToggle(200);
+		$(this).next('.tooltip-desc').stop().slideToggle(200);
 	});
 
 	$('#product').on('click', function(){
