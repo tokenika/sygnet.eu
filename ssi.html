@@ -29,7 +29,7 @@
   <body>
 
     <header class="bg-blue">
-      <div class="container-fluid d-flex justify-content-between">
+      <div class="container d-flex justify-content-between">
         <div id="logotype">
           <a href="index.html" title="Sygnet" class="d-flex">
             <img class="img-fluid" src="img/logo.svg" alt="Sygnet">
@@ -61,7 +61,11 @@
         <div class="container">
           <div class="pre-title text-center" data-aos="fade-up">Digital Identity re-invented</div>
           <h1 class="subpage text-center c-white" data-aos="fade-up">Self-Sovereign Identity</h1>
-          <img class="img-fluid" src="img/ssi.png" alt="Self-Sovereign Identity">
+          <div class="row">
+            <div class="col-md-12 col-lg-10 offset-lg-1">
+              <img class="img-fluid" src="img/ssi.png" alt="Self-Sovereign Identity">
+            </div>
+          </div>
         </div>
       </div>
       <div class="second-section">
@@ -69,28 +73,28 @@
           <div class="container">
             <div class="space"></div>
             <div class="row" data-aos="fade-up">
-              <div class="col-sm-12 col-md-4">
-                <h5>Cryptographically <br>signed entities</h5>
+              <div class="col-sm-12 col-md-4 col-lg-3 offset-lg-1">
+                <h5>Cryptographically signed entities</h5>
               </div>
-              <div class="col-sm-12 col-md-8">
+              <div class="col-sm-12 col-md-8 col-lg-7 m-r-a">
                 <p>Self-Sovereign Identity is an emerging, decentralized framework for digital identity management. It allows users to prove beyond doubt that what they claim about themselves can be trusted, as it has been cryptographically signed by other trustworthy entities.</p>
               </div>
             </div>
             <div class="space"></div>
             <div class="row" data-aos="fade-up">
-              <div class="col-sm-12 col-md-4">
+              <div class="col-sm-12 col-md-4 col-lg-3 offset-lg-1">
                 <h5>Prove who we are <br>without documents</h5>
               </div>
-              <div class="col-sm-12 col-md-8">
+              <div class="col-sm-12 col-md-8 col-lg-7 m-r-a">
                 <p>SSI replicates they way identity works in the offline world - we carry paper or plastic identity cards or documents, issued by trustworthy third-parties, and are able to prove who we are, or what abilities or properties we have. What is worth noting is that we use these digital credentials without their issuer being aware of this fact.</p>
               </div>
             </div>
             <div class="space"></div>
             <div class="row" data-aos="fade-up">
-              <div class="col-sm-12 col-md-4">
+              <div class="col-sm-12 col-md-4 col-lg-3 offset-lg-1">
                 <h5>The missing layer <br>of the Internet</h5>
               </div>
-              <div class="col-sm-12 col-md-8">
+              <div class="col-sm-12 col-md-8 col-lg-7 m-r-a">
                 <p>Thus, Self-Sovereign Identity is a concept you are already familiar with in the real world. The effort is to port this proven concept into the online environment and leverage the immense business potential of an internet with a built-in trust layer.</p>
               </div>
             </div>
@@ -104,60 +108,68 @@
       <div class="container">
         <div id="before"></div>
         <div class="text-inner">
-          <div class="pre-title c-grey" data-aos="fade-up" data-aos-anchor="#before">The current paradigm</div>
-          <p class="bigger c-white" data-aos="fade-up">The current paradigm could be described as service-based identity. This is how the Internet works today, as "our" digital identities are not really ours - instead they are created, hosted and controlled by third-party service providers.<br> This approach has many very problematic consequences.</p>
-          <a href="#consequences" class="btn c-white empty" data-aos="fade-up"><img class="img-fluid" src="img/arrow-white.svg" alt="">Show consequences</a>
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="pre-title c-grey" data-aos="fade-up" data-aos-anchor="#before">The current paradigm</div>
+              <p class="bigger c-white" data-aos="fade-up">The current paradigm could be described as service-based identity. This is how the Internet works today, as "our" digital identities are not really ours - instead they are created, hosted and controlled by third-party service providers.<br> This approach has many very problematic consequences.</p>
+              <a href="#consequences" class="btn c-white empty" data-aos="fade-up"><img class="img-fluid" src="img/arrow-white.svg" alt="">Show consequences</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="consequences" class="bg-darker2 d-flex align-items-center">
       <div class="container">
-        <div class="row" data-aos="fade-up">
-          <div class="col-sm-12 col-md-4">
-            <h5 class="c-white">Prone to mass hacking</h5>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <p class="c-white">Large amounts of sensitive data is accumulated in isolated data silos, making hacking attempts very likely and profitable.</p>
-          </div>
-          <div class="col-sm-12 col-md-4 d-flex align-items-center">
-            <img class="img-fluid icon m-auto" src="img/prone_to_mass_hacking.svg" alt="Prone to mass hacking">
-          </div>
-        </div>
-        <div class="border" data-aos="fade-up"></div>
-        <div class="row" data-aos="fade-up">
-          <div class="col-sm-12 col-md-4">
-            <h5 class="c-white">Hard to transfer</h5>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <p class="c-white">It's impossible to port your identity from one service to another. Also, there is a lot of inefficiency involved, as each online business needs to verify information about you that has been already verified by another company.</p>
-          </div>
-          <div class="col-sm-12 col-md-4 d-flex align-items-center">
-            <img class="img-fluid icon m-auto" src="img/hard_to_transfer.svg" alt="Hard to transfer">
-          </div>
-        </div>
-        <div class="border" data-aos="fade-up"></div>
-        <div class="row" data-aos="fade-up">
-          <div class="col-sm-12 col-md-4">
-            <h5 class="c-white">Hard to control</h5>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <p class="c-white">There is no efficient way to control who knows what about you and manage permissions for processing of your data by a third-party.</p>
-          </div>
-          <div class="col-sm-12 col-md-4 d-flex align-items-center">
-            <img class="img-fluid icon m-auto" src="img/hard_to_control.svg" alt="Hard to control">
-          </div>
-        </div>
-        <div class="border" data-aos="fade-up"></div>
-        <div class="row" data-aos="fade-up">
-          <div class="col-sm-12 col-md-4">
-            <h5 class="c-white">Hard to monetize</h5>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <p class="c-white">Monetization of data is possible at the expense of losing privacy, and is usually done by third parties. There is no efficient way to reward users willing to share their personal data, as the user is more of an object than a subject in today’s online identity interactions.</p>
-          </div>
-          <div class="col-sm-12 col-md-4 d-flex align-items-center">
-            <img class="img-fluid icon m-auto" src="img/hard_to_monetize.svg" alt="Hard to monetize">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="row" data-aos="fade-up">
+              <div class="col-sm-12 col-md-4">
+                <h5 class="c-white">Prone to mass hacking</h5>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <p class="c-white">Large amounts of sensitive data is accumulated in isolated data silos, making hacking attempts very likely and profitable.</p>
+              </div>
+              <div class="col-sm-12 col-md-4 d-flex align-items-center">
+                <img class="img-fluid icon m-auto" src="img/prone_to_mass_hacking.svg" alt="Prone to mass hacking">
+              </div>
+            </div>
+            <div class="border" data-aos="fade-up"></div>
+            <div class="row" data-aos="fade-up">
+              <div class="col-sm-12 col-md-4">
+                <h5 class="c-white">Hard to transfer</h5>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <p class="c-white">It's impossible to port your identity from one service to another. Also, there is a lot of inefficiency involved, as each online business needs to verify information about you that has been already verified by another company.</p>
+              </div>
+              <div class="col-sm-12 col-md-4 d-flex align-items-center">
+                <img class="img-fluid icon m-auto" src="img/hard_to_transfer.svg" alt="Hard to transfer">
+              </div>
+            </div>
+            <div class="border" data-aos="fade-up"></div>
+            <div class="row" data-aos="fade-up">
+              <div class="col-sm-12 col-md-4">
+                <h5 class="c-white">Hard to control</h5>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <p class="c-white">There is no efficient way to control who knows what about you and manage permissions for processing of your data by a third-party.</p>
+              </div>
+              <div class="col-sm-12 col-md-4 d-flex align-items-center">
+                <img class="img-fluid icon m-auto" src="img/hard_to_control.svg" alt="Hard to control">
+              </div>
+            </div>
+            <div class="border" data-aos="fade-up"></div>
+            <div class="row" data-aos="fade-up">
+              <div class="col-sm-12 col-md-4">
+                <h5 class="c-white">Hard to monetize</h5>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <p class="c-white">Monetization of data is possible at the expense of losing privacy, and is usually done by third parties. There is no efficient way to reward users willing to share their personal data, as the user is more of an object than a subject in today’s online identity interactions.</p>
+              </div>
+              <div class="col-sm-12 col-md-4 d-flex align-items-center">
+                <img class="img-fluid icon m-auto" src="img/hard_to_monetize.svg" alt="Hard to monetize">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -221,7 +233,11 @@
         <div class="container">
           <div class="pre-title text-center" data-aos="fade-up">SSI infrastructure</div>
           <h2 class="text-center c-white" data-aos="fade-up">How does it work?</h2>
-          <img class="img-fluid" src="img/how-does-it-work.png" alt="How does it work">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <img class="img-fluid" src="img/how-does-it-work.png" alt="How does it work">
+              </div>
+          </div>
         </div>
       </div>
       <div class="second-section">
@@ -236,21 +252,25 @@
           </div>
         </div>
         <div id="types" class="container">
-          <div class="row text-center">
-            <div class="col-sm-12 col-md-4" data-aos="fade-up">
-              <img class="img-fluid" src="img/identity_subject.svg" alt="Identity Subject">
-              <h5>Identity Subject</h5>
-              <p>An entity about whom a Verifiable Credential is created. This can be a physical person, a legal person, or a thing.</p>
-            </div>
-            <div class="col-sm-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
-              <img class="img-fluid" src="img/identity_provider.svg" alt="Identity Provider">
-              <h5>Identity Provider</h5>
-              <p>An entity that signs a Verifiable Credential and thus certifies the authenticity of information contained in it.</p>
-            </div>
-            <div class="col-sm-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
-              <img class="img-fluid" src="img/identity_consumer.svg" alt="Identity Consumer">
-              <h5>Identity Consumer</h5>
-              <p>An entity that needs to verify a credential in its line of work.</p>
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="row text-center">
+                <div class="col-sm-12 col-md-4" data-aos="fade-up">
+                  <img class="img-fluid" src="img/identity_subject.svg" alt="Identity Subject">
+                  <h5>Identity Subject</h5>
+                  <p>An entity about whom a Verifiable Credential is created. This can be a physical person, a legal person, or a thing.</p>
+                </div>
+                <div class="col-sm-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
+                  <img class="img-fluid" src="img/identity_provider.svg" alt="Identity Provider">
+                  <h5>Identity Provider</h5>
+                  <p>An entity that signs a Verifiable Credential and thus certifies the authenticity of information contained in it.</p>
+                </div>
+                <div class="col-sm-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                  <img class="img-fluid" src="img/identity_consumer.svg" alt="Identity Consumer">
+                  <h5>Identity Consumer</h5>
+                  <p>An entity that needs to verify a credential in its line of work.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
