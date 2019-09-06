@@ -23,7 +23,7 @@ body.cookie {padding: 125px 0 0 0;}
 body::before {content: "";display: block;position: absolute;top: 0;left: 0;width: 100%;height: 90px;background: #8042ff;}
 body.cookie::before {height: 125px;}
 h1 {font-size: 64px;margin: 0 0 40px;line-height: 70px;letter-spacing: -2px;}
-h1.subpage {font-size: 40px;margin: 0 0 60px;}
+h1.subpage {font-size: 48px;margin: 0 0 60px;}
 h2 {font-size: 48px;margin: 0 0 30px;}
 h3 {font-size: 36px;margin: 0 0 40px;letter-spacing: -1px;line-height: 44px;}
 h4 {font-size: 26px;margin: 0 0 30px;}
@@ -66,7 +66,7 @@ ul li:last-child {margin: 0;}
 .img-fluid {max-width: 100%;height: auto;vertical-align: middle;}
 .text-inner {margin: auto;}
 .text-inner p {font-size: 18px;line-height: 27px;}
-.pre-title {font-size: 24px;font-weight: 500;margin-bottom: 20px;color: #dac3ff;}
+.pre-title {font-size: 24px;font-weight: 500;margin-bottom: 15px;color: #dac3ff;}
 .space {height: 50px;}
 .icon {width: 100%;max-width: 200px;}
 .intro {font-size: 18px;line-height: 27px;max-width: 500px;margin: 0 auto 50px;}
@@ -139,11 +139,11 @@ header.mini #logotype a span {opacity: 0;-ms-transform: translate(0,-25px);-webk
 #cases .case:last-child {border-bottom: 0px solid #ddd;}
 #digital {padding-top: 0;}
 #features .icon, #benefits .icon {margin-bottom: 15px;margin-top: 15px;}
-#features p, #benefits p {max-width: 210px;margin-left: auto;margin-right: auto;}
+#features p, #benefits p {max-width: 230px;margin-left: auto;margin-right: auto;font-size: 18px;line-height: 28px;}
 #growth {padding: 100px 0;}
 #growth .image {padding: 25px 0 0;}
 #growth #more {padding: 35px 0 0;}
-#growth p {max-width: 330px;margin-left: auto;margin-right: auto;}
+#growth p {max-width: 335px;margin-left: auto;margin-right: auto;font-size: 18px;line-height: 28px;}
 #involved {padding: 100px 0;background: #6c34de;display: none;}
 #involved p {color: #dac3ff;}
 #involved .input-group {max-width: 400px;position: relative;margin: 0 auto 40px;}
@@ -189,6 +189,7 @@ footer .copy {padding: 45px 0 0;font-size: 12px;}
 #types p {max-width: 254px;margin: 0 auto 35px;}
 #preteam, #team, #contact, #news {padding: 100px 0;}
 #preteam .bigger, #contact .bigger {font-size: 36px;font-weight: bold;margin-bottom: 50px;line-height: 48px;}
+#preteam .bigger {max-width: 787px;margin-left: auto;margin-right: auto;}
 #contact .bigger {max-width: 777px;margin-left: auto;margin-right: auto;}
 #contact-info .row {margin-top: 80px;margin-bottom: 80px;}
 #contact-info .con-title {opacity: .8;}
@@ -199,8 +200,9 @@ footer .copy {padding: 45px 0 0;font-size: 12px;}
 #contact-info .chdir {margin-top: 40px;}
 .person {padding: 20px;}
 .person .photo {background: #ddd;padding-top: 20px;margin-bottom: 20px;}
-.person .subtitle {margin-bottom: 20px;line-height: 20px;}
+.person .subtitle {margin-bottom: 20px;line-height: 24px;}
 .person .tooltip {width: 205px;}
+.person h5 {font-size: 18px;margin: 30px 0 20px;}
 #road-map .bigger {font-size: 22px;text-align: center;max-width: 700px;margin: 0 auto;line-height: 32px;}
 .roadmap_head {border-bottom: 1px solid #d8d8d8;text-transform: uppercase;font-size: 16px;margin: 60px 0;}
 .roadmap_head div {padding: 30px 15px;}
@@ -269,8 +271,8 @@ footer .copy {padding: 45px 0 0;font-size: 12px;}
   body.cookie #menu {top: 125px;height: calc(100vh - 125px);}
   body.cookie header.mini #menu {top: 90px;height: calc(100vh - 90px);}
   #toggler {display: block;}
-  #menu .d-flex {padding: 10px 0 50px;}
-  #menu a {font-size: 22px;padding: 15px;}
+  #menu .d-flex {padding: 35px 0 60px;}
+  #menu a {font-size: 20px;padding: 15px;}
   #cases {padding: 40px 0;}
   #cases h2 {text-align: center;}
   #cases .case {max-width: 620px;margin: auto;}
@@ -279,7 +281,7 @@ footer .copy {padding: 45px 0 0;font-size: 12px;}
   .foot-logo {margin-bottom: 40px;}
   .second-section .abs {position: relative;margin: 25px auto;display: block;top: auto;transform: translate3d(0px, 0, 0px)!important;}
   .second-section .text-inner.left {margin-left: auto;}
-  .second-section .text-inner.right {margin-right: auto;}
+  .second-section .text-inner.right {margin-right: auto;text-align: center;}
   .second-section .d-flex:not(.btn) {min-height: 355px;}
   #erecipe .second-section .d-flex:not(.btn) {min-height: 320px;}
   #erecipe .second-section .text-inner {padding-top: 50px;}
@@ -294,6 +296,7 @@ footer .copy {padding: 45px 0 0;font-size: 12px;}
   .left_side .road_item::after {right: -80px;}
   .road_under .road_under_item::after {width: 20px;right: -62px;}
   .road_under::after {right: -63px;}
+  #cases h3 {text-align: center;}
 }
 @media (max-width: 830px) {
   .cookiepolicy {font-size: 13px;}
@@ -341,6 +344,7 @@ footer .copy {padding: 45px 0 0;font-size: 12px;}
   #news .news {margin-bottom: 50px;}
   body.cookie::before {height: 90px;}
   .post-img {height: 285px;}
+  h1.subpage {font-size: 38px;}
 }
 @media (max-width: 600px) {
   h1 {font-size: 50px;line-height: 56px;}
@@ -383,18 +387,24 @@ footer .copy {padding: 45px 0 0;font-size: 12px;}
   .end_side2::before {content: "";display: block;width: 30px;height: calc(100% - 35px);background: #fafafa;position: absolute;top: 57px;left: -10px;}
 }
 @media (max-width: 460px) {
-  h1 {font-size: 44px;}
+  h1 {font-size: 40px;line-height: 48px;}
+  h1.subpage {font-size: 32px;line-height: 42px;}
   h2 {font-size: 32px;}
-  h3 {font-size: 24px;}
+  h3 {font-size: 24px;margin-bottom: 20px;line-height: 34px;}
+  .pre-title {font-size: 16px;}
+  .btn {font-size: 12px;}
   .intro.bigger {font-size: 24px;line-height: 36px;}
   .icon {max-width: 180px;}
   #cases .case {text-align: center;-ms-flex-direction: column!important;flex-direction: column!important;}
-  #toggler {margin: 8px 0;}
+  #toggler {margin: 0;}
   #mission .text-inner {padding: 0 0px;}
   #mission .bigger {font-size: 24px;line-height: 36px;}
   #involved br {display: none;}
+  #growth p, #features p, #benefits p {font-size: 16px;line-height: 26px;}
   .second-section .abs.abs2 {max-width: 100%;}
   .second-section .abs.abs3 {max-width: 100%;}
   #cases .case .image {width: 150px;}
   #cases .case .desc {padding-left: 0px;}
+  #home .text-inner p {font-size: 16px;line-height: 27px;}
+  .text-inner p {font-size: 14px;line-height: 24px;}
 }
