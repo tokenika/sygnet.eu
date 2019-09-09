@@ -106,9 +106,9 @@ const client = new dsteem.Client('https://api.steemit.com');
 
 window.onload = async () => {
     const query = {
-        tag: 'tokenika',
+        tag: 'sygnetproject',
         limit: 50,
-        start_author: 'tokenika'
+        start_author: 'sygnetproject'
     };
     client.database
         .getDiscussions('blog',query)
